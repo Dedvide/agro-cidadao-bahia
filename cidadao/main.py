@@ -84,6 +84,12 @@ async def estatisticas():
     return JSONResponse(stats())
 
 
+@app.get("/biblioteca", response_class=HTMLResponse)
+async def biblioteca():
+    html_path = PAINEL_DIR / "biblioteca.html"
+    return html_path.read_text(encoding="utf-8")
+
+
 @app.get("/health")
 async def health():
     return {"status": "ok", "servico": "Agro Cidadão Bahia"}

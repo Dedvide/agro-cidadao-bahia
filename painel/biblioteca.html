@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Rural — Agro Cidadão Bahia</title>
+  <link rel="stylesheet" href="/static/cidadao.css" />
+  <style>
+    .biblioteca { max-width: 760px; margin: 0 auto; padding: 16px 12px 40px; }
+    .biblioteca h2 { color: var(--verde); font-size: 1.1rem; margin: 24px 0 10px; border-left: 4px solid var(--verde); padding-left: 10px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .card {
+      background: #fff;
+      border: 1px solid var(--borda);
+      border-radius: 14px;
+      padding: 16px;
+      text-decoration: none;
+      color: var(--texto);
+      box-shadow: var(--sombra);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: box-shadow .15s, border-color .15s;
+    }
+    .card:hover { border-color: var(--verde-claro); box-shadow: 0 4px 16px rgba(0,0,0,.13); }
+    .card .icone { font-size: 2rem; line-height: 1; }
+    .card .nome  { font-weight: 700; font-size: .95rem; color: var(--verde); }
+    .card .desc  { font-size: .8rem; color: var(--sub); line-height: 1.4; }
+    .card .tipo  { font-size: .72rem; background: var(--verde-bg); color: var(--verde); border-radius: 20px; padding: 2px 8px; align-self: flex-start; margin-top: 2px; }
+    .intro { background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 14px 18px; font-size: .88rem; color: var(--sub); margin-bottom: 8px; line-height: 1.55; }
+    .btn-voltar { display: inline-flex; align-items: center; gap: 6px; color: var(--verde); font-size: .9rem; font-weight: 600; text-decoration: none; margin-bottom: 4px; }
+    .btn-voltar:hover { text-decoration: underline; }
+    .ouvir-pagina { float: right; background: none; border: 1.5px solid var(--verde-claro); border-radius: 20px; padding: 4px 12px; font-size: .8rem; color: var(--verde); cursor: pointer; }
+    .ouvir-pagina:hover { background: var(--verde-bg); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">🌱 Agro Cidadão Bahia</div>
+    <div class="header-slogan">Biblioteca Rural Digital — cursos e materiais gratuitos</div>
+  </header>
+
+  <div class="biblioteca">
+
+    <br>
+    <a href="/" class="btn-voltar">← Voltar ao Assistente</a>
+    <button class="ouvir-pagina" onclick="ouvirPagina()">🔊 Ouvir esta página</button>
+
+    <div class="intro" id="texto-intro">
+      Todos os links abaixo são gratuitos e oficiais — do governo federal, Embrapa ou SENAR.
+      Você não precisa pagar nada. Alguns pedem cadastro simples com CPF.
+      Pressione 🔊 para ouvir as informações em voz alta.
+    </div>
+
+    <h2>📚 Cursos Online Gratuitos</h2>
+    <div class="cards">
+
+      <a class="card" href="https://ead.senar.org.br" target="_blank" rel="noopener">
+        <span class="icone">🎓</span>
+        <span class="nome">SENAR EAD</span>
+        <span class="desc">Cursos de agricultura, pecuária, horticultura, apicultura e gestão rural. Certificado gratuito.</span>
+        <span class="tipo">Cursos com certificado</span>
+      </a>
+
+      <a class="card" href="https://www.escolavirtual.gov.br" target="_blank" rel="noopener">
+        <span class="icone">🏛️</span>
+        <span class="nome">Escola Virtual Gov</span>
+        <span class="desc">Cursos do governo federal gratuitos para cidadãos. Inclui gestão, meio ambiente e empreendedorismo rural.</span>
+        <span class="tipo">Cursos com certificado</span>
+      </a>
+
+      <a class="card" href="https://www.sebrae.com.br/sites/PortalSebrae/sebraeaz/agronegocio" target="_blank" rel="noopener">
+        <span class="icone">💼</span>
+        <span class="nome">SEBRAE Agronegócio</span>
+        <span class="desc">Capacitação em negócios rurais, acesso a mercados, crédito e gestão da propriedade.</span>
+        <span class="tipo">Cursos e consultorias</span>
+      </a>
+
+    </div>
+
+    <h2>🌾 Conhecimento Técnico (Embrapa)</h2>
+    <div class="cards">
+
+      <a class="card" href="https://www.embrapa.br/busca-de-publicacoes" target="_blank" rel="noopener">
+        <span class="icone">📖</span>
+        <span class="nome">Publicações Embrapa</span>
+        <span class="desc">Manuais técnicos gratuitos sobre culturas, pragas, solos e sistemas de produção.</span>
+        <span class="tipo">Leitura gratuita</span>
+      </a>
+
+      <a class="card" href="https://www.embrapa.br/videos" target="_blank" rel="noopener">
+        <span class="icone">▶️</span>
+        <span class="nome">Vídeos Embrapa</span>
+        <span class="desc">Vídeos explicativos sobre técnicas agrícolas, criação de animais e sustentabilidade.</span>
+        <span class="tipo">Vídeos gratuitos</span>
+      </a>
+
+      <a class="card" href="https://www.embrapa.br/agencia-de-informacao-tecnologica" target="_blank" rel="noopener">
+        <span class="icone">🔬</span>
+        <span class="nome">Ageitec Embrapa</span>
+        <span class="desc">Sistema de informação tecnológica agropecuária — fichas técnicas por cultura e tema.</span>
+        <span class="tipo">Base de dados técnica</span>
+      </a>
+
+    </div>
+
+    <h2>📺 Assistir no YouTube (gratuito, sem cadastro)</h2>
+    <div class="cards">
+
+      <a class="card" href="https://www.youtube.com/@embrapa" target="_blank" rel="noopener">
+        <span class="icone">🌿</span>
+        <span class="nome">Canal Embrapa</span>
+        <span class="desc">Vídeos curtos e diretos sobre plantio, colheita, pragas e tecnologias rurais.</span>
+        <span class="tipo">YouTube gratuito</span>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/@SENARBrasil" target="_blank" rel="noopener">
+        <span class="icone">🚜</span>
+        <span class="nome">Canal SENAR</span>
+        <span class="desc">Treinamentos em vídeo para produtores rurais: manejo, sanidade animal, negócios.</span>
+        <span class="tipo">YouTube gratuito</span>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/@MinisteriodaAgriculturaOficial" target="_blank" rel="noopener">
+        <span class="icone">🏛️</span>
+        <span class="nome">Canal MAPA</span>
+        <span class="desc">Notícias e orientações oficiais do Ministério da Agricultura, Pecuária e Abastecimento.</span>
+        <span class="tipo">YouTube gratuito</span>
+      </a>
+
+    </div>
+
+    <h2>💰 Preços e Mercado</h2>
+    <div class="cards">
+
+      <a class="card" href="https://www.conab.gov.br/info-agro/precos" target="_blank" rel="noopener">
+        <span class="icone">📊</span>
+        <span class="nome">Preços CONAB</span>
+        <span class="desc">Preços de produtos agrícolas por estado e por semana. Saiba quanto vale o que você produz.</span>
+        <span class="tipo">Dados oficiais</span>
+      </a>
+
+      <a class="card" href="https://www.gov.br/agricultura/pt-br/assuntos/politica-agricola/credito-rural" target="_blank" rel="noopener">
+        <span class="icone">🏦</span>
+        <span class="nome">Crédito Rural MAPA</span>
+        <span class="desc">Linhas de crédito disponíveis para agricultores: Pronaf, ABC, Moderfrota e outros programas.</span>
+        <span class="tipo">Programas de crédito</span>
+      </a>
+
+    </div>
+
+    <h2>🌧️ Clima e Previsão</h2>
+    <div class="cards">
+
+      <a class="card" href="https://clima.inmet.gov.br" target="_blank" rel="noopener">
+        <span class="icone">🌦️</span>
+        <span class="nome">INMET Clima</span>
+        <span class="desc">Previsão do tempo por município e dados climáticos históricos para planejamento agrícola.</span>
+        <span class="tipo">Dados oficiais</span>
+      </a>
+
+      <a class="card" href="https://www.sudene.gov.br/monitoramento-das-secas" target="_blank" rel="noopener">
+        <span class="icone">🌵</span>
+        <span class="nome">Monitor de Secas</span>
+        <span class="desc">Mapa mensal de seca no Nordeste. Essencial para quem planta no semiárido baiano.</span>
+        <span class="tipo">Monitoramento</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <footer>
+    Todos os links são fontes públicas oficiais. O Agro Cidadão não tem vínculo com essas instituições.<br>
+    <a href="/">← Voltar ao Assistente de IA</a>
+  </footer>
+
+  <script>
+    function ouvirPagina() {
+      if (!window.speechSynthesis) { alert("Seu navegador não suporta leitura em voz alta. Use o Chrome."); return; }
+      const texto = document.getElementById("texto-intro").textContent;
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(texto);
+      u.lang = "pt-BR"; u.rate = 0.88;
+      speechSynthesis.speak(u);
+    }
+  </script>
+
+</body>
+</html>

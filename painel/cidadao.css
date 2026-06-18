@@ -183,6 +183,19 @@ header {
   min-height: 18px;
 }
 
+.btn-ouvir {
+  display: inline-block;
+  margin-left: 8px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: .6;
+  vertical-align: middle;
+  padding: 0 2px;
+}
+.btn-ouvir:hover { opacity: 1; }
+
 .municipio-row {
   margin-top: 6px;
   display: flex;

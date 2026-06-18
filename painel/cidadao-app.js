@@ -245,11 +245,37 @@ async function enviar() {
   }
 }
 
+// ── Voz de saída (Text-to-Speech) ──
+function lerEmVoz(texto) {
+  if (!window.speechSynthesis) return;
+  // limpa markdown básico para leitura mais natural
+  const limpo = texto.replace(/[#*_`]/g, "").replace(/\n+/g, ". ").trim();
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(limpo);
+  u.lang  = "pt-BR";
+  u.rate  = 0.88;
+  u.pitch = 1;
+  speechSynthesis.speak(u);
+}
+
 // ── Helpers de mensagem ──
 function addMsg(quem, texto, extraClass = "") {
   const div = document.createElement("div");
   div.className = `msg ${quem}${extraClass ? " " + extraClass : ""}`;
-  div.textContent = texto.replace(/\*/g, "");  // remove asteriscos de markdown simples
+  div.textContent = texto.replace(/[#*_`]/g, "");
+
+  // botão de ouvir em todas as mensagens do bot
+  if (quem === "bot" && !extraClass) {
+    const btnOuvir = document.createElement("button");
+    btnOuvir.className = "btn-ouvir";
+    btnOuvir.title = "Ouvir resposta";
+    btnOuvir.textContent = "🔊";
+    btnOuvir.addEventListener("click", () => lerEmVoz(texto));
+    div.appendChild(btnOuvir);
+    // lê automaticamente a resposta
+    lerEmVoz(texto);
+  }
+
   mensagensEl.appendChild(div);
   mensagensEl.scrollTop = mensagensEl.scrollHeight;
   return div;

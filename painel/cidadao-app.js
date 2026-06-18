@@ -44,6 +44,62 @@ function extrairMunicipio(texto) {
   return "";
 }
 
+// ── Microfone (Web Speech API) ──
+let recognition = null;
+let gravando = false;
+
+function iniciarMic() {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const btnMic = document.getElementById("btn-mic");
+  const micStatus = document.getElementById("mic-status");
+
+  if (!SpeechRecognition) {
+    micStatus.style.display = "block";
+    micStatus.textContent = "Seu navegador não suporta áudio. Use o Chrome no celular.";
+    return;
+  }
+
+  if (gravando) {
+    recognition.stop();
+    return;
+  }
+
+  recognition = new SpeechRecognition();
+  recognition.lang = "pt-BR";
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  recognition.onstart = () => {
+    gravando = true;
+    btnMic.classList.add("gravando");
+    btnMic.textContent = "⏹";
+    micStatus.style.display = "block";
+    micStatus.textContent = "Ouvindo... fale sua dúvida";
+  };
+
+  recognition.onresult = (e) => {
+    const transcrito = e.results[0][0].transcript;
+    entrada.value = transcrito;
+    micStatus.textContent = `Entendido: "${transcrito}"`;
+    entrada.focus();
+  };
+
+  recognition.onerror = (e) => {
+    micStatus.textContent = e.error === "not-allowed"
+      ? "Permita o acesso ao microfone nas configurações do navegador."
+      : "Não entendi. Tente falar mais devagar ou use o texto.";
+  };
+
+  recognition.onend = () => {
+    gravando = false;
+    btnMic.classList.remove("gravando");
+    btnMic.textContent = "🎤";
+    setTimeout(() => { micStatus.style.display = "none"; }, 3000);
+  };
+
+  recognition.start();
+}
+
 // ── Inicialização ──
 function init() {
   renderSugestoes();
@@ -56,6 +112,7 @@ function init() {
 
   formEl.addEventListener("submit", onSubmit);
   inputImagem.addEventListener("change", onImagemSelecionada);
+  document.getElementById("btn-mic").addEventListener("click", iniciarMic);
   entrada.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); formEl.dispatchEvent(new Event("submit")); }
   });

@@ -155,8 +155,33 @@ header {
   cursor: pointer;
   transition: background .15s;
 }
-.btn-enviar:hover  { background: #1b5e20; }
+.btn-enviar:hover    { background: #1b5e20; }
 .btn-enviar:disabled { background: #a5d6a7; cursor: default; }
+
+.btn-mic {
+  background: #fff;
+  border: 1.5px solid var(--borda);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+  flex-shrink: 0;
+}
+.btn-mic:hover       { background: var(--verde-bg); border-color: var(--verde-claro); }
+.btn-mic.gravando    { background: #ffebee; border-color: #ef9a9a; animation: pulsar .8s infinite; }
+
+@keyframes pulsar {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .5; }
+}
+
+.mic-status {
+  font-size: .78rem;
+  color: #c62828;
+  padding: 4px 2px;
+  min-height: 18px;
+}
 
 .municipio-row {
   margin-top: 6px;

@@ -34,15 +34,17 @@
         </div>
 
         <div class="input-row">
+          <button type="button" class="btn-mic" id="btn-mic" title="Falar">🎤</button>
           <input
             id="entrada"
             type="text"
-            placeholder="Digite sua dúvida... ex: minhas folhas estão amarelando"
+            placeholder="Digite ou fale sua dúvida..."
             autocomplete="off"
             enterkeyhint="send"
           />
           <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
         </div>
+        <div id="mic-status" class="mic-status" style="display:none"></div>
 
         <input id="municipio" type="hidden" value="" />
 

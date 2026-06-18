@@ -14,6 +14,8 @@ const SUGESTOES = [
 ];
 
 let imagemFile = null;
+let municipioSessao = "";        // município capturado na conversa
+let aguardandoMunicipio = true;  // primeira mensagem é o município
 
 // ── DOM refs ──
 const mensagensEl = document.getElementById("mensagens");
@@ -25,14 +27,31 @@ const municipioEl = document.getElementById("municipio");
 const sugestoesEl = document.getElementById("sugestoes");
 const formEl = document.getElementById("form-chat");
 
+// ── Extrai município de texto livre ──
+function extrairMunicipio(texto) {
+  const t = texto.toLowerCase();
+  const prefixos = ["de ", "em ", "sou de ", "moro em ", "aqui em ", "municipio ", "município "];
+  for (const p of prefixos) {
+    const i = t.indexOf(p);
+    if (i !== -1) {
+      const resto = texto.slice(i + p.length).trim().split(/[\s,\.]/)[0];
+      if (resto.length > 2) return resto.charAt(0).toUpperCase() + resto.slice(1);
+    }
+  }
+  // se o texto for curto (até 3 palavras), provavelmente é só o nome do município
+  const palavras = texto.trim().split(/\s+/);
+  if (palavras.length <= 3) return texto.trim();
+  return "";
+}
+
 // ── Inicialização ──
 function init() {
   renderSugestoes();
   addMsg("bot",
-    "Olá! Sou o *Agro Cidadão Bahia* 🌱\n\n" +
+    "Olá! Sou o Agro Cidadão Bahia 🌱\n\n" +
     "Estou aqui para ajudar agricultores familiares com dúvidas sobre plantio, pragas, " +
     "solo, irrigação e muito mais — de forma totalmente gratuita.\n\n" +
-    "Você pode me enviar uma *pergunta* ou *foto* da sua lavoura. Como posso ajudar hoje?"
+    "Para começar: de qual município você é?"
   );
 
   formEl.addEventListener("submit", onSubmit);
@@ -93,7 +112,30 @@ async function enviar() {
   const texto = entrada.value.trim();
   if (!texto && !imagemFile) return;
 
-  const municipio = municipioEl.value.trim();
+  // primeira mensagem: capturar município
+  if (aguardandoMunicipio && texto && !imagemFile) {
+    municipioSessao = extrairMunicipio(texto) || texto.trim();
+    municipioEl.value = municipioSessao;
+    aguardandoMunicipio = false;
+    addMsg("user", texto);
+    entrada.value = "";
+    addMsg("bot",
+      `Obrigado! Registrei que você é de ${municipioSessao}. ` +
+      "Agora pode me fazer sua pergunta ou enviar uma foto da lavoura."
+    );
+    sugestoesEl.style.display = "flex";
+    renderSugestoes();
+    entrada.focus();
+    return;
+  }
+
+  const municipio = municipioSessao || municipioEl.value.trim();
+
+  // tenta extrair município do texto mesmo após boas-vindas
+  if (!municipioSessao) {
+    const extraido = extrairMunicipio(texto);
+    if (extraido) { municipioSessao = extraido; municipioEl.value = extraido; }
+  }
 
   // exibir mensagem do usuário
   if (imagemFile) {

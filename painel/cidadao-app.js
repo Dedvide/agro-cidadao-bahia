@@ -267,13 +267,39 @@ async function enviar() {
   }
 }
 
+// ── Renderiza markdown simples como HTML seguro ──
+function renderMarkdown(texto) {
+  // 1. escapa HTML para prevenir XSS
+  let h = texto
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  // 2. links markdown [texto](url) — aceita https:// e caminhos relativos /...
+  h = h.replace(
+    /\[([^\]]{1,80})\]\(((?:https?:\/\/|\/)[^)]{1,200})\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer">$1 ↗</a>'
+  );
+  // 3. negrito **texto**
+  h = h.replace(/\*\*([^*\n]{1,100})\*\*/g, "<strong>$1</strong>");
+  // 4. quebras de linha
+  h = h.replace(/\n/g, "<br>");
+  return h;
+}
+
+// ── Texto limpo para leitura em voz (sem markdown nem links) ──
+function textoParaVoz(texto) {
+  return texto
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")  // [texto](url) → texto
+    .replace(/[#*_`]/g, "")
+    .replace(/\n+/g, ". ")
+    .trim();
+}
+
 // ── Voz de saída (Text-to-Speech) ──
 function lerEmVoz(texto) {
   if (!window.speechSynthesis) return;
-  // limpa markdown básico para leitura mais natural
-  const limpo = texto.replace(/[#*_`]/g, "").replace(/\n+/g, ". ").trim();
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(limpo);
+  const u = new SpeechSynthesisUtterance(textoParaVoz(texto));
   u.lang  = "pt-BR";
   u.rate  = 0.88;
   u.pitch = 1;
@@ -284,18 +310,18 @@ function lerEmVoz(texto) {
 function addMsg(quem, texto, extraClass = "") {
   const div = document.createElement("div");
   div.className = `msg ${quem}${extraClass ? " " + extraClass : ""}`;
-  div.textContent = texto.replace(/[#*_`]/g, "");
 
-  // botão de ouvir em todas as mensagens do bot
   if (quem === "bot" && !extraClass) {
+    div.innerHTML = renderMarkdown(texto);
     const btnOuvir = document.createElement("button");
     btnOuvir.className = "btn-ouvir";
     btnOuvir.title = "Ouvir resposta";
     btnOuvir.textContent = "🔊";
     btnOuvir.addEventListener("click", () => lerEmVoz(texto));
     div.appendChild(btnOuvir);
-    // lê automaticamente a resposta
     lerEmVoz(texto);
+  } else {
+    div.textContent = texto;
   }
 
   mensagensEl.appendChild(div);

@@ -183,6 +183,14 @@ header {
   min-height: 18px;
 }
 
+.msg.bot a {
+  color: var(--verde);
+  font-weight: 600;
+  text-decoration: underline;
+  word-break: break-word;
+}
+.msg.bot a:hover { color: #1b5e20; }
+
 .btn-ouvir {
   display: inline-block;
   margin-left: 8px;

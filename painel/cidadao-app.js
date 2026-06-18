@@ -36,7 +36,6 @@ function init() {
   );
 
   formEl.addEventListener("submit", onSubmit);
-  document.getElementById("btn-foto").addEventListener("click", () => inputImagem.click());
   inputImagem.addEventListener("change", onImagemSelecionada);
   entrada.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); formEl.dispatchEvent(new Event("submit")); }

@@ -116,8 +116,17 @@ header {
   font-size: .82rem;
   cursor: pointer;
   white-space: nowrap;
+  display: inline-block;
 }
 .btn-foto:hover { background: #5d4037; }
+
+#input-imagem {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
 #nome-arquivo { font-size: .78rem; color: var(--sub); }
 
 .input-row {

@@ -27,10 +27,27 @@ const municipioEl = document.getElementById("municipio");
 const sugestoesEl = document.getElementById("sugestoes");
 const formEl = document.getElementById("form-chat");
 
+// ── Palavras que indicam pergunta agrícola, não município ──
+const PALAVRAS_AGRICOLAS = [
+  "lavoura","plantio","planta","cacau","café","mandioca","milho","feijão","tomate",
+  "banana","cana","soja","algodão","sisal","coco","laranja","manga","mamão","uva",
+  "praga","doença","fungo","vassoura","bruxa","broca","lagarta","formiga","cupim","mosca",
+  "amarelando","murchando","caindo","podre","mancha","folha","raiz","fruto","caule",
+  "solo","terra","adubo","calcário","irrigação","seca","chuva","colheita","pesca",
+  "peixe","camarão","boi","vaca","galinha","porco","cabra","abelha","mel","leite",
+  "problema","ajuda","socorro","como","qual","quando","quanto","onde","por que","estou com"
+];
+
+function parecePerguntoAgricola(texto) {
+  const t = texto.toLowerCase();
+  return PALAVRAS_AGRICOLAS.some(p => t.includes(p));
+}
+
 // ── Extrai município de texto livre ──
 function extrairMunicipio(texto) {
   const t = texto.toLowerCase();
-  const prefixos = ["de ", "em ", "sou de ", "moro em ", "aqui em ", "municipio ", "município "];
+  // só prefixos explícitos de localização — nunca o genérico "de " que captura "lavoura de cacau"
+  const prefixos = ["sou de ", "moro em ", "aqui em ", "estou em ", "municipio ", "município ", "cidade de "];
   for (const p of prefixos) {
     const i = t.indexOf(p);
     if (i !== -1) {
@@ -38,9 +55,9 @@ function extrairMunicipio(texto) {
       if (resto.length > 2) return resto.charAt(0).toUpperCase() + resto.slice(1);
     }
   }
-  // se o texto for curto (até 3 palavras), provavelmente é só o nome do município
+  // texto curto sem palavras agrícolas = provavelmente só o nome do município
   const palavras = texto.trim().split(/\s+/);
-  if (palavras.length <= 3) return texto.trim();
+  if (palavras.length <= 3 && !parecePerguntoAgricola(texto)) return texto.trim();
   return "";
 }
 
@@ -169,21 +186,26 @@ async function enviar() {
   const texto = entrada.value.trim();
   if (!texto && !imagemFile) return;
 
-  // primeira mensagem: capturar município
+  // primeira mensagem: tentar capturar município, mas só se não parecer pergunta agrícola
   if (aguardandoMunicipio && texto && !imagemFile) {
-    municipioSessao = extrairMunicipio(texto) || texto.trim();
-    municipioEl.value = municipioSessao;
+    const municipioDetectado = extrairMunicipio(texto);
+    if (municipioDetectado && !parecePerguntoAgricola(texto)) {
+      municipioSessao = municipioDetectado;
+      municipioEl.value = municipioSessao;
+      aguardandoMunicipio = false;
+      addMsg("user", texto);
+      entrada.value = "";
+      addMsg("bot",
+        `Obrigado! Registrei que você é de ${municipioSessao}. ` +
+        "Agora pode me fazer sua pergunta ou enviar uma foto da lavoura."
+      );
+      sugestoesEl.style.display = "flex";
+      renderSugestoes();
+      entrada.focus();
+      return;
+    }
+    // usuário ignorou a pergunta do município e foi direto à dúvida — tudo bem, continuar normalmente
     aguardandoMunicipio = false;
-    addMsg("user", texto);
-    entrada.value = "";
-    addMsg("bot",
-      `Obrigado! Registrei que você é de ${municipioSessao}. ` +
-      "Agora pode me fazer sua pergunta ou enviar uma foto da lavoura."
-    );
-    sugestoesEl.style.display = "flex";
-    renderSugestoes();
-    entrada.focus();
-    return;
   }
 
   const municipio = municipioSessao || municipioEl.value.trim();

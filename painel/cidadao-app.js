@@ -53,6 +53,30 @@ function renderSugestoes() {
   );
 }
 
+// ── Comprime imagem para max 800px / 200KB antes de enviar ──
+function comprimirImagem(file) {
+  return new Promise((resolve) => {
+    const MAX = 800;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        let w = img.width, h = img.height;
+        if (w > MAX || h > MAX) {
+          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+          else       { w = Math.round(w * MAX / h); h = MAX; }
+        }
+        canvas.width = w; canvas.height = h;
+        canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+        canvas.toBlob((blob) => resolve(blob), "image/jpeg", 0.82);
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
 // ── Imagem selecionada ──
 function onImagemSelecionada() {
   imagemFile = inputImagem.files[0] || null;
@@ -86,26 +110,36 @@ async function enviar() {
   inputImagem.value = "";
 
   btnEnviar.disabled = true;
-  const typing = addMsg("bot", "Analisando sua dúvida...", "digitando");
+  const typing = addMsg("bot", "Analisando... pode levar alguns segundos.", "digitando");
 
   try {
     const form = new FormData();
     form.append("pergunta", texto || "Analise esta imagem da minha lavoura.");
     form.append("municipio", municipio);
-    if (arquivoEnviado) form.append("imagem", arquivoEnviado);
 
-    const res = await fetch(`${API_BASE}/chat`, { method: "POST", body: form });
+    if (arquivoEnviado) {
+      const blob = await comprimirImagem(arquivoEnviado);
+      form.append("imagem", blob, "foto.jpg");
+    }
+
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 55000);
+
+    const res = await fetch(`${API_BASE}/chat`, { method: "POST", body: form, signal: controller.signal });
+    clearTimeout(timer);
     const data = await res.json();
 
     typing.remove();
     addMsg(res.ok ? "bot" : "erro", data.resposta || "Erro desconhecido.");
-
-    // esconder sugestões após primeira resposta real
     sugestoesEl.style.display = "none";
 
   } catch (err) {
     typing.remove();
-    addMsg("erro", "Não consegui me conectar. Verifique sua internet e tente novamente.");
+    if (err.name === "AbortError") {
+      addMsg("erro", "A resposta demorou demais. Tente com uma foto menor ou envie só a pergunta em texto.");
+    } else {
+      addMsg("erro", "Não consegui me conectar. Verifique sua internet e tente novamente.");
+    }
   } finally {
     btnEnviar.disabled = false;
     entrada.focus();

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — Centro de Pesquisa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SIPA-Bahia AI — Centro de Pesquisa</h1>
+      <p class="sub">Visão integrada · CETAB</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="assistente.html">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+      <a href="centro.html" class="ativo">Centro</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <section id="kpis" class="cards"></section>
+
+  <div class="centro-grid">
+    <div class="bloco"><h2>🔬 Gestão de Pesquisa</h2><div id="pesquisa"></div></div>
+    <div class="bloco"><h2>⚗️ Laboratório — Equipamentos & QA/QC</h2><div id="laboratorio"></div></div>
+    <div class="bloco">
+      <h2>📚 Conhecimento — Repositório (RAG)</h2>
+      <input id="busca" type="text" placeholder="buscar na literatura... ex: antracnose manga" />
+      <div id="docs"></div>
+      <h3>Hipóteses geradas pela IA</h3><ul id="hipoteses"></ul>
+    </div>
+    <div class="bloco"><h2>🛰️ Campo — Monitoramento ambiental</h2><div id="campo"></div></div>
+    <div class="bloco"><h2>🖼️ IA aplicada — Visão computacional</h2><div id="visao"></div></div>
+    <div class="bloco"><h2>🧬 Bioinformática</h2><div id="bioinfo"></div></div>
+    <div class="bloco"><h2>🌱 Biotecnologia — produção biológica</h2><div id="biotec"></div></div>
+  </div>
+
+  <footer>
+    Centro de Pesquisa (protótipo) — visão integrada dos 10 sistemas. Dados de demonstração;
+    visão computacional, bioinformática e fontes ambientais ao vivo são scaffolds.
+  </footer>
+
+  <script src="centro.js"></script>
+</body>
+</html>

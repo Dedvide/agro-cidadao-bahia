@@ -1,0 +1,17 @@
+{
+  "total_publicacoes": 4,
+  "com_doi": 4,
+  "por_ano": {
+    "2020": 4
+  },
+  "por_periodico": {
+    "Pesquisa Agropecuária Brasileira": 1,
+    "Semina: Ciências Agrárias": 1,
+    "Bioscience Journal": 1,
+    "Communications in Soil Science and Plant Analysis": 1
+  },
+  "vinculo_validado": 0,
+  "vinculo_a_validar": 4,
+  "citacoes_conhecidas": 0,
+  "citacoes_pendentes": 3
+}

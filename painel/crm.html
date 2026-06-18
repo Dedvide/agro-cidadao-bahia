@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — CRM / Portal Operacional</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Portal Operacional — CRM Agro</h1>
+      <p class="sub">Onde o técnico alimenta o sistema · CETAB · ADAB · SEAGRI</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="crm.html" class="ativo">CRM</a>
+      <a href="metas.html">Metas ABC+</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="assistente.html">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <div id="aviso-api" class="aviso" style="display:none">
+    ⚠ API não respondeu. Suba o servidor: <code>cd api ; uvicorn main:app --port 8001</code>
+    e abra <code>http://127.0.0.1:8001/app/crm.html</code>.
+  </div>
+
+  <main class="crm-grid">
+    <!-- COLUNA ESQUERDA: entrada de dados (onde o técnico trabalha) -->
+    <section class="bloco">
+      <h2>📋 Registrar visita</h2>
+      <form id="form-visita" class="form">
+        <label>Propriedade<select id="v-prop" required></select></label>
+        <label>Técnico<input id="v-tec" value="Téc. Ana Lima" required></label>
+        <div class="form-2">
+          <label>Data<input id="v-data" type="date" required></label>
+          <label>Tipo<select id="v-tipo"><option>visita</option><option>orientacao</option><option>coleta</option><option>retorno</option></select></label>
+        </div>
+        <label>Problema identificado<input id="v-prob" placeholder="ex.: ferrugem asiática"></label>
+        <label>Orientação<input id="v-orient" placeholder="ex.: fungicida + monitorar"></label>
+        <label>Retorno previsto<input id="v-ret" type="date"></label>
+        <button type="submit">Registrar visita</button>
+        <span id="v-msg" class="form-msg"></span>
+      </form>
+
+      <h2>👤 Cadastros rápidos</h2>
+      <form id="form-prod" class="form mini">
+        <b>Novo produtor</b>
+        <div class="form-2"><input id="p-doc" placeholder="CPF/CNPJ" required><input id="p-nome" placeholder="Nome" required></div>
+        <div class="form-2"><input id="p-mun" placeholder="Município"><input id="p-tel" placeholder="Telefone"></div>
+        <button type="submit">+ Produtor</button>
+      </form>
+      <form id="form-imovel" class="form mini">
+        <b>Nova propriedade</b>
+        <div class="form-2"><input id="i-nome" placeholder="Nome da propriedade" required><select id="i-prod" required></select></div>
+        <div class="form-2"><input id="i-mun" placeholder="Município"><input id="i-cult" placeholder="Cultura"></div>
+        <button type="submit">+ Propriedade</button>
+      </form>
+    </section>
+
+    <!-- COLUNA DIREITA: consultas operacionais -->
+    <section class="bloco">
+      <h2>🗂️ Prontuário da propriedade</h2>
+      <select id="pr-sel"><option value="">selecione...</option></select>
+      <div id="prontuario"><p class="hint">Selecione uma propriedade.</p></div>
+
+      <h2>💼 Carteira do técnico</h2>
+      <div class="form-2">
+        <input id="c-tec" value="Téc. Ana Lima">
+        <button id="c-btn" type="button">Ver carteira</button>
+      </div>
+      <div id="carteira"></div>
+    </section>
+  </main>
+
+  <footer>
+    Camada Operacional (CRM) consumindo a API ao vivo. Os dados aqui alimentam o Data Lake,
+    a Ontologia e os dashboards. Protótipo sobre SQLite.
+  </footer>
+
+  <script src="crm-app.js"></script>
+</body>
+</html>

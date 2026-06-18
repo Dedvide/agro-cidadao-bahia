@@ -1,0 +1,11 @@
+CETAB - Laboratório de Qualidade de Alimentos e Bebidas
+Laudo nº: 2026/MEL-12
+Amostra: mel de cacau
+Solicitante: Cooperativa de Apicultores do Recôncavo
+Município: Cruz das Almas - BA
+Data da análise: 22/04/2026
+
+Parâmetro          Resultado     Unidade
+Umidade            18,5          %
+HMF                25            mg/kg
+Acidez             35            meq/kg

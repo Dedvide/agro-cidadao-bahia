@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — Laudos Inteligentes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SIPA-Bahia AI — Laudos Inteligentes</h1>
+      <p class="sub">Do dado técnico à decisão · CETAB</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="laudo.html" class="ativo">Laudos IA</a>
+      <a href="assistente.html">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+      <a href="centro.html">Centro</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <div id="headline" class="headline"></div>
+
+  <main class="laudo-main">
+    <aside class="laudo-lista">
+      <h2>Laudo recebido</h2>
+      <p class="hint">selecione um exemplo (ou arraste um arquivo)</p>
+      <div id="amostras"></div>
+      <label class="upload-box">
+        <input type="file" id="arquivo" hidden />
+        📎 arraste/seleccione um laudo (PDF, Excel, imagem)
+      </label>
+      <h3>Documento</h3>
+      <pre id="bruto" class="doc-bruto">—</pre>
+    </aside>
+
+    <section class="laudo-result">
+      <h2>Interpretação automática <span class="badge-ia">IA</span></h2>
+      <div id="resultado"><p class="hint">Selecione um laudo à esquerda.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    Modo demonstração: interpretações pré-processadas pelo motor real do SIPA (offline).
+    Em produção, a IA lê o arquivo enviado em tempo real.
+  </footer>
+
+  <script src="laudo.js"></script>
+</body>
+</html>

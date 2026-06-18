@@ -1,0 +1,580 @@
+{
+  "resumo": {
+    "entidades": 48,
+    "municipios": 9,
+    "propriedades": 9,
+    "analises": 28,
+    "eventos": 1
+  },
+  "lineage": [
+    {
+      "origin_system": "CETAB-SIPA",
+      "n": 39
+    },
+    {
+      "origin_system": "IBGE",
+      "n": 9
+    }
+  ],
+  "municipios": [
+    {
+      "ibge_code": "2901304",
+      "name": "Andaraí",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2907202",
+      "name": "Casa Nova",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2912202",
+      "name": "Ibicoara",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2914604",
+      "name": "Irecê",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2914802",
+      "name": "Itabuna",
+      "region": null,
+      "n_analises": 4,
+      "n_eventos": 1
+    },
+    {
+      "ibge_code": "2918407",
+      "name": "Juazeiro",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2921906",
+      "name": "Mucugê",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2923506",
+      "name": "Palmeiras",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    },
+    {
+      "ibge_code": "2931350",
+      "name": "Teixeira de Freitas",
+      "region": null,
+      "n_analises": 3,
+      "n_eventos": 0
+    }
+  ],
+  "fichas": {
+    "2901304": {
+      "municipio": {
+        "name": "Andaraí",
+        "ibge_code": "2901304",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Andaraí",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.0,
+            "fosforo": 8.0,
+            "potassio": 40.0,
+            "materia_organica": 1.3
+          },
+          "external_ref": "ABC-S07",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.4,
+            "fosforo": 14.0,
+            "potassio": 60.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S07b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.8,
+            "turbidez": 6.0
+          },
+          "external_ref": "ABC-A07",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2907202": {
+      "municipio": {
+        "name": "Casa Nova",
+        "ibge_code": "2907202",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Casa Nova",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.2,
+            "fosforo": 18.0,
+            "potassio": 90.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S02",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.6000000000000005,
+            "fosforo": 24.0,
+            "potassio": 110.0,
+            "materia_organica": 1.9000000000000001
+          },
+          "external_ref": "ABC-S02b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 7.1,
+            "turbidez": 4.0
+          },
+          "external_ref": "ABC-A02",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2912202": {
+      "municipio": {
+        "name": "Ibicoara",
+        "ibge_code": "2912202",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Ibicoara",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.0,
+            "fosforo": 8.0,
+            "potassio": 40.0,
+            "materia_organica": 1.3
+          },
+          "external_ref": "ABC-S06",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.4,
+            "fosforo": 14.0,
+            "potassio": 60.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S06b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.8,
+            "turbidez": 6.0
+          },
+          "external_ref": "ABC-A06",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2914604": {
+      "municipio": {
+        "name": "Irecê",
+        "ibge_code": "2914604",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Irecê",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.2,
+            "fosforo": 18.0,
+            "potassio": 90.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S03",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.6000000000000005,
+            "fosforo": 24.0,
+            "potassio": 110.0,
+            "materia_organica": 1.9000000000000001
+          },
+          "external_ref": "ABC-S03b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 7.1,
+            "turbidez": 4.0
+          },
+          "external_ref": "ABC-A03",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2914802": {
+      "municipio": {
+        "name": "Itabuna",
+        "ibge_code": "2914802",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Itabuna",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 4.8,
+            "fosforo": 6.0,
+            "potassio": 35.0,
+            "materia_organica": 2.4
+          },
+          "external_ref": "ABC-S09",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.2,
+            "fosforo": 12.0,
+            "potassio": 55.0,
+            "materia_organica": 2.6999999999999997
+          },
+          "external_ref": "ABC-S09b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.5,
+            "turbidez": 9.0
+          },
+          "external_ref": "ABC-A09",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "diagnostico_molecular",
+          "laboratory": null,
+          "collected_at": "2026-04-15",
+          "result": {
+            "HLB": null
+          },
+          "external_ref": "ABC-MOL-01",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": [
+        {
+          "event_type": "foco_hlb",
+          "status": "confirmado",
+          "occurred_at": "2026-06-16",
+          "origin_system": "CETAB-SIPA"
+        }
+      ]
+    },
+    "2918407": {
+      "municipio": {
+        "name": "Juazeiro",
+        "ibge_code": "2918407",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Juazeiro",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.2,
+            "fosforo": 18.0,
+            "potassio": 90.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S01",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 6.6000000000000005,
+            "fosforo": 24.0,
+            "potassio": 110.0,
+            "materia_organica": 1.9000000000000001
+          },
+          "external_ref": "ABC-S01b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 7.1,
+            "turbidez": 4.0
+          },
+          "external_ref": "ABC-A01",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2921906": {
+      "municipio": {
+        "name": "Mucugê",
+        "ibge_code": "2921906",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Mucugê",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.0,
+            "fosforo": 8.0,
+            "potassio": 40.0,
+            "materia_organica": 1.3
+          },
+          "external_ref": "ABC-S05",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.4,
+            "fosforo": 14.0,
+            "potassio": 60.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S05b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.8,
+            "turbidez": 6.0
+          },
+          "external_ref": "ABC-A05",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2923506": {
+      "municipio": {
+        "name": "Palmeiras",
+        "ibge_code": "2923506",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Palmeiras",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.0,
+            "fosforo": 8.0,
+            "potassio": 40.0,
+            "materia_organica": 1.3
+          },
+          "external_ref": "ABC-S04",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.4,
+            "fosforo": 14.0,
+            "potassio": 60.0,
+            "materia_organica": 1.6
+          },
+          "external_ref": "ABC-S04b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.8,
+            "turbidez": 6.0
+          },
+          "external_ref": "ABC-A04",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    },
+    "2931350": {
+      "municipio": {
+        "name": "Teixeira de Freitas",
+        "ibge_code": "2931350",
+        "region": null
+      },
+      "propriedades": [
+        {
+          "name": "Amostras — Teixeira de Freitas",
+          "area_ha": null
+        }
+      ],
+      "analises": [
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 4.8,
+            "fosforo": 6.0,
+            "potassio": 35.0,
+            "materia_organica": 2.4
+          },
+          "external_ref": "ABC-S10",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "fertilidade_solo",
+          "laboratory": "CETAB - Lab. de Solos",
+          "collected_at": "2026-04-10",
+          "result": {
+            "ph": 5.2,
+            "fosforo": 12.0,
+            "potassio": 55.0,
+            "materia_organica": 2.6999999999999997
+          },
+          "external_ref": "ABC-S10b",
+          "origin_system": "CETAB-SIPA"
+        },
+        {
+          "analysis_type": "analise_agua",
+          "laboratory": "CETAB",
+          "collected_at": "2026-04-12",
+          "result": {
+            "ph": 6.5,
+            "turbidez": 9.0
+          },
+          "external_ref": "ABC-A10",
+          "origin_system": "CETAB-SIPA"
+        }
+      ],
+      "eventos": []
+    }
+  }
+}

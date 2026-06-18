@@ -1,0 +1,3 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# reusa também: pydantic (já instalado), e os módulos de prototipo-extrator/ e ontology/

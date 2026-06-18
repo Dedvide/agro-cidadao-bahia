@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: agro-cidadao-bahia
+    runtime: python
+    buildCommand: pip install -r cidadao/requirements.txt
+    startCommand: uvicorn cidadao.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false        # definir manualmente no painel do Render
+      - key: TWILIO_ACCOUNT_SID
+        sync: false        # opcional — só para WhatsApp
+      - key: TWILIO_AUTH_TOKEN
+        sync: false        # opcional — só para WhatsApp
+    plan: free
+    region: oregon

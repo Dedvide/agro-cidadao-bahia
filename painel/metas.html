@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Metas ABC+ — PRODEAGRO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Painel de Metas — ABC+ / PRODEAGRO</h1>
+      <p class="sub" id="proj">Aplicação Integrada do Plano ABC+ nos Biomas da Bahia</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="crm.html">CRM</a>
+      <a href="metas.html" class="ativo">Metas ABC+</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+    </nav>
+  </header>
+
+  <div id="aviso-api" class="aviso" style="display:none">
+    ⚠ API não respondeu. Suba: <code>cd api ; uvicorn main:app --port 8001</code> e abra
+    <code>http://127.0.0.1:8001/app/metas.html</code>.
+  </div>
+
+  <section id="metas" class="metas-grid"></section>
+
+  <div class="centro-grid">
+    <div class="bloco"><h2>Propriedades por bioma</h2><div id="bioma"></div></div>
+    <div class="bloco"><h2>Unidades demonstrativas ILPF</h2><div id="uds"></div></div>
+  </div>
+
+  <footer>
+    Metas e alvos conforme Ofício SEAGRI 464/2026. "Ao vivo" = calculado do CRM/Data Lake;
+    "projeto" = contadores em metas-config.json (editar com a execução real).
+  </footer>
+
+  <script src="metas-app.js"></script>
+</body>
+</html>

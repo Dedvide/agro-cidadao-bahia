@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro de Operações Agropecuárias — Bahia</title>
+  <link rel="stylesheet" href="operacoes.css" />
+</head>
+<body>
+  <header class="ops-header">
+    <div>
+      <h1>Centro de Operações Agropecuárias — Bahia</h1>
+      <p>CETAB · ADAB · SEAGRI · monitoramento estadual</p>
+    </div>
+    <div class="ops-status">
+      <span class="ao-vivo">● AO VIVO</span>
+      <span id="relogio"></span>
+      <a href="index.html" class="ops-sair">sair</a>
+    </div>
+  </header>
+
+  <div id="kpis" class="ops-kpis"></div>
+
+  <main class="ops-grid">
+    <section class="ops-panel alerta"><h2>🔴 Focos sanitários</h2><div id="focos"></div></section>
+    <section class="ops-panel"><h2>⚠ Alertas recentes</h2><div id="alertas"></div></section>
+    <section class="ops-panel"><h2>📋 Pendências de campo</h2><div id="pendencias"></div></section>
+    <section class="ops-panel"><h2>🎯 Metas ABC+</h2><div id="metas"></div></section>
+    <section class="ops-panel wide"><h2>🌎 Propriedades por bioma</h2><div id="bioma"></div></section>
+  </main>
+
+  <div id="erro" class="ops-erro" style="display:none"></div>
+  <script src="operacoes-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — Painel de Indicadores</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SIPA-Bahia AI</h1>
+      <p class="sub">Sistema Inteligente de Prevenção Agropecuária da Bahia · CETAB</p>
+    </div>
+    <nav class="nav">
+      <a href="apresentacao.html" class="nav-destaque">▶ Apresentação</a>
+      <a href="index.html" class="ativo">Dashboard</a>
+      <a href="operacoes.html">Operações</a>
+      <a href="crm.html">CRM</a>
+      <a href="agricultor.html">Agricultor</a>
+      <a href="metas.html">Metas ABC+</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="assistente.html">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+      <a href="centro.html">Centro</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <section id="kpis" class="cards"><!-- KPIs ENAP injetados via JS --></section>
+
+  <div id="cobertura" class="cobertura"></div>
+
+  <div class="controles">
+    <label>Eixo:
+      <select id="filtro-categoria"><option value="">todos</option></select>
+    </label>
+    <label>Status:
+      <select id="filtro-status">
+        <option value="">todos</option>
+        <option value="requer_atencao">requer atenção</option>
+        <option value="adequado">adequado</option>
+      </select>
+    </label>
+    <span class="camada-toggle">
+      Camada:
+      <label><input type="radio" name="camada" value="bahia" checked> Bahia (mapa)</label>
+      <label><input type="radio" name="camada" value="amostras"> amostras</label>
+      <label><input type="radio" name="camada" value="municipios"> municípios</label>
+    </span>
+  </div>
+
+  <main>
+    <div id="map"></div>
+    <aside id="lateral">
+      <h2>Recomendações automáticas</h2>
+      <p class="hint">geradas pela interpretação dos laudos</p>
+      <ul id="recomendacoes"></ul>
+
+      <h2>Amostras que requerem atenção</h2>
+      <ul id="lista-atencao"></ul>
+
+      <h2>Trilha de auditoria</h2>
+      <p class="hint" id="revisao-info"></p>
+    </aside>
+  </main>
+
+  <section id="graficos">
+    <div class="grafico-card"><h3>Laudos por eixo</h3><canvas id="chart-eixos"></canvas></div>
+    <div class="grafico-card"><h3>Alertas por eixo</h3><canvas id="chart-alertas"></canvas></div>
+    <div class="grafico-card"><h3>Laudos por mês</h3><canvas id="chart-serie"></canvas></div>
+    <div class="grafico-card"><h3>pH do solo (acidez)</h3><canvas id="chart-ph"></canvas></div>
+    <div class="grafico-card"><h3>Por tipo de solicitante</h3><canvas id="chart-solicitante"></canvas></div>
+    <div class="grafico-card"><h3>Top municípios por análises</h3><canvas id="chart-municipios"></canvas></div>
+  </section>
+
+  <footer>
+    Fonte: laudos do CETAB normalizados por IA · classificação contra faixas de referência
+    (ilustrativas no protótipo) · KPIs com estimativas. Mapa © OpenStreetMap.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# Chave de API e segredos — NUNCA commitar
+.env
+
+# Ambientes virtuais
+.venv_cidadao/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Banco de dados local
+cidadao/interacoes.db
+
+# Logs do servidor
+uvicorn.log
+uvicorn-err.log
+
+# Outputs gerados pelo protótipo CETAB
+prototipo-extrator/saida/
+prototipo-extrator/__pycache__/
+ontology/__pycache__/
+nucleo-cientifico/__pycache__/
+api/__pycache__/
+cidadao/__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,41 @@
+{
+  "_nota": "Seed com os DOIs reais levantados na 1a pesquisa (Nível A). O vínculo autor<->CETAB de parte da produção é INDIRETO e precisa de validação (aparece sob Embrapa/UFRB/UFBA). 'citacoes' = null onde não há contagem confiável; a integração viva (Crossref/OpenAlex) preenche.",
+  "publicacoes": [
+    {
+      "titulo": "Economics of Rhizobia and Azospirilla Co-inoculation in Irrigated Common Bean in Commercial and Family Farming",
+      "doi": "10.1590/S1678-3921.pab2020.v55.01532",
+      "periodico": "Pesquisa Agropecuária Brasileira",
+      "ano": 2020,
+      "autores": ["Enderson Ferreira", "Osmira Silva", "Alcido Wander"],
+      "vinculo_cetab": "a_validar",
+      "citacoes": null
+    },
+    {
+      "titulo": "Response of the Common Bean to Liquid Fertilizer and Rhizobium tropici Inoculation",
+      "doi": "10.5433/1679-0359.2020v41n6Supl2p2967",
+      "periodico": "Semina: Ciências Agrárias",
+      "ano": 2020,
+      "autores": ["José Geraldo Mageste", "Enderson Ferreira", "Adriano Nascente"],
+      "vinculo_cetab": "a_validar",
+      "citacoes": null
+    },
+    {
+      "titulo": "Soil Microbiological Properties and Enzyme Activity in Agroforestry Systems Compared with Monoculture",
+      "doi": "10.14393/BJ-v36n1a2020-42704",
+      "periodico": "Bioscience Journal",
+      "ano": 2020,
+      "autores": ["Divino Levi Miguel"],
+      "vinculo_cetab": "a_validar",
+      "citacoes": null
+    },
+    {
+      "titulo": "Irrigation Systems, Fertigation and Mulch: Effects on Soil Attributes with Banana Crop",
+      "doi": "10.1080/00103624.2020.1845359",
+      "periodico": "Communications in Soil Science and Plant Analysis",
+      "ano": 2020,
+      "autores": ["Francisco Alisson Xavier"],
+      "vinculo_cetab": "a_validar",
+      "citacoes": 0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Digital do Agricultor — ABC+ Bahia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Painel Digital do Agricultor</h1>
+      <p class="sub">Sua propriedade, suas análises, suas recomendações ABC+ · CETAB/SEAGRI</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="crm.html">CRM</a>
+      <a href="agricultor.html" class="ativo">Agricultor</a>
+      <a href="metas.html">Metas ABC+</a>
+      <a href="operacoes.html">Operações</a>
+    </nav>
+  </header>
+
+  <div id="aviso-api" class="aviso" style="display:none">
+    ⚠ API não respondeu. Suba <code>uvicorn main:app --port 8001</code> e abra
+    <code>http://127.0.0.1:8001/app/agricultor.html</code>.
+  </div>
+
+  <div class="controles">
+    <label>Selecione sua propriedade: <select id="sel-prop"></select></label>
+  </div>
+
+  <main class="agri-grid">
+    <section class="bloco" id="prop"></section>
+    <section class="bloco" id="clima"></section>
+    <section class="bloco wide" id="laudos"></section>
+    <section class="bloco" id="recs"></section>
+    <section class="bloco" id="avisos"></section>
+  </main>
+
+  <footer>
+    Painel Digital do Agricultor (IA + APIs Públicas) — protótipo. IA interpreta seus laudos;
+    clima e práticas conforme o Plano ABC+ Bahia.
+  </footer>
+
+  <script src="agricultor-app.js"></script>
+</body>
+</html>

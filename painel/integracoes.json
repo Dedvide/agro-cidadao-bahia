@@ -1,0 +1,43 @@
+{
+  "_nota": "Catálogo de integração: endpoints REAIS; respostas de exemplo ILUSTRATIVAS. A conexão do IBGE é ao vivo (real). Demais exigem credenciais/convênios — status honesto por ente.",
+  "resumo": { "total": 17, "api_publica": 7, "convenio": 4, "parceria_infra": 6 },
+  "grupos": [
+    {
+      "esfera": "Federal — API pública (integração autônoma)",
+      "entes": [
+        { "nome": "Embrapa AgroAPI", "icone": "🛰️", "fornece": "Clima (Agritempo), NDVI (SATVeg), previsão (ClimAPI)", "mecanismo": "API pública", "status": "api_publica", "endpoint": "https://www.agroapi.cnptia.embrapa.br", "exemplo": "{ municipio: 'Cruz das Almas', temp: 24.5, umidade: 82, ndvi: 0.71 }" },
+        { "nome": "Embrapa AGROFIT", "icone": "🧪", "fornece": "Agrotóxicos registrados por praga × cultura", "mecanismo": "API pública", "status": "api_publica", "endpoint": "https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=AGROFIT", "exemplo": "{ praga: 'mosca-das-frutas', cultura: 'manga', produtos_registrados: 12 }" },
+        { "nome": "ZARC / Plante Certo (MAPA)", "icone": "📅", "fornece": "Janela de plantio por município e cultura", "mecanismo": "API / dados abertos", "status": "api_publica", "endpoint": "https://mapa-indicadores.agricultura.gov.br", "exemplo": "{ municipio: 'Barreiras', cultura: 'soja', janela: 'nov-dez' }" },
+        { "nome": "INMET", "icone": "🌦️", "fornece": "Estações meteorológicas automáticas (dados horários)", "mecanismo": "API pública", "status": "api_publica", "endpoint": "https://apitempo.inmet.gov.br", "exemplo": "{ estacao: 'A402', temp: 24.3, chuva_mm: 3.2 }" },
+        { "nome": "INPE (Queimadas / TerraBrasilis)", "icone": "🔥", "fornece": "Focos de calor, uso e cobertura do solo", "mecanismo": "API / WMS", "status": "api_publica", "endpoint": "https://terrabrasilis.dpi.inpe.br", "exemplo": "{ municipio: 'Barreiras', focos_calor_30d: 7 }" },
+        { "nome": "IBGE (SIDRA / Localidades)", "icone": "🗺️", "fornece": "Municípios da Bahia, indicadores agropecuários", "mecanismo": "API pública", "status": "api_publica", "endpoint": "https://servicodados.ibge.gov.br/api/v1/localidades/estados/29/municipios", "exemplo": "417 municípios da Bahia", "live": true },
+        { "nome": "ANA (SNIRH / HidroWeb)", "icone": "💧", "fornece": "Qualidade e disponibilidade hídrica", "mecanismo": "API pública", "status": "api_publica", "endpoint": "https://www.snirh.gov.br", "exemplo": "{ rio: 'Paraguaçu', qualidade: 'boa' }" }
+      ]
+    },
+    {
+      "esfera": "Federal — base restrita (requer convênio)",
+      "entes": [
+        { "nome": "CAF (MDA) — ex-DAP", "icone": "👨‍🌾", "fornece": "Cadastro Nacional da Agricultura Familiar", "mecanismo": "Convênio", "status": "convenio", "endpoint": "https://www.gov.br/mda", "exemplo": "{ produtor: '***', agricultura_familiar: true }" },
+        { "nome": "CAR / SICAR", "icone": "📍", "fornece": "Geometria das propriedades rurais", "mecanismo": "Convênio", "status": "convenio", "endpoint": "https://www.car.gov.br", "exemplo": "{ propriedade: '***', area_ha: 12.5, geometria: 'polygon' }" }
+      ]
+    },
+    {
+      "esfera": "Estadual — Bahia (soberania + articulação)",
+      "entes": [
+        { "nome": "ADAB / SIDAB", "icone": "🛡️", "fornece": "Defesa sanitária vegetal/animal (417 municípios)", "mecanismo": "Convênio (irmã SEAGRI)", "status": "convenio", "endpoint": "http://www.adab.ba.gov.br", "exemplo": "{ foco: 'HLB', municipio: 'Gov. Mangabeira', status: 'notificado' }" },
+        { "nome": "Bahiater", "icone": "🤝", "fornece": "Assistência técnica e extensão rural (ATER)", "mecanismo": "Parceria", "status": "parceria", "endpoint": "https://www.bahiater.ba.gov.br", "exemplo": "{ canal: 'agricultura familiar', visitas_mes: '***' }" },
+        { "nome": "INEMA", "icone": "🌿", "fornece": "Qualidade da água, outorga, ambiental", "mecanismo": "Convênio", "status": "convenio", "endpoint": "http://www.inema.ba.gov.br", "exemplo": "{ outorga: '***', corpo_hidrico: '***' }" },
+        { "nome": "SEI-BA", "icone": "📊", "fornece": "Estatísticas socioeconômicas da Bahia", "mecanismo": "Dados", "status": "parceria", "endpoint": "https://www.sei.ba.gov.br", "exemplo": "{ indicador: 'PIB agro', valor: '***' }" },
+        { "nome": "PRODEB", "icone": "☁️", "fornece": "Hospedagem soberana (nuvem estadual)", "mecanismo": "Infraestrutura", "status": "parceria", "endpoint": "https://www.prodeb.ba.gov.br", "exemplo": "infraestrutura de TIC do Estado" }
+      ]
+    },
+    {
+      "esfera": "Cidadão / execução",
+      "entes": [
+        { "nome": "gov.br", "icone": "🔑", "fornece": "Autenticação única do cidadão", "mecanismo": "Login federado", "status": "parceria", "endpoint": "https://www.gov.br", "exemplo": "login único do produtor" },
+        { "nome": "WhatsApp Business API", "icone": "💬", "fornece": "Canal da agricultura familiar (foto, áudio, laudo)", "mecanismo": "API (Meta)", "status": "parceria", "endpoint": "https://business.whatsapp.com", "exemplo": "produtor envia foto → recebe orientação" },
+        { "nome": "SENAI CIMATEC", "icone": "🧠", "fornece": "IA / supercomputação — parceiro de execução", "mecanismo": "Parceria técnica", "status": "parceria", "endpoint": "https://www.senaicimatec.com.br", "exemplo": "treino de modelos / HPC" }
+      ]
+    }
+  ]
+}

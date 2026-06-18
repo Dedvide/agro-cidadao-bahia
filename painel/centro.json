@@ -1,0 +1,266 @@
+{
+  "instituto": {
+    "projetos_ativos": 1,
+    "projetos_total": 2,
+    "pesquisadores": 2,
+    "bolsas_ativas": 1,
+    "publicacoes": 1,
+    "por_financiador": {
+      "CNPq": 1,
+      "FAPESB": 1
+    },
+    "investimento_editais": 150000.0,
+    "bibliometria": {
+      "total": 4,
+      "por_ano": {
+        "2020": 4
+      },
+      "periodicos": 4
+    }
+  },
+  "pesquisa": {
+    "projetos": [
+      {
+        "titulo": "Epidemiologia do HLB no Recôncavo",
+        "status": "ativo",
+        "financiador": "CNPq"
+      },
+      {
+        "titulo": "Mel de cacau: caracterização",
+        "status": "concluido",
+        "financiador": "FAPESB"
+      }
+    ],
+    "pesquisadores": [
+      {
+        "nome": "Dra. Marta Souza",
+        "area": "Biologia Molecular",
+        "orcid": "0000-0002-1234-5678"
+      },
+      {
+        "nome": "Dr. Pedro Anjos",
+        "area": "Entomologia",
+        "orcid": null
+      }
+    ]
+  },
+  "laboratorio": {
+    "equipamentos_alertas": [
+      {
+        "tipo": "calibracao_vencida",
+        "item": "Termociclador qPCR",
+        "detalhe": "vencida em 2026-06-01"
+      },
+      {
+        "tipo": "calibracao_vencida",
+        "item": "Espectrômetro AA",
+        "detalhe": "vencida em 2025-12-10"
+      },
+      {
+        "tipo": "reagente_vencido",
+        "item": "Master Mix qPCR (lote L2023X)",
+        "detalhe": "validade 2026-01-15"
+      },
+      {
+        "tipo": "estoque_baixo",
+        "item": "Master Mix qPCR",
+        "detalhe": "5.0 mL (mín. 10.0)"
+      }
+    ],
+    "qaqc": {
+      "status": "FORA DE CONTROLE",
+      "violacoes": [
+        [
+          "1_3s",
+          "ponto além de ±3 DP (rejeição)"
+        ],
+        [
+          "R_4s",
+          "amplitude entre pontos > 4 DP"
+        ]
+      ],
+      "grafico": "img/carta_controle.png"
+    }
+  },
+  "conhecimento": {
+    "documentos": [
+      {
+        "tipo": "artigo",
+        "titulo": "Resistência da mangueira à antracnose (Colletotrichum)",
+        "autores": null,
+        "doi": "10.x/manga",
+        "ano": 2024,
+        "texto": "Genótipos de manga avaliados quanto à resistência à antracnose em alta umidade no semiárido."
+      },
+      {
+        "tipo": "tese",
+        "titulo": "Epidemiologia do HLB em citros no Recôncavo Baiano",
+        "autores": null,
+        "doi": null,
+        "ano": 2025,
+        "texto": "Dispersão espacial do greening e do psilídeo vetor em pomares da Bahia."
+      },
+      {
+        "tipo": "protocolo",
+        "titulo": "Detecção molecular de Xylella fastidiosa por qPCR",
+        "autores": null,
+        "doi": null,
+        "ano": 2023,
+        "texto": "Protocolo de extração e qPCR para diagnóstico de CVC em citros."
+      }
+    ],
+    "hipoteses": [
+      "Há correlação positiva (r=0.99, n=5) entre fosforo e potassio no solo — investigar relação causal.",
+      "Há correlação positiva (r=0.99, n=5) entre materia_organica e ph no solo — investigar relação causal.",
+      "Há correlação positiva (r=0.99, n=5) entre ph e potassio no solo — investigar relação causal.",
+      "Há correlação positiva (r=0.98, n=5) entre fosforo e ph no solo — investigar relação causal.",
+      "Há correlação positiva (r=0.98, n=5) entre materia_organica e potassio no solo — investigar relação causal.",
+      "Há correlação positiva (r=0.96, n=5) entre fosforo e materia_organica no solo — investigar relação causal.",
+      "Governador Mangabeira concentra alta taxa de alerta (50%, n=2) — possível foco a priorizar."
+    ]
+  },
+  "campo": {
+    "monitoramento": [
+      {
+        "municipio": "Cruz das Almas",
+        "clima": {
+          "temp": 24.5,
+          "umidade": 82,
+          "precip_mm": 110
+        },
+        "risco": {
+          "nivel": "alto",
+          "motivo": "umidade alta + temperatura amena (favorável a fungos/vetores)"
+        }
+      },
+      {
+        "municipio": "Governador Mangabeira",
+        "clima": {
+          "temp": 24.8,
+          "umidade": 84,
+          "precip_mm": 120
+        },
+        "risco": {
+          "nivel": "alto",
+          "motivo": "umidade alta + temperatura amena (favorável a fungos/vetores)"
+        }
+      },
+      {
+        "municipio": "Juazeiro",
+        "clima": {
+          "temp": 27.8,
+          "umidade": 55,
+          "precip_mm": 20
+        },
+        "risco": {
+          "nivel": "baixo",
+          "motivo": "condições menos favoráveis a patógenos"
+        }
+      }
+    ]
+  },
+  "ia_aplicada": {
+    "visao": [
+      {
+        "arquivo": "folha_citros_001.jpg",
+        "classe": "sigatoka",
+        "confianca": 0.83
+      },
+      {
+        "arquivo": "fruto_manga_044.jpg",
+        "classe": "saudavel",
+        "confianca": 0.81
+      },
+      {
+        "arquivo": "microscopia_fungo_007.png",
+        "classe": "ferrugem",
+        "confianca": 0.82
+      }
+    ],
+    "bioinfo": [
+      {
+        "id": "amostra_HLB_16S",
+        "comprimento": 50,
+        "gc_percent": 52.0,
+        "composicao": {
+          "A": 11,
+          "C": 11,
+          "G": 15,
+          "T": 13
+        }
+      },
+      {
+        "id": "controle",
+        "comprimento": 34,
+        "gc_percent": 41.2,
+        "composicao": {
+          "A": 10,
+          "C": 7,
+          "G": 7,
+          "T": 10
+        }
+      }
+    ]
+  },
+  "biotecnologia": {
+    "indicadores": {
+      "mudas_em_producao": 800,
+      "lotes_cultura": 2,
+      "lotes_bioproduto": 2,
+      "acessos_germoplasma": 1,
+      "matrizes_sadias": 1
+    },
+    "alertas": [
+      {
+        "tipo": "contaminacao_alta",
+        "item": "CT-2026-02 (Musa spp.)",
+        "detalhe": "15.0% (máx 10.0%)"
+      },
+      {
+        "tipo": "bioproduto_vencido",
+        "item": "Bacillus subtilis (lote BIO-02)",
+        "detalhe": "validade 2026-02-01"
+      },
+      {
+        "tipo": "viabilidade_baixa",
+        "item": "Bacillus subtilis (lote BIO-02)",
+        "detalhe": "70.0% (mín 80.0%)"
+      },
+      {
+        "tipo": "matriz_infectada",
+        "item": "MZ-CT-09 (Citrus sinensis)",
+        "detalhe": "descartar da rede de matrizes"
+      }
+    ],
+    "culturas": [
+      {
+        "lote": "CT-2026-01",
+        "especie": "Citrus sinensis",
+        "estagio": "multiplicacao",
+        "n_mudas": 480,
+        "contaminacao_pct": 3.0
+      },
+      {
+        "lote": "CT-2026-02",
+        "especie": "Musa spp.",
+        "estagio": "enraizamento",
+        "n_mudas": 320,
+        "contaminacao_pct": 15.0
+      }
+    ],
+    "matrizes": [
+      {
+        "codigo": "MZ-CT-07",
+        "especie": "Citrus sinensis",
+        "status_sanitario": "sadia",
+        "indexada_para": "HLB,CVC"
+      },
+      {
+        "codigo": "MZ-CT-09",
+        "especie": "Citrus sinensis",
+        "status_sanitario": "infectada",
+        "indexada_para": "HLB"
+      }
+    ]
+  }
+}

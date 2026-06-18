@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — Assistente CETAB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SIPA-Bahia AI — Assistente CETAB</h1>
+      <p class="sub">Pergunte sobre os dados do CETAB</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="assistente.html" class="ativo">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html">LIMS</a>
+      <a href="centro.html">Centro</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <div class="chat-wrap">
+    <div id="sugestoes" class="sugestoes"></div>
+    <div id="mensagens" class="mensagens"></div>
+    <form id="form-chat" class="chat-form">
+      <input id="entrada" type="text" placeholder="pergunte... ex: quantas análises o CETAB fez?" autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    Modo demonstração: respostas calculadas sobre o Data Lake do CETAB (offline).
+    Em produção, o assistente consulta o banco ao vivo e cita a fonte.
+  </footer>
+
+  <script src="assistente.js"></script>
+</body>
+</html>

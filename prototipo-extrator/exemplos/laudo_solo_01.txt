@@ -1,0 +1,21 @@
+SECRETARIA DA AGRICULTURA, PECUÁRIA, IRRIGAÇÃO, PESCA E AQUICULTURA - BAHIA
+CETAB - Laboratório de Análise de Solos
+========================================================================
+
+Laudo nº: 2026/0457
+Solicitante: João Pereira dos Santos   (Agricultura Familiar)
+Município: Cruz das Almas - BA
+Propriedade: Sítio Boa Esperança
+Data da coleta: 12/03/2026        Data da análise: 20/03/2026
+Profundidade: 0-20 cm
+
+RESULTADOS - ANÁLISE DE FERTILIDADE (extrator Mehlich-1)
+------------------------------------------------------------------------
+  pH (água) .................. 5,2
+  Fósforo (P) ................ 8 mg/dm³
+  Potássio (K) ............... 35 mg/dm³
+  Cálcio (Ca) ................ 2,1 cmolc/dm³
+  Magnésio (Mg) .............. 0,8 cmolc/dm³
+  Matéria orgânica (MO) ...... 1,4 %
+
+Observações: amostra entregue pelo próprio produtor.

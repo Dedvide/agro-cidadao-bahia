@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIPA-Bahia AI — Painel LIMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>SIPA-Bahia AI — LIMS</h1>
+      <p class="sub">Gestão de amostras · da coleta ao laudo · CETAB</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="laudo.html">Laudos IA</a>
+      <a href="assistente.html">Assistente</a>
+      <a href="ficha360.html">Ficha 360</a>
+      <a href="lims.html" class="ativo">LIMS</a>
+      <a href="centro.html">Centro</a>
+      <a href="integracoes.html">Integrações</a>
+    </nav>
+  </header>
+
+  <section id="kpis" class="cards"><!-- KPIs LIMS via JS --></section>
+
+  <div class="controles">
+    <label>Status:
+      <select id="filtro-status"><option value="">todos</option></select>
+    </label>
+    <span class="hint">clique numa amostra para ver a cadeia de custódia e o laudo</span>
+  </div>
+
+  <main>
+    <div class="tabela-wrap">
+      <table id="tabela-amostras">
+        <thead>
+          <tr><th>Protocolo</th><th>Eixo</th><th>Município</th><th>Solicitante</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <aside id="detalhe">
+      <p class="hint">Selecione uma amostra à esquerda.</p>
+    </aside>
+  </main>
+
+  <footer>
+    Painel LIMS (protótipo) — leitura do fluxo coleta→laudo. Dados de demonstração.
+  </footer>
+
+  <script src="lims.js"></script>
+</body>
+</html>

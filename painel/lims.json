@@ -1,0 +1,325 @@
+{
+  "amostras": [
+    {
+      "protocolo": "CETAB-2026-00006",
+      "categoria_analise": "qualidade_alimentos",
+      "tipo_amostra": "mel",
+      "municipio": "Cruz das Almas",
+      "solicitante_nome": "Coop. Apicultores",
+      "solicitante_tipo": "cooperativa",
+      "coletor": "Téc. Ana Lima",
+      "data_coleta": "2026-05-25",
+      "status": "cadastrada",
+      "laudo": null,
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Ana Lima",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00006"
+        }
+      ]
+    },
+    {
+      "protocolo": "CETAB-2026-00005",
+      "categoria_analise": "residuos_agrotoxicos",
+      "tipo_amostra": "fruto",
+      "municipio": "Muritiba",
+      "solicitante_nome": "Coop. Recôncavo",
+      "solicitante_tipo": "cooperativa",
+      "coletor": "Téc. Elis",
+      "data_coleta": "2026-05-22",
+      "status": "recebida",
+      "laudo": null,
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Elis",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00005"
+        },
+        {
+          "evento": "coletada",
+          "responsavel": "Téc. Elis",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "recebida",
+          "responsavel": "Téc. Elis",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        }
+      ]
+    },
+    {
+      "protocolo": "CETAB-2026-00004",
+      "categoria_analise": "analise_agua",
+      "tipo_amostra": "agua",
+      "municipio": "Cachoeira",
+      "solicitante_nome": "Prefeitura de Cachoeira",
+      "solicitante_tipo": "prefeitura",
+      "coletor": "Téc. Davi",
+      "data_coleta": "2026-05-20",
+      "status": "em_analise",
+      "laudo": null,
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Davi",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00004"
+        },
+        {
+          "evento": "coletada",
+          "responsavel": "Téc. Davi",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "recebida",
+          "responsavel": "Téc. Davi",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "em_analise",
+          "responsavel": "Téc. Davi",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        }
+      ]
+    },
+    {
+      "protocolo": "CETAB-2026-00003",
+      "categoria_analise": "monitoramento_pragas",
+      "tipo_amostra": "inseto",
+      "municipio": "Sao Felix",
+      "solicitante_nome": "Fazenda Goiabal",
+      "solicitante_tipo": "produtor_rural",
+      "coletor": "Téc. Bia",
+      "data_coleta": "2026-05-15",
+      "status": "analisada",
+      "laudo": {
+        "numero": null,
+        "status": "em_validacao",
+        "validado_por": null,
+        "data_emissao": null,
+        "codigo_verificacao": null,
+        "confianca": 0.95,
+        "arquivo": null,
+        "resultados": [
+          {
+            "rotulo": "Ceratitis capitata",
+            "valor": "14 adulto",
+            "classe": "alto",
+            "alerta": true
+          }
+        ]
+      },
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Bia",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00003"
+        },
+        {
+          "evento": "coletada",
+          "responsavel": "Téc. Bia",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "recebida",
+          "responsavel": "Téc. Bia",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "em_analise",
+          "responsavel": "Téc. Bia",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "analisada",
+          "responsavel": "CETAB - Ecologia Química",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "resultado lançado"
+        }
+      ]
+    },
+    {
+      "protocolo": "CETAB-2026-00002",
+      "categoria_analise": "diagnostico_molecular",
+      "tipo_amostra": "foliar",
+      "municipio": "Governador Mangabeira",
+      "solicitante_nome": "Sítio Citrolândia",
+      "solicitante_tipo": "produtor_rural",
+      "coletor": "Téc. Caio",
+      "data_coleta": "2026-05-10",
+      "status": "validada",
+      "laudo": {
+        "numero": null,
+        "status": "aprovado",
+        "validado_por": "Dr. Pedro Anjos",
+        "data_emissao": null,
+        "codigo_verificacao": null,
+        "confianca": 0.95,
+        "arquivo": null,
+        "resultados": [
+          {
+            "rotulo": "HLB",
+            "valor": "positivo (Ct 27.4)",
+            "classe": "positivo",
+            "alerta": true
+          }
+        ]
+      },
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Caio",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00002"
+        },
+        {
+          "evento": "coletada",
+          "responsavel": "Téc. Caio",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "recebida",
+          "responsavel": "Téc. Caio",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "em_analise",
+          "responsavel": "Téc. Caio",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "analisada",
+          "responsavel": "CETAB - Biologia Molecular",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "resultado lançado"
+        },
+        {
+          "evento": "validada",
+          "responsavel": "Dr. Pedro Anjos",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "validação técnica"
+        }
+      ]
+    },
+    {
+      "protocolo": "CETAB-2026-00001",
+      "categoria_analise": "fertilidade_solo",
+      "tipo_amostra": "solo",
+      "municipio": "Cruz das Almas",
+      "solicitante_nome": "João Pereira",
+      "solicitante_tipo": "agricultura_familiar",
+      "coletor": "Téc. Ana Lima",
+      "data_coleta": "2026-05-04",
+      "status": "entregue",
+      "laudo": {
+        "numero": "CETAB-LAUDO-2026-00001",
+        "status": "emitido",
+        "validado_por": "Dra. Marta Souza (CRQ 12345)",
+        "data_emissao": "2026-06-13T08:55:58",
+        "codigo_verificacao": "052BB75EDC1B",
+        "confianca": 0.95,
+        "arquivo": "laudos/CETAB-LAUDO-2026-00001.html",
+        "resultados": [
+          {
+            "rotulo": "ph",
+            "valor": "5.2",
+            "classe": "baixo",
+            "alerta": true
+          },
+          {
+            "rotulo": "fosforo",
+            "valor": "8.0 mg/dm3",
+            "classe": "baixo",
+            "alerta": true
+          },
+          {
+            "rotulo": "potassio",
+            "valor": "35.0 mg/dm3",
+            "classe": "baixo",
+            "alerta": true
+          }
+        ]
+      },
+      "custodia": [
+        {
+          "evento": "cadastro",
+          "responsavel": "Téc. Ana Lima",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "protocolo CETAB-2026-00001"
+        },
+        {
+          "evento": "coletada",
+          "responsavel": "Téc. Ana Lima",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "recebida",
+          "responsavel": "Téc. Ana Lima",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "em_analise",
+          "responsavel": "Téc. Ana Lima",
+          "data": "2026-06-13T08:55:58",
+          "observacao": null
+        },
+        {
+          "evento": "analisada",
+          "responsavel": "CETAB - Lab. de Solos",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "resultado lançado"
+        },
+        {
+          "evento": "validada",
+          "responsavel": "Dra. Marta Souza (CRQ 12345)",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "validação técnica"
+        },
+        {
+          "evento": "laudo_emitido",
+          "responsavel": "sistema",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "laudo CETAB-LAUDO-2026-00001 (cód. 052BB75EDC1B)"
+        },
+        {
+          "evento": "entregue",
+          "responsavel": "Portal do Produtor",
+          "data": "2026-06-13T08:55:58",
+          "observacao": "entregue via portal"
+        }
+      ]
+    }
+  ],
+  "resumo": {
+    "total": 6,
+    "por_status": {
+      "cadastrada": 1,
+      "recebida": 1,
+      "em_analise": 1,
+      "analisada": 1,
+      "validada": 1,
+      "entregue": 1
+    },
+    "fila_validacao": 1,
+    "aguardando_emissao": 1,
+    "emitidos": 1,
+    "entregues": 1
+  }
+}

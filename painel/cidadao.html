@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Assistente gratuito de inteligência artificial para agricultores familiares da Bahia. Tire dúvidas sobre plantio, pragas, solo e muito mais." />
+  <title>Agro Cidadão Bahia — Assistente Rural Gratuito</title>
+  <link rel="stylesheet" href="cidadao.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">🌱 Agro Cidadão Bahia</div>
+    <div class="header-slogan">Inteligência Artificial para democratizar o conhecimento rural</div>
+  </header>
+
+  <div class="faixa-voluntaria">
+    Iniciativa voluntária e gratuita de servidor público • Sem fins lucrativos • Fontes: Embrapa, MAPA, CONAB
+  </div>
+
+  <div class="chat-container">
+
+    <div id="sugestoes" class="sugestoes"></div>
+
+    <div id="mensagens" class="mensagens"></div>
+
+    <div class="form-wrap">
+      <form id="form-chat" enctype="multipart/form-data">
+
+        <div class="campo-imagem">
+          <button type="button" class="btn-foto" id="btn-foto">📷 Enviar foto</button>
+          <span id="nome-arquivo"></span>
+          <input type="file" id="input-imagem" accept="image/*" capture="environment" style="display:none" />
+        </div>
+
+        <div class="input-row">
+          <input
+            id="entrada"
+            type="text"
+            placeholder="Digite sua dúvida... ex: minhas folhas estão amarelando"
+            autocomplete="off"
+            enterkeyhint="send"
+          />
+          <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
+        </div>
+
+        <div class="municipio-row">
+          <label for="municipio">Seu município (opcional):</label>
+          <input id="municipio" type="text" placeholder="ex: Cruz das Almas" />
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    As orientações são baseadas em fontes públicas (Embrapa, MAPA) e não substituem avaliação de técnico agropecuário.<br>
+    Para assistência técnica presencial: <a href="https://www.bahiater.ba.gov.br" target="_blank" rel="noopener">Bahiater</a> •
+    Dúvidas sobre o projeto: <a href="mailto:agrocidadaobahia@gmail.com">agrocidadaobahia@gmail.com</a>
+  </footer>
+
+  <script src="cidadao-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2334 @@
+Capítulo 2 Infra-estrutura laboratorial,
+gerenciamento de
+laboratório e automação
+da informação
+Marino José Tedesco
+Adriana Delfino dos Santos
+Clésio Gianello
+Fábio Cesar da Silva
+Luiz Manoel Silva Cunha
+Roberto Hiroshi Higa
+Silvia Maria Fonseca Silveira Massruhá
+=== PAGE BREAK ===
+
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+563
+1. Introdução
+Grande parte dos laboratórios de análise de solos, de plantas e de
+fertilizantes existentes nas instituições governamentais cresceu a partir
+de instalações acanhadas e, em muitos casos, pouco apropriadas às
+finalidades propostas. Em várias regiões brasileiras, podem ocorrer vários
+problemas laboratoriais, como: baixa capacitação de recursos humanos,
+organização deficitária, infra-estrutura precária ou utilização de
+protocolos analíticos antigos, que não refletem o “estado da arte” dos
+métodos de análise. Essas deficiências podem comprometer a qualidade
+dos laudos emitidos em laboratórios.
+Nos capítulos da parte 2 deste manual, são apresentados os
+métodos de análise (protocolos) de solos, plantas, fertilizantes e corretivos.
+No presente capítulo, são apresentadas a organização da infra-
+estrutura e a informatização de processos no laboratório. Em geral, os
+laboratórios mais bem administrados têm procurado adotar soluções
+baratas e criativas, adquirir equipamentos e sistemas computadorizados,
+bem como elaborar e executar projetos.
+O primeiro aspecto a ser abordado é a adequação da infra-
+estrutura dos laboratórios, onde são executados todos os serviços
+prestados aos usuários, considerando a organização física, o treinamento
+de pessoal, o uso adequado de equipamentos e tipos de análises
+realizadas. Depois de estabelecida a infra-estrutura adequada, são
+necessários a organização interna dos processos no laboratório, seu
+controle estatístico e procedimentos de automação da rotina para
+aumentar a produtividade de análises processadas por dia.
+A gestão da informação no laboratório é atualmente muito
+importante, destacando-se um conjunto de técnicas que podem ser
+utilizadas para adotar um Sistema de Gerenciamento de Informações
+Laboratoriais (LIMS), o qual depende de um fluxo adequado de
+informações. Novas formas de armazenamento e disponibilização de
+informação são igualmente apresentadas. Existem também formas
+computacionais para verificar a consistência de resultados analíticos no
+laboratório. Esses são os sistemas especialistas utilizados por alguns
+laboratórios que participam da Rede Oficial dos Laboratórios de Análise
+de Solo e de Tecido Vegetal do Rio Grande do Sul e de Santa Catarina.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+564
+Além disso, a própria Embrapa Informática Agropecuária tem
+investido muito no apoio ao gerenciamento do laboratório e na
+interpretação de laudos de análise.
+Entretanto, não é suficiente investir em infra-estrutura física
+laboratorial. O investimento isolado em recursos físicos sem adequadas
+formação, capacitação e atualização dos recursos humanos não traz os
+resultados esperados.
+2. Infra-estrutura laboratorial
+A infra-estrutura descrita neste trabalho é, normalmente,
+encontrada nos laboratórios autônomos ou integrantes de instituições
+de pesquisa e de ensino, bem como em cooperativas, com um fluxo de
+operações de médio porte (20 mil amostras de solo por ano e 2 mil
+amostras de plantas por ano), estando integrados a sistemas de controle
+de qualidade.
+O principal objetivo desses laboratórios é a prestação de serviços,
+com ênfase na caracterização da fertilidade do solo e na análise foliar, tendo
+em vista a elaboração de recomendações de fertilizantes e corretivos da
+acidez. Desse modo, serão enfocados os principais aspectos do processo de
+geração da informação que são fontes usuais de erro (por exemplo, a
+qualidade da água destilada), a alocação de recursos humanos e os níveis
+de sensibilidade da medida nos aparelhos e em seus utensílios.
+Deve existir também um organograma elaborado para toda a
+empresa, no qual o laboratório deve ser situado. Essa condição
+organizacional depende do tipo e da qualidade de gerenciamento das
+informações obtidas nos laboratórios, conforme abordado adiante.
+No dimensionamento da infra-estrutura, devem ser consideradas
+a sazonalidade dos cultivos e a conseqüente variação na demanda por
+análises de laboratório; nesses períodos de subutilização dos
+equipamentos (em épocas fora do pico de demanda), podem-se utilizar
+esses equipamentos em trabalhos de pesquisa e na manutenção deles.
+2.1 Organização de um laboratório
+O organograma usual de um laboratório deve apresentar
+claramente a estrutura do setor de laboratório e definir seus princípios
+de funcionamento (FERREIRA; GOMES, 1995), com informações simples
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+565
+e resumidas. Os seguintes componentes devem fazer parte do
+planejamento do organograma funcional:
+• Tipos de análises a serem feitas (solo, plantas, adubos, água,
+etc.).
+• Objetivos (prestação de serviços e/ou pesquisa).
+• Número de amostras a serem analisadas e sazonalidade das
+atividades.
+• Origem dos recursos.
+• Regime de trabalho dos funcionários.
+A infra-estrutura básica do laboratório deve estar voltada para o
+atendimento das necessidades de processamento de um número mínimo de
+amostras previstas no período de pico de demanda. Um laboratório de análises
+de solos, plantas, fertilizantes e corretivos deve ter os seguintes “sítios” de
+trabalho, considerados no fluxograma lógico das operações laboratoriais:
+• Recebimento de amostras (solo, plantas e fertilizantes).
+• Preparo de amostras de solo (secagem, moagem e estoque).
+• Preparo de amostras de plantas (secagem, moagem e estoque).
+• Preparo de extratos de solo (extração, retirada de alíquotas,
+diluição, lavagem da vidraria).
+• Digestão de amostras de plantas (pesagem, capela, mufla,
+diluição).
+• Sala de aparelhos de medição (comum para solo e plantas).
+• Escritório (preparo de laudos, conferência, expedição).
+Alguns cuidados na infra-estrutura devem ser observados:
+• A sala de preparo de solo deve ser isolada do laboratório, para
+evitar contaminação com poeira.
+• Amostras, extratos e vidrarias devem “viajar” o mínimo possível
+pelo laboratório.
+• A sala de aparelhos e o escritório devem ser climatizados e
+isolados do ruído das máquinas (agitadores, lavadores, etc.).
+• Os gases (N
+2O, ar comprimido e acetileno) devem ficar em local
+próximo dos aparelhos (e não na mesma sala).
+• A água destilada deve estar disponível nos pontos de demanda,
+por encanamento de PVC.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+566
+• Amostras analisadas devem ser estocadas por um período mínimo
+de três meses, para o caso de eventual repetição de análises.
+Por exemplo, o laboratório de análises de solos e plantas da UFRGS
+pode analisar, em época de pico de demanda, até 4 mil amostras de solo
+por mês, determinando pH, índice SMP , teor de argila, P , K, Ca, Mg, Al,
+M.Org., Cu, Zn, S-SO 4
+-2, B e Mn, métodos descritos por Tedesco et al.
+(1995). Tem capacidade também para analisar 600 amostras de plantas
+por mês, determinando os teores de N, P , K, Ca, Mg, Cu, Zn, Mn, Fe e B,
+métodos descritos por Tedesco et al. (1995). Amostras de calcário e água
+(200 amostras por mês) em pequeno número também podem ser
+analisadas.
+Nesse laboratório, os parâmetros utilizados na recomendação de
+adubos e de corretivo da acidez são determinados duas vezes, em dias
+diferentes (pH, índice SMP , P e K disponíveis). Dessa forma, pretende-se
+reduzir o erro analítico a níveis mínimos, pelo controle estatístico de
+processos, com vista à melhoria da qualidade.
+2.2 Recursos humanos
+Não menos importantes são os aspectos gerenciais dos recursos
+humanos no laboratório. Aproveitar ao máximo as potencialidade de uma
+equipe de trabalho exige sensibilidade e conhecimentos do comportamento
+humano, devendo ter sempre em mente que “se administra o trabalho de
+indivíduos e não de robôs”. O livro de Ferreira e Gomes (1995) apresenta
+várias orientações, extraídas de muitos autores, que auxiliam o
+gerenciamento do pessoal do laboratório, sintetizadas a seguir:
+• Dar pleno conhecimento a todos os indivíduos da equipe de suas
+funções, obrigações formais e limitações no trabalho.
+• Estabelecer objetivos claros e definidos no plano de trabalho de
+cada indivíduo da equipe.
+• Criar normas criteriosas sobre as obrigações da empresa e do
+empregado.
+• Classificar racionalmente os cargos e formular uma política lógica
+e adequada de salários.
+• Substituir a verticalização de cargos nas organizações (em
+decadência) por estruturas mais amplas, mais participativas e
+abertas no sentido horizontal.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+567
+• Treinar periodicamente a equipe e colocar um técnico de reserva
+para a eventual substituição de titular.
+• Aproveitar o talento específico do indivíduo na equipe, sempre
+que possível.
+• Direcionar as ações gerenciais de forma a integrar o indivíduo à
+filosofia da organização, principalmente em relação à definição de
+objetivos da empresa e aos recursos disponíveis para alcançá-los.
+• Ressaltar que o principal objetivo da direção de um laboratório é
+assegurar um clima organizacional propício tanto à realização
+profissional quanto ao comprometimento pessoal com os
+objetivos e resultados a ser alcançados.
+2.3 Tipos de equipamentos de laboratórios
+Os principais equipamentos utilizados em laboratório de análises
+de solo, de plantas, de fertilizantes e de corretivos, bem como suas
+limitações, são apresentados a seguir.
+2.3.1 Espectrofotômetro de absorção atômica
+O espectrofotômetro de absorção atômica (AAS) é o equipamento
+de maior utilidade (e mais caro) do laboratório de análise de solos e
+plantas. Isso deve-se ao fato de que sua técnica de determinação é:
+• Relativamente livre de interferência quando amostras e padrões
+têm a mesma matriz.
+• De fácil execução.
+• Compatível com a sensibilidade requerida para as determinações
+de macronutrientes (Ca e Mg) e micronutrientes (Cu, Zn, Mn e
+Fe) extraídos pelas soluções comumente utilizadas nas análise
+de solo e os teores no tecido das plantas.
+A tendência mundial entre os fabricantes é a oferta de aparelhos
+com mais “eletrônica embarcada”. Os mais modernos são totalmente
+controlados por computador. Embora à primeira vista a sofisticação possa
+ser atraente, deve-se levar em conta que o excesso de componentes
+eletrônicos pode dificultar a operação e o treinamento de pessoal. A
+falha do espectrofotômetro de AA, por exemplo, é um desastre no
+laboratório em época de pico. Ademais, vários recursos eletrônicos
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+568
+disponíveis, além de onerar o equipamento, não têm aplicação para o
+serviço de rotina.
+Considerando ainda que esses equipamentos são importados e
+que a assistência técnica é cara e demorada, deve-se prever uma forma
+alternativa para as determinações. Para um laboratório de análise de
+solos e plantas, o fotômetro de AA deve ter as seguintes características:
+• Disponibilidade de duplo feixe.
+• Possibilidade de leitura direta em concentração, com base na
+curva padrão.
+• Possibilidade de recalibração durante a leitura de uma batelada
+de amostras.
+• Existência de intertravamento para uso com óxido nitroso.
+Se o equipamento for complexo, é conveniente que seja
+configurado com recursos que possibilitem a comunicação com outros
+equipamentos de laboratório e também com microcomputadores. Como
+exemplos desses recursos, podem ser citados o conversor de sinais
+analógicos para digital, a interface serial e a interface paralela.
+A maioria dos aparelhos possui corretor de radiação de fundo
+(background) com lâmpada de deutério, para utilização em comprimentos
+de onda de 190 nm a 400 nm. Sua utilização, entretanto, não é fundamental
+em análises de solos e de plantas, em que a matriz é uniforme e as
+concentrações dos elementos a serem determinados são relativamente altas.
+No caso de análises de água, a técnica de AA com chama pode não ter
+a sensibilidade suficiente para a determinação de micronutrientes, ocorrendo
+o mesmo no caso de metais (Pb, Cr, Cd e Ni) em plantas. Aparelhos com
+“limites de detecção” mais baixos, como absorção atômica em forno de grafite
+e espectrofotometria em plasma, podem ser utilizados nesses casos.
+O limite de detecção de um aparelho de medição é a menor
+concentração de um elemento que pode ser medida. Esse valor depende
+da amplitude do sinal e do ruído de fundo. A International Union of Pure
+and Applyed Chemistry (Iupac) define o limite de detecção como “a
+concentração que produz um sinal de absorbância três vezes maior que
+o desvio padrão da prova em branco” (BEATY; KERBER, 1993).
+Como o limite de detecção assim calculado depende de vários fatores
+de difícil controle, utiliza-se usualmente a “concentração característica (CC)”,
+definida como “a concentração de um elemento (em mg L
+-1) necessária
+para produzir um sinal de absorção de 1 % (0,0044 de absorbância)”.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+569
+A CC pode ser calculada pela absorbância de uma solução padrão
+(situada na parte reta da curva de calibração), pela fórmula
+CC (mg L-1) = conc. do padrão (mg L-1) x 0,0044/absorbância medida
+A CC permite que o operador verifique se as condições de operação
+do aparelho estão otimizadas e se este está operando conforme as
+especificações do fabricante. Valores de CC são geralmente especificados
+nos manuais dos aparelhos. A Tabela 1 apresenta valores de CC típicos obtidos
+em espectrofotometria de AA com chama e com forno de grafite. Na prática,
+valores de até metade das concentrações dadas nessa tabela podem ser
+determinados com segurança se o aparelho tiver boa estabilidade.
+Tabela 1. Concentração característica (para 1 % de absorção) de alguns elementos
+de interesse agrícola determinados pelas técnicas de espectrofotometria de
+absorção atômica com chama (AA) e com forno de grafite (FG).
+Elemento(1) Concentração característica
+AA(2) FG(3)
+(mg L-1) (Pg/0,0044 A (4))
+Al 1,1 10,0
+Ca 0,09 0,8
+Cd 0,03 0,4
+Cr 0,08 3,0
+Cu 0,08 4,0
+Fe 0,11 5,0
+K 0,04 0,8
+Mg 0,01 0,3
+Mn 0,05 2,0
+Mo 0,67 9,0
+Na 0,01 1,0
+Ni 0,14 13,0
+Pb 0,45 10,0
+Si 2,1 40,0
+Zn 0,02 0,1
+(1) Medido em chama na mistura de gases de ar–acetileno ou de óxido nitroso para Cr, Mo, Al e Si.
+(2) Perkin-Elmer (1994).
+(3) Perkin-Elmer (1985).
+(4) Expresso em picogramas (10 -9 g) em 20 x 10 -6 L de solução necessários para obter um sinal de
+0,0044 unidades de absorbância.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+570
+2.3.2 Fotômetro de chama
+O fotômetro de chama é o equipamento preferencial para a
+determinação de K e Na, por estes serem facilmente excitados em baixa
+temperatura (utiliza-se como combustível o gás de cozinha com ar para
+formar a chama), emitindo radiação característica no retorno ao estado
+fundamental.
+Embora a maioria dos espectrofotômetros de AA permita leituras
+em emissão, K e Na são mais convenientemente determinados por
+fotometria de chama. A elevada temperatura da chama em AA em geral
+ioniza excessivamente esses átomos, dificultando a obtenção de resposta
+linear (BAKER; SUHR, 1982). No entanto, alguns laboratórios têm utilizado
+com sucesso o espectrofotômetro para a determinação de potássio e
+sódio. Fotômetros de chama são equipamentos baratos, que utilizam
+fotocélulas e filtros de interferência adequados aos elementos a serem
+determinados, em lugar de monocromador.
+As curvas padrão de potássio e sódio obtidas em fotômetros de
+chama em geral ajustam-se à equação potencial, em razão da auto-
+absorção em altas concentrações, da ionização na chama e da perda de
+sensibilidade da fotocélula. Pode-se, nesses casos, utilizar essa equação
+para os cálculos ou gravar uma escala com os teores do solo (para leitura
+direta) no mostrador do aparelho, se este for do tipo analógico.
+2.3.3 Colorímetro UV-visível
+Esse equipamento é fundamental no laboratório de análises de
+solos e plantas, sendo utilizado nas determinações de P , matéria orgânica,
+B e S. O molibdênio (Mo) em plantas pode também ser determinado
+colorimetricamente (TEDESCO et al., 1995).
+Um equipamento de boa qualidade com feixe simples e cubeta de 10 mm
+de caminho ótico é adequado, sendo recomendado o uso de estabilizador
+de voltagem. A faixa de trabalho em geral é de 400 nm a 900 nm.
+2.3.4 Destilador de nitrogênio
+A determinação das diferentes formas de N (N total, NH 4
++, NO3
+- e
+NO2
+-) em solo é feita preferencialmente por destilação de arraste de
+vapor, por ser um método relativamente livre de interferências. Embora
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+571
+existam destiladores semi-automatizados, o aparelho semimicro Kjeldahl,
+descrito por Bremer e Edwards (1965) e modificado por Tedesco et al. (1995),
+é muito utilizado por ser muito prático, como se pode notar na Fig. 1. O
+destilador tem baixo custo e pode ser montado por técnicos do próprio
+laboratório. Requer manutenção mínima e possui grande versabilidade e
+alta sensibilidade: até 0,014 mg L
+-1 de NH 4
++ podem ser determinados,
+utilizando um frasco de destilação de 200 mL e destilando 100 mL de amostra
+(TEDESCO et al., 1995). Um operador trabalhando com dois aparelhos pode
+destilar até 240 amostras por dia num período de 8 horas.
+Fig. 1. Conjunto
+modificado de destilação
+de amônia por arraste de
+vapor, com coluna
+d’água para controlar a
+saída do vapor.
+Fonte: Tedesco et al. (1995).
+Além dos aparelhos apresentados, muitos outros são utilizados em
+laboratório de solos. Como exemplos, podem ser citados: potenciômetro,
+condutivímetro, bureta digital, moinhos, forno mufla e agitadores. Esses
+são aparelhos de menor custo, de boa qualidade e podem ser obtidos no
+mercado nacional.
+2.4 Cuidados básicos na rotina de laboratório
+Atualmente, implementam-se programas de treinamento
+especializado de técnicos de laboratório sobre normas de controle de
+
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+572
+práticas laboratoriais (FERREIRA; GOMES, 1995), de modo que possam
+ser capazes de:
+• Entender os princípios científicos dos procedimentos indicados
+para obter resultados confiáveis.
+• Reconhecer potenciais fontes de erros (qualidade da água, mau
+funcionamento de equipamentos, utensílios descalibrados,
+reagentes de baixa qualidade, entre outros) nas tarefas analíticas.
+• Estar adequadamente informados sobre os princípios de funciona-
+mento dos equipamentos e dos métodos utilizados na rotina.
+Entre as fontes de erro usualmente encontradas nas análises de solo,
+de plantas e de fertilizantes, destacam-se: o grau de pureza dos reagentes
+(mais detalhes no capítulo 1 da parte 3), a exatidão e a precisão das operações
+de medidas (balanças, cachimbos, etc.) e a qualidade da água.
+A qualidade da água usada no preparo dos reagentes e na lavagem
+das vidrarias tem sido um problema constante em laboratórios de solo e
+de planta. Embora o destilador seja um equipamento barato, geralmente
+fica escondido, sendo muitas vezes negligenciado, perdendo eficiência
+operacional. Os contaminantes da água ficam concentrados no
+destilador, o que exige limpeza freqüente. O acúmulo de sais pode obstruir
+o sistema automático de ligação e ocasionar a queima das resistências
+no caso de falta de água.
+Como solução para as situações acima, o laboratório necessita de
+um destilador com capacidade mínima de 10 L hora
+-1, operando 120
+horas por semana. Um destilador menor e resistências, para eventual
+substituição, devem estar disponíveis.
+A freqüência de limpeza depende do tempo de operação e da
+qualidade da água de alimentação (torneira). Dispondo de água de boa
+qualidade, com baixo teor de sais, conforme exemplificado na Tabela 2,
+recomenda-se drenar a água do bojo pelo menos três vezes por semana.
+Se a água contiver teores elevados de sais (em geral Ca e Mg) e material
+em suspensão (argila, óxidos, matéria orgânica), é recomendável drenar
+a água diariamente.
+Alguns destiladores são equipados com dispositivos para drenar
+facilmente a água do bojo, bastando para tanto abrir um registro. Esse
+dispositivo, caso não venha incorporado ao aparelho, é fácil de instalar.
+Mesmo com a drenagem freqüente da água do bojo do destilador,
+ocorre deposição de sais (crostas) sobre as resistências e no selo da
+campânula, que deve ser removida a cada 2 ou 3 meses, dependendo
+da composição da água de abastecimento.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+573
+Tabela 2. Impurezas na água de suprimento do laboratório (proveniente da torneira
+e da água com diversos tratamentos de purificação) em relação à água bidestilada
+(em mg L-1) – Departamento de Solos, UFRGS.
+Elemento Água de Água Água Água destilada
+torneira destilada deionizada e deionizada
+Cálcio 5,17 <0,01 0,18 <0,01
+Magnésio 2,40 <0,001 0,015 <0,001
+Potássio 1,3 <0,1 <0,1 <0,1
+Fósforo <0,01 <0,01 <0,01 <0,01
+Cobre <0,05 <0,05 <0,05 <0,05
+Zinco <0,01 <0,01 <0,01 <0,01
+Manganês <0,09 <0,09 <0,09 <0,09
+Ferro <0,09 <0,09 <0,09 <0,09
+A água destilada é utilizada para preparo de reagentes, soluções,
+etc. O conhecimento da qualidade da água de abastecimento e da água
+destilada e a conseqüente adoção de práticas de controle devem ser os
+primeiros cuidados do chefe do laboratório para manter a qualidade dos
+resultados analíticos.
+A análise mostrada na Tabela 2, por exemplo, indica que a água
+de alimentação nesse caso contém teores baixos de Ca, Mg e K. Os
+outros elementos determinados estão presentes em teores muito baixos,
+não apresentando riscos de contaminação das amostras, mesmo no caso
+do P e dos micronutrientes Cu e Zn. Um simples cálculo pode mostrar
+que não há necessidade de enxaguar os frascos de extração de K com
+água destilada: se eles retiverem 0,2 mL de água na secagem (em posição
+invertida) e se for utilizada solução extratora na relação solo:solução de
+3,0:30,0 mL, o erro positivo será de 0,009 mg L
+-1 na solução de leitura de
+K, ou de 0,09 mg dm-3 de K no solo. Pode-se, portanto, adotar a técnica
+de não enxaguar os frascos com água destilada, com grande economia
+de tempo e material.
+Em relação ao Ca e ao Mg, a contaminação é ainda menor, por
+causa do maior fator de diluição.
+2.5 Tipos de análises
+2.5.1 Solo para fins de fertilidade
+Os laboratórios que fazem análises de solo com a finalidade de
+diagnóstico da fertilidade para recomendações de adubação, geralmente
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+574
+denominadas “de rotina”, utilizam um número adequado de determinações
+para atingir esse objetivo. Essas determinações e a respectiva metodologia
+analítica (protocolos) são normatizadas para os laboratórios integrantes do
+mesmo sistema, que em geral utilizam o mesmo controle de qualidade. Por
+exemplo, os integrantes da rede de Laboratórios de Análise de Solos dos
+estados do Rio Grande do Sul e de Santa Catarina (24 laboratórios)
+determinam como análise “de rotina”: pH em água; teor de argila; P e K
+disponíveis; matéria orgânica; Al, Ca e Mg trocáveis e índice SMP . Essas
+determinações possibilitam calcular a acidez total (H + Al), CTC, e
+saturação por base ou por Al. Com a devida interpretação, podem ser
+feitas as recomendações para a correção da acidez e a adubação ( SBCS/
+NRS, 2004). O laboratório executa também, caso solicitado, outras
+determinações, como, por exemplo: micronutrientes, Na, condutividade
+e metais pesados. Outras redes de laboratórios, como os que adotam a
+metodologia analítica proposta pelo Instituto Agronômico de Campinas,
+utilizam metodologia adequada ao mesmo objetivo, mas com ênfase na
+determinação do pH em CaCl 2 e K, Ca e Mg extraídos por resina (RAIJ
+et al, 1987). Detalhes da metodologia são dados no capítulo 1 da parte 2.
+• Análise de nutrientes em tecido vegetal para diagnose nutricional:
+determina-se as concentrações de nitrogênio, fósforo, enxofre,
+boro, cloreto, silício, sódio, potássio, cálcio, magnésio, cobre, ferro,
+manganês, zinco, molibdênio, alumínio.
+• Em relação às análises de fertilizantes orgânicos, inorgânicos e
+organominerais (capítulos 3 e 4 da parte 2): métodos simplificados
+(nitrogênio, fósforo solúvel em água, total e solúvel em citrato neutro
+de amônio mais água e em ácido cítrico a 2 %, relação 1:100, potássio,
+boro, enxofre) e métodos oficiais (nitrogênio, fósforo total, solúvel em
+água, solúvel em citrato neutro de amônio mais água e em ácido
+cítrico a 2 %, relação 1:100, potássio, cálcio, magnésio, enxofre, boro,
+zinco, cobre, manganês, ferro, cobalto), entre outros métodos oficiais
+aprovados pelo Ministério da Agricultura, Pecuária e Abastecimento.
+• Análise de corretivos: granulometria, teores de óxido de cálcio e
+de magnésio, análise do poder de neutralização (PN), cálculo do
+PRNT (poder relativo de neutralização total).
+3. Automação de rotinas laboratoriais
+Trata-se da utilização de alguns utensílios (dosadores, pipetadores,
+entre outros) para otimizar as rotinas analíticas no laboratório, com o
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+575
+propósito de aumentar a produtividade dos operadores e proporcionar
+uma redução de custos.
+3.1 Utilização de volumes de solo
+O laboratório de análises de solos deve analisar um grande número
+de amostras a baixo custo, principalmente em períodos de pico de
+demanda. A sistematização do tratamento das amostras e as rotinas
+analíticas devem ser estabelecidas para possibilitar alta eficiência. Em
+geral, as amostras são acondicionadas em caixas, com um número
+variável de 30 a 50 provas cada uma (com prova em branco e amostra
+padrão).
+Em lugar de massa de solo, utilizam-se volumes de solo, retirados
+das caixas contendo as amostras moídas por medidas calibradas ou
+“cachimbos”, feitos de aço inox. O erro médio nesse procedimento de
+amostragem é em geral menor que 5 % (TEDESCO, 1985), perfeitamente
+aceitável em determinações com vista ao diagnóstico da fertilidade do
+solo.
+3.2 Uso de pipetas automáticas
+Os frascos de extração, de diluição e de leituras são também
+dispostos em conjuntos, de acordo com o número de provas das caixas
+de amostras. Por exemplo, no laboratório da UFRGS são utilizadas caixas
+com 40 provas (5 conjuntos de 8 provas). Obtém-se assim melhor
+utilização do espaço, sendo mais leves e adequadas aos trabalhos dos
+laboratoristas, além de serem compatíveis com os procedimentos que
+requerem o uso de bloco digestor, de 40 provas (para as determinações
+de S e B).
+As soluções extratoras são adicionadas por pipetas calibradas, que
+são fixadas em painéis removíveis da estrutura de suporte, onde estão
+fixos os sistemas de vácuo/pressão. Dessa forma, consegue-se manter o
+uso racional do espaço de bancadas com um mínimo de tempo na
+substituição dos painéis, bastando desfazer duas ligações de mangueira
+de vácuo/pressão por conexões de engate rápido.
+A retirada de alíquotas de extrato para diluição ou leitura é feita
+também com a utilização de pipetas automáticas. Após a retirada da
+alíquota de extrato, as pipetas devem ser lavadas pelo menos uma vez,
+seja com solução de diluição da alíquota, seja com reagentes para a
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+576
+colorimetria. Por exemplo, se na determinação de fósforo a pipeta retiver
+0,3 mL (2 gotas) de um extrato contendo 20 mg dm-3 de P , a contaminação
+para a amostra seguinte será de 1 mg dm-3 de P (a mais), se a pipeta não
+for lavada (diluição 1:1). Com uma lavagem, entretanto, a contaminação
+será de somente 0,17 mg dm-3, que é aceitável na determinação do P no
+solo por esse método (com duas lavagens, a contaminação é reduzida
+para 0,03 mg dm
+-3).
+3.3 Seringas diluidoras
+Alguns laboratórios utilizam dispensadores/diluidores feitos com
+seringas hipodérmicas de vidro, conforme procedimento adotado pelo
+IAC (RAIJ et al., 1987). Os mesmos cuidados para minimizar a
+contaminação entre amostras devem ser praticados. O sistema para a
+diluição deve ser adequado às características de cada laboratório e à
+metodologia adotada.
+3.4 Lavadores de vidraria
+São em geral utilizados esguichos pressurizados em número igual
+e no espaçamento dos frascos do conjunto de extração, montados num
+suporte metálico, sobre um tanque de dimensões adequadas. Do tanque,
+o solo é arrastado pelo líquido para um recipiente maior, para decantação.
+As diluições e os extratos para leitura são feitos em copos de plástico
+descartáveis (tipo cafezinho).
+3.5 Outros sistemas de automatização
+Os auto-analisadores e os sistemas de injeção em fluxo (FIA) podem
+ser também utilizados em análises de solos. Entretanto, apresentam alguns
+aspectos inconvenientes: ocupam grande espaço, por serem sistemas
+semipermanentes, e são relativamente caros. A análise de solo requer a
+determinação de muitos parâmetros e a utilização racional e ágil do
+espaço do laboratório.
+Utilizam-se também equipamentos de laboratório já informatizados,
+aplicações desenvolvidas (aplicativos) sob encomenda e softwares
+comerciais (planilhas eletrônicas, banco de dados, geradores de gráficos,
+coletores de dados, controle estatístico, edição de texto para relatórios
+e outros específicos).
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+577
+4. A utilização da informática
+no gerenciamento do laboratório
+A aplicação da informática em laboratório de análises de solo,
+plantas e fertilizantes pode ocorrer em quatro fases de trabalho:
+organização e gerenciamento da informação analítica interna no
+laboratório; controle estatístico do processo para fins de qualidade;
+interpretação de resultados analíticos nos laudos a serem emitidos, por
+exemplo, usando sistemas especialistas e modelos matemáticos; e
+disponibilização de resultados via Internet.
+4.1 Controle estatístico de
+processos para fins de qualidade
+A qualidade dos resultados analíticos deve ser a principal
+preocupação do responsável pelo laboratório, o que é realizado por
+técnicas de controle estatístico de processos, que é a base dos programas
+de controle de qualidade em laboratórios de solos e de plantas.
+No controle de qualidade, pode ser utilizado o padrão interno do
+laboratório, incluído em cada lote de amostras. Pode-se estudar assim a
+variação dos parâmetros analisados e a precisão dos métodos adotados.
+O controle de qualidade por amostras-padrão externas é de grande
+importância na avaliação do desempenho do laboratório. Programas de
+controle de qualidade são adotados em várias regiões do País, tanto
+para solo como para tecido de plantas. Os selos de qualidade analítica
+que esses programas podem fornecer aos laboratórios com bom
+desempenho são fatores essenciais e necessários para a credibilidade
+do laboratório entre seus usuários, mas nem sempre isso é suficiente
+para garantir a qualidade do laudo final emitido. Entretanto, na maioria
+das vezes, as ações desses programas voltam-se ao monitoramento da
+qualidade no decorrer do ano e limitam-se à emissão de listas de
+laboratórios aptos ao uso de selo de qualidade. Muitos laboratórios de
+análises de solos e de tecidos de plantas do Brasil participam de grupos
+de controle de qualidade dos resultados (capítulo 1 da parte 3).
+A utilização de recursos computacionais para aumento da
+eficiência e controle dos resultados analíticos dos laboratórios cresce
+intensamente, tornando-se um investimento necessário. A impressão de
+laudos é a tarefa mais simples do computador. A conferência de dados,
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+578
+rejeitando valores espúrios (por exemplo: pH = 54, em lugar de 5,4) ou
+alertando sobre resultados inusitadamente altos ( outlayers) ou baixos é
+outra aplicação importante.
+A análise da coerência interna de dados de uma análise é muito
+útil no estudo dos resultados. Por exemplo, alto teor de Al+3 trocável não
+é compatível com valores de pH superiores a 5,6. A recomendação de
+calcário pelo índice SMP pode ser comparada com a recomendação dada
+pela equação que considera os teores de matéria orgânica e Al+3 trocável
+(sistema dos estados do Rio Grande do Sul e de Santa Catarina)
+(SOCIEDADE BRASILEIRA DE CIÊNCIA DO SOLO, 1995). O laboratório
+de Análises de Solo do Instituto Agronômico de Campinas utiliza um
+sistema próprio para essa finalidade (capítulo 1 da parte 3).
+Um maior detalhamento do controle de qualidade foi abordado
+no capítulo 1  da parte 3 deste manual, sendo aqui demonstrada a relação
+entre os processos automatizados pela informática e a necessidade do
+controle estatístico desses mesmos processos que ocorrem no laboratório.
+4.2 Sistema de gerenciamento
+de informações laboratoriais (LIMS)
+A função principal de muitos laboratórios analíticos é gerar e
+apresentar informações, de forma rápida, para a tomada de decisão.
+Um Laboratorial Information Management System (LIMS) é uma das
+ferramentas de automação de laboratório à disposição do analista, para
+ajudá-lo a realizar essa função (MCDOWALL, 1995). Embora o LIMS não
+seja o responsável pelas análises dos dados, ele pode servir de base
+para integrar as operações executadas nos laboratórios e estes à
+organização. Um LIMS pode oferecer ao laboratório recursos para
+automatizar o processo de criação e disponibilização de informação, bem
+como ser uma plataforma de disseminação de informação para o cliente
+e o gerente da organização.
+4.2.1 Implementações e benefícios do LIMS
+Um LIMS é diferente de qualquer parte de um equipamento para
+automação laboratorial disponível em um laboratório químico. Ele pode
+fornecer benefícios tanto dentro do laboratório quanto fora dele. Segundo
+McDowall (1995), os benefícios são:
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+579
+• No laboratório – gerador de informação.
+• Na organização – provedor de informação para o usuário.
+A Fig. 2 exibe um conjunto de funções que um LIMS deve garantir.
+O diagrama mostra um LIMS situado na fronteira entre o laboratório e
+os demais compartimentos da organização. Amostras são preparadas
+na organização e repassadas para o LIMS. Elas são analisadas no
+laboratório, os dados são gerados e transformados dentro do LIMS em
+informações, que são repassadas de volta para a organização. Segundo
+McDowall, esse é um posicionamento ideal do LIMS, pois tanto a
+organização quanto o laboratório são beneficiados.
+Fig. 2. Implementação ideal de um LIMS.
+Fonte: McDowall (1995).
+Além disso, existem duas outras implementações possíveis com o
+LIMS, que resultam no posicionamento diferente da fronteira entre o
+laboratório e a organização.
+A Fig. 3 exibe a implementação mais comum de LIMS, encontrada
+nos década de 1980. As funções principais são as mesmas mostradas na
+Fig. 2, mas a ênfase na implementação é diferente. A fronteira entre a
+organização e o laboratório deslocou-se para cima, e o benefício do
+LIMS é quase que exclusivamente do laboratório, sobrando pouco para
+a organização. Aqui, o LIMS é um instrumento para o laboratório, de
+modo que poucos o utilizam. O sistema é construído de baixo para cima,
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+580
+sem levar em consideração o que acontece fora do laboratório, e os
+benefícios são destinados ao laboratório e não à organização.
+Fig. 3. Implementação de sistema com ênfase no laboratório de análise e não na
+organização, modelo button-up.
+Fonte: McDowall (1995).
+Fig. 4. Implementação de sistema com ênfase na organização e não no laboratório,
+modelo top-down.
+Fonte: McDowall (1995).
+Outra forma de implementação de LIMS é mostrada na Fig. 4. Ela
+utiliza uma abordagem top-down, na qual o gerente máximo, ou o grupo
+de tecnologia de informação da organização, decide se um LIMS deve
+ser implementado. Nesse momento, pouca importância é dada ao
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+581
+laboratório, já que as atenções estão voltadas para a organização. A
+análise e os dados, incluindo as funções do LIMS, são ignorados, o que
+permite ao staff o espaço e as justificativas para desenvolver sua própria
+alternativa de soluções para o processamento local.
+Como se pode ver, comparando as três abordagens, existe um
+equilíbrio a ser encontrado entre a necessidade da organização e a do
+laboratório. A interface entre os dois segmentos deve ser cuidadosamente
+definida. Portanto, a implementação inicial deve ser em direção ao
+laboratório, gerador de informação. A automação do gerador de
+informação é a chave para o sucesso de todo o LIMS (MCDOWALL, 1995).
+4.2.2 Requisitos para um LIMS
+Nos últimos 20 anos, profissionais da área médica, por exemplo,
+vêm se tornando cada vez mais dependentes do amplo conjunto de
+sofisticados serviços de diagnósticos oferecidos pelos laboratórios clínicos.
+Os instrumentos analíticos automatizados geram um aumento na
+variedade e no volume de informações de testes e também um aumento
+na velocidade com que elas são geradas. Dessa forma, o custo de
+manutenção do hospital sofre um aumento de 10 % (BRENDER; MCNAIR,
+1996).
+Baseado nesse crescimento, os aspectos racionalização e
+integração de laboratórios passaram a receber maior atenção. Esses
+fatos levaram os administradores de hospitais, os fornecedores de
+equipamento, os técnicos de laboratório e os médicos a encontrar uma
+forma de:
+• Assegurar que a informação relevante seja recuperada.
+• Assegurar que os resultados significativos estejam sempre
+disponíveis, quando e onde eles forem necessários e com
+qualidade.
+• Ajudar os clínicos a filtrar as informações.
+• Assegurar que os serviços de suporte a diagnósticos operem
+“informações imediatas”.
+Os modernos laboratórios clínicos são complexos e heterogêneos,
+executam tanto aplicações autônomas quanto integradas – rodando em
+equipamentos de características diferentes –, tornando, assim, maior a
+dependência em relação à tecnologia da informação.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+582
+Atualmente, o desenvolvimento da tecnologia aplicada a laboratórios
+clínicos é tão rápido que os fornecedores de produtos estão com dificuldades
+em absorver, decidir e integrar novas tecnologias/técnicas disponíveis em
+uma versão global de um LIMS. Uma solução óbvia para esse domínio é
+baseada no conceito de sistemas abertos e interconectados, interagindo no
+nível funcional (BRENDER; MCNAIR, 1996).
+A diversidade de práticas laboratoriais, bem como o tamanho (volume
+de dados, repertório analítico), o equipamento e as metodologias analíticas
+implicam que nenhum paradigma para a solução do modelo de LIMS
+contemplará em detalhes todos os laboratórios clínicos, exceto generalidade
+e flexibilidade, que são explicitamente construídas dentro do modelo.
+Um LIMS, visto sob a ótica de um instrumento para controlar
+operações e o desempenho no laboratório, deve ser um sistema aberto,
+e sua arquitetura deve ter as seguintes características:
+• Interoperabilidade entre subsistemas fornecidos por vários
+fabricantes e sobre diferentes plataformas.
+• Interoperabilidade entre os LIMS existentes e um conjunto de
+novos subsistemas apoiados em modernas tecnologias de
+informação (TIs).
+• Mecanismos para uma rápida, fácil e flexível personalização.
+• Troca de informação com outros sistemas de informação voltados
+para cuidados com a saúde.
+• Acoplamento de um novo equipamento.
+Além das características mencionadas, outras podem ser
+encontradas em Brender e McNair (1996), com respeito, principalmente,
+ao gerenciamento, à segurança e à integração.
+Os diversos requisitos que os LIMS terão no futuro fazem crer que
+eles serão entidades muito dinâmicas e integradas. Acoplados a TIs para
+laboratórios, otimizarão o controle e o gerenciamento da qualidade,
+quaisquer que sejam as mudanças operadas na organização.
+4.2.3 Gerenciando o funcionamento
+de um LIMS aberto
+Os ambientes computacionais dos laboratórios clínicos variam
+bastante, desde um simples sistema de informação monolítico, que
+centraliza o planejamento e os processos de investigação laboratoriais,
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+583
+até uma variedade de aplicações para investigações específicas
+executadas em laboratório. Introduzir aplicações nesses ambientes
+computacionais e integrá-las a eles é muito difícil (WADE et al., 1996).
+Segundo o projeto OpenLabs (WADE, 1994, citado por WADE et al.,
+1996), para facilitar o crescimento dos sistemas voltados para laboratórios
+clínicos é preciso fornecer suporte aos serviços dos laboratórios clínicos
+em um sistema computacional distribuído, aberto. O propósito dessa
+abordagem é permitir que diferentes aplicações específicas a laboratórios
+clínicos interoperem sobre uma plataforma computacional aberta,
+desprezando o fato de que esses sistemas funcionam sobre diferentes
+plataformas e estão distribuídos em uma rede local.
+Para que essa abordagem tenha sucesso, dois difíceis problemas
+têm de ser resolvidos ( WADE et al., 1996).
+• O primeiro: a tarefa em execução por esses sistemas distribuídos
+deve estar integrada, monitorada e coordenada localmente (o
+suporte deve ser dado ao planejamento e à ativação automática
+das atividades computacionais no laboratório).
+• O segundo: o gerenciamento de vários serviços laboratoriais deve
+ser integrado para garantir o próprio controle, a administração
+dos gastos e o monitoramento do ambiente computacional do
+laboratório.
+Para encontrar soluções para os problemas apresentados,
+importantes aspectos devem ser considerados (WADE et al., 1996): a
+habilidade de monitorar e automatizar o fluxo de trabalho envolvido na
+execução das investigações realizadas no laboratório, bem como a de
+assegurar o correto funcionamento dos sistemas distribuídos que
+processam essa tarefa. Segundo Wade, o gerenciamento do fluxo de
+trabalho e do sistema distribuído também facilita a introdução de serviços
+laboratoriais de caráter clínico, em um ambiente computacional já
+existente no laboratório.
+4.3 Gerenciamento do fluxo de trabalho no laboratório
+O gerenciamento do fluxo de trabalho é uma técnica nova da
+comunidade de Sistemas de Informação de Escritórios (OIS) e está
+usualmente voltado para gerenciar os serviços dos escritórios (ELLIS, 1994,
+citado por WADE et al., 1996).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+584
+Essa tecnologia está se expandindo para os processos externos de
+mais alto nível e de maior complexidade. Qualquer processo que seja
+amplo e arriscado, principalmente os serviços requeridos em um
+laboratório, pode se beneficiar do gerenciamento do fluxo de trabalho
+(SWENSON, 1995, citado por WADE et al., 1996).
+Os sistemas workflow  são utilizados para dar suporte a esses
+serviços. Na visão de Wade, um sistema workflow  é uma aplicação
+proativa, que gerencia o fluxo de trabalho, consistindo de um número
+de tarefas ou atividades, de acordo com regras definidas.
+Embora sejam sistemas que usualmente gerenciam o trabalho
+executado principalmente por seres humanos, os conceitos de workflow,
+modelos e tecnologias são muito utilizados no gerenciamento de tarefas
+automatizadas em sistemas de laboratório distribuídos.
+Os sistemas workflow controlam o fluxo de trabalho por intermédio
+da organização, decidindo quais tarefas ou atividades devem ser
+realizadas no próximo passo. Como esses sistemas adotam uma
+abordagem de gerenciamento de fluxo de trabalho, as dificuldades
+encontradas na introdução de novos serviços no laboratório devem ser
+muito reduzidas.
+Os sistemas workflow monitoram os participantes, garantindo a
+total execução de todas as atividades atribuídas, podem tomar decisões
+quando necessário e examinam o percurso para mais tarde analisar o
+desempenho.
+4.3.1 Sistemas workflow
+Atualmente, as empresas investem cada vez mais em plataformas
+de hardware altamente sofisticadas que, interligadas a um servidor e
+entre si, estão permitindo acesso às informações de qualquer parte da
+organização, o que possibilita grande integração do trabalho. Acoplados
+ao hardware, softwares de várias categorias estão presentes na tarefa
+de integração, sendo o sistema de workflow um deles.
+Um workflow é definido como um conjunto de atividades processadas
+ao mesmo tempo (ou não) com alguma especificação de controle e fluxo de
+dados entre atividades relacionadas ou não (NICOLA, 1998).
+Um workflow pode descrever tarefas dos processos de negócios
+em nível conceitual necessário para compreender, avaliar e projetar esses
+processos. Um dos principais objetivos do workflow  é minimizar o
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+585
+problema da coordenação do trabalho nos processos de negócios. O
+principal problema do sistema baseado em processos é que não é possível
+controlar as atividades que estão sendo executadas, tornando-se assim
+difícil monitorar quando (em que instante de tempo) determinada
+atividade é executada e quem a a executa (http://www.inf.ufrgs.br/
+~nicolao/artigo.html).
+A seguir, são apresentados alguns tipos de sistemas workflow (http:/
+/cne.gmu.edu/modules/workflow/workflow-systems.html):
+• Sistemas de workflow baseados em imagem – Projetados para
+automatizar o fluxo de papel na organização, transformam o
+papel em “imagem” digital. Esses foram os primeiros sistemas
+de workflow a ter sucesso. Eles estão fortemente associados à
+tecnologia de imaging  e enfatizam o roteamento e o
+processamento das imagens digitalizadas.
+• Sistemas de workflow baseados em formulários – São sistemas
+projetados para inteligentemente direcionar formulários pela
+organização. Esses formulários diferem das imagens, são
+baseados em textos e consistem de campos editáveis. Os
+formulários são automaticamente dirigidos de acordo com as
+informações neles colocadas. Além disso, os sistemas baseados
+em formulários podem notificar as pessoas quanto a determinada
+ação ou avisá-las quando essa ação é esperada. Um exemplo
+desse tipo de sistema é encontrado em Teixeira e Tompson (1993).
+Sistemas de workflow baseados em coordenação – Projetados
+para facilitar a finalização do trabalho, fornecem um modelo de trabalho
+para coordenação da atividade. O modelo de trabalho é voltado para o
+domínio do negócio no qual o ser humano tem interesse. Tais sistemas
+têm potencial para aumentar a produtividade da organização. Uma
+experiência com o uso desse tipo de sistema encontra-se descrita em:
+http://cne.gmu.edu/modules/ workflow /workflow-coordination.html
+(TEIXEIRA; TOMPSON, 1993).
+4.3.2 Mecanismos básicos
+de um sistema de workflow
+Para que as tarefas descritas no item anterior possam ser
+executadas com sucesso, são necessários os seguintes mecanismos
+básicos (GOODMAN et al., 1995):
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+586
+• Rastreador do fluxo de trabalho (workflow  traking ) – É um
+requisito-chave. É por esse mecanismo que se registra o que
+aconteceu no laboratório. Sua função é semelhante à de um
+livro de registro. Esse registro constitui um histórico. Nele é
+registrado o que foi realizado, quando foi realizado, quem realizou
+e os resultados obtidos. Todas essas informações podem ser
+utilizadas para analisar o fluxo de trabalho no laboratório – como
+encontrar o tempo despendido entre a realização de tarefas –,
+para investigar irregularidades no resultado final, etc.
+• Controlador do fluxo de trabalho – É outro elemento básico,
+com a função de controlar o que está acontecendo enquanto os
+passos definidos no fluxo de trabalho são executados.
+• Modelador do fluxo de trabalho – A modelagem do fluxo de trabalho
+torna explícito o gerenciamento do fluxo (GOODMAN et al., 1995)
+e suporta os mecanismos já comentados. O sistema gerenciamento
+de fluxo de trabalho descreve um protocolo para o laboratório, ou
+para parte dele, com o esquema do fluxo de trabalho que mostra a
+ordem dos relacionamentos e as dependências de dados entre as
+várias etapas a serem executadas.
+Um formalismo chamado workflow  meta-model é utilizado para
+especificar o esquema de trabalho e a forma como será executado. A
+modelagem do fluxo de trabalho exerce um papel fundamental por unificar
+e abstrair o gerenciamento e o controle do fluxo de trabalho, permitindo
+que essas funções sejam executadas automaticamente pelo software de
+gerenciamento de fluxo de trabalho. Desse modo, as aplicações não têm a
+função de coordenar o rastreamento do fluxo de trabalho nem de exercer o
+controle sobre ele. Conseqüentemente, um workflow meta-model deve
+ser capaz de ambos: tanto de descrever a informação histórica que está
+armazenada quanto de fornecer a informação necessária ao controle de
+execução do fluxo de trabalho em tempo real.
+4.3.3 Utilização de sistemas
+de workflow no laboratório
+O Workflow Management Software for Genome-Laboratory
+Informatics é um projeto que vem sendo desenvolvido no MIT Center for
+Genome Research/Whitehead Institute for Biomedical Research. Nesse
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+587
+projeto, todos os esforços são direcionados para a construção de um
+sistema para solucionar problemas críticos de um grande laboratório de
+genome, que é controlar o fluxo de trabalho existente no laboratório e
+gerenciar os dados produzidos. O sistema desenvolvido se apóia em
+manual complexo, disponível na Web e nas atividades automatizadas
+existentes no laboratório, incluindo planejamento e configuração de
+experimentos, controle de robô, captura de dados, análises preliminares
+e controle de qualidade e repasse dos resultados.
+O objetivo desse projeto é fornecer componentes para:
+• Aumentar a funcionalidade da metodologia de especificação do
+fluxo de trabalho ( workflow meta-model) atualmente em uso
+no Centro de Pesquisa de Genome (CGR) (STEIN et al., 1995,
+citado por GOODMAN et al., 1995).
+• Construir um sistema para gerenciamento do fluxo de trabalho
+tendo como base o CGR, para facilitar seu uso e adequá-lo à
+metodologia gerada.
+• Generalizar o sistema construído de tal forma que possa trabalhar
+com o LabBase (ROZEN et al., 1995a, 1995b, 1995c, citados por
+GOODMAN et al., 1995), como gerenciador de dados, e também
+ser usado com SYBASE (MCGOVERAN; DATE, 1992; KIRKWOOD,
+1993, citados por GOODMAN et al. 1995), ou com o sistema
+AceDB (THIERRY-MIEG; DURBIN, 1992; DUNHAM et al., 1994,
+citados por GOODMAN et al., 1995).
+O mérito desse projeto está no fato de ser um sistema fácil de
+usar, robusto e portável, com modelo e características operacionais
+necessários aos laboratórios de genome.
+Segundo Goodman et al. (1995), o gerenciamento do fluxo de
+trabalho faculta o acompanhamento do curso das amostras no laboratório,
+por meio da interconexão dos protocolos, e de tomada de decisões no
+dia a dia, com base no status atual dos protocolos.
+Centrado nos conhecimentos apresentados em Goodman et al.
+(1995), o CGR desenvolveu um sistema de gerenciamento do fluxo de
+trabalho para apoiar o projeto de mapeamento de YAC/STS dos seres
+humanos (STEIN et. al., 1995, citados por GOODMAN et al., 1995). Esse
+gerenciador permite ao projetista construir um esquema para o fluxo de
+trabalho, que consiste nos estados (representando as atividades
+pendentes) e nas transações que o projetista define e armazena no
+formato de tabela de dados. O projetista pode estabelecer algumas
+condições para as transações nessa mesma tabela.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+588
+O sistema desenvolvido para CGR fornece informações sobre as
+atividades pendentes. Elas podem ser encontradas em relatórios
+tradicionais ou nos e-mails enviados para o supervisor do laboratório.
+Além disso, o sistema fornece informações para avaliar o progresso das
+atividades e, em alguns casos, determina as ações que devem ser tomadas
+para a execução dos próximos passos.
+Atualmente, o sistema vem sendo usado de forma freqüente para
+implementar fluxo de trabalho semi-automático para grandes protocolos
+(workflow meta-model) utilizados no CGR.
+5. Utilização da informática na
+organização de dados, de informação
+e de conhecimentos gerados no setor agrícola
+No momento em que a globalização da economia se torna uma
+realidade, criando uma situação de alta competitividade, algumas empresas
+começam a diminuir a produtividade dos recursos e a priorizar o serviço ao
+cliente, sem contar que dispõem de grandes volumes de dados de alta
+complexidade. A tecnologia é o diferencial nessa era da informação e do
+conhecimento cujos aliados são os softwares, os computadores e a Internet.
+Os avanços das tecnologias de informação e comunicação
+permitem que se desenvolvam aplicações em áreas pouco convencionais,
+como em laboratórios e campos experimentais agrícolas. Nesta seção
+são apresentados alguns exemplos de sistemas no setor agrícola que
+utilizam essas tecnologias para manipular dados, informação e
+conhecimentos com benefícios quantitativos e qualitativos.
+Antes de descrever essas tecnologias de informação e
+comunicação, é necessário fazer uma distinção entre dado, informação
+e conhecimento.
+Na Fig. 5, é ilustrada a estrutura dos dados, informação e conhecimento.
+• O dado é um elemento puro, quantificável sobre um determinado
+evento. Geralmente, os dados são utilizados no ambiente
+operacional, registrados numa base de dados, selecionados e
+recuperados dela ou das mais variadas formas de documentos
+eletrônicos (textos, música, imagem de satélite, programa de
+rádio, vídeo, entre outros). O dado por si só não oferece
+embasamento para o entendimento de sua situação.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+589
+• A informação é o dado analisado e contextualizado. Envolve a
+interpretação de um conjunto de dados a partir do estabele-
+cimento de um contexto ou de uma referência.
+• O conhecimento refere-se à habilidade de criar um modelo
+mental que descreva o objeto e indique as ações a implementar,
+as decisões a tomar. A compreensão, análise e síntese, necessá-
+rias para a tomada de decisões inteligentes, são realizadas a
+partir do nível do conhecimento.
+Fig. 5. Estrutura de dados,
+informação e conhecimento.
+Fonte: Rezende (2003).
+O desafio da década de 1980 foi migrar os dados para as
+informações, por meio do desenvolvimento dos sistemas de informação,
+que tinham por finalidade analisar dados e organizar a informação para
+melhorar o processo decisório empresarial. Naquela época, os conceitos
+de banco de dados e de sistema gerenciador de banco de dados (SGBD)
+tornaram-se intrínsecos aos sistemas de informação. A partir da década
+de 1990, o desafio passou a ser a criação de sistemas capazes de
+representar e processar conhecimento em resposta às diferentes
+necessidades de indivíduos, grupos e culturas. Neste momento, surgem
+outros conceitos, como sistemas inteligentes (SIs), Data Warehouse,
+mineração de dados, entre outros. Simultaneamente à evolução das
+tecnologias de informação, ocorreu uma explosão das tecnologias de
+comunicação por causa do grande crescimento da Internet.
+Nesta seção, são apresentados alguns conceitos e exemplos das principais
+tecnologias de informação e comunicação utilizadas no setor agrícola, como:
+(a) Os principais conceitos de banco de dados e um exemplo de
+sistema de banco de dados na área de experimentos em manejo de
+fertilizantes para cana-de-açúcar (BDCana).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+590
+(b) Data warehouse e um exemplo de aplicação dessa tecnologia.
+(c) Recursos de informação em meio eletrônico e um exemplo de
+aplicação para manipulação deles.
+Também são introduzidos conceitos de sistemas inteligentes (SIs) que
+diferem de aplicações tradicionais como base de dados, processadores de
+textos e planilhas eletrônicas. Enquanto essas aplicações tradicionais utilizam
+abordagens manuais para manipular dados e informação, os SIs podem
+manipular símbolos que representam entidades do mundo real e assim facilitar
+a manipulação do conhecimento de um determinado domínio de
+especialidade. São apresentadas algumas abordagens estatísticas na
+interpretação de resultados analíticos para fins agronômicos.
+Para finalizar, mostra-se como utilizar a Internet para tornar
+disponível a informação gerada em laboratórios e campos experimentais
+agrícolas e apresentam-se alguns exemplos de serviços básicos e especiais
+disponíveis na Internet para ser utilizados no processo de transferência
+de tecnologias e conhecimentos do setor agropecuário.
+5.1 Base de dados
+Guimarães (2003) define base de dados ou banco de dados como
+uma coleção de dados relacionados entre si. Esses dados correspondem
+ao valor de um campo armazenado como matéria-prima para obtenção
+de informação. Podem ser caracteres, números e, nos últimos anos,
+música, imagem de satélite, programa de rádio, filme, etc. A informação
+corresponde a dados compilados e processados de acordo com solicitação
+de consultas e análises.
+Uma base de dados representa algum aspecto do mundo real, ou
+seja, atende a um propósito específico de um determinado grupo de
+usuários. Para tal, ela é projetada, construída e preenchida com dados,
+por meio de aplicações pré-concebidas para esse fim (GUIMARÃES, 2003;
+TAKAI et al., 2005) e, além disso, deseja-se armazenar esses dados para
+uso futuro. Usualmente, bases de dados requerem o acesso simultâneo
+ou concorrente por vários usuários.
+O modelo da base de dados pode ser: plano ou tabular, em rede,
+relacional ou orientado a objeto.
+• O modelo plano consiste de uma matriz simples, bidimensional,
+composta por elementos de dados (inteiros, números reais, etc).
+Esse modelo é a base das planilhas eletrônicas.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+591
+• O modelo em rede amplia o modelo de plano, permitindo a adição
+de múltiplas tabelas. As tabelas são relacionadas por meio de
+referências, o que pode ser visualizado como uma estrutura de rede.
+• O modelo relacional, um dos mais utilizados atualmente, consiste
+no gerenciamento de dados baseado na teoria matemática de
+conjuntos, que assume uma estrutura regular ou “normalizada”
+de elementos – também chamados de entidades – organizados
+em listas simples ou conjuntos de valores que podem estar
+relacionados uns aos outros (OLOFSON, 2003). As bases de dados
+relacionais permitem aos usuários escrever consultas ( queries)
+que não foram antecipadas por quem as projetou. Com isso,
+essas bases de dados podem ser utilizadas por diferentes
+programas de aplicações e durante décadas.
+• O modelo orientado a objeto (OO), desenvolvido a partir de
+necessidades não atendidas pelo modelo relacional, tem ganhado
+mercado nos últimos anos. Possui a capacidade de lidar com
+objetos complexos – como textos, gráficos, imagens, músicas,
+vídeos –, e objetos dinâmicos – como sistemas de informações
+gráficas, experiências científicas e simulações (ELMASRI;
+NAVATHE, 2005). A unidade de armazenamento desse modelo
+de base de dados é o objeto juntamente com suas características.
+Aos programadores são permitidos o compartilhamento
+concomitante e a continuidade das informações nas aplicações.
+Um sistema gerenciador de base de dados (SGBD) é uma coleção
+de programas que permitem aos usuários criar e manipular uma base de
+dados (GUIMARÃES, 2003). Geralmente, um SGBD provê mecanismos
+para manipular quaisquer modelos de bases de dados, além de facilitar
+o processo de definir, construir e manipular bases de dados de diversas
+aplicações. Definir uma base de dados envolve a especificação de tipos
+de dados a serem armazenados nela. Construir uma base de dados é o
+processo de armazenar os dados em algum meio que seja controlado
+pelo SGBD. Manipular uma base de dados indica a utilização de funções
+como a de consulta, para recuperar dados específicos, modificação da
+base de dados (inserções, atualizações e remoções) e geração de
+relatórios. A base de dados e o software de gerenciamento da base de
+dados compõem o chamado Sistema de Base de Dados. A Fig. 6 apresenta
+um esquema genérico de um sistema de base de dados em sua interação
+com seus usuários. A abordagem de Base de Dados suporta diversas
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+592
+aplicações, utiliza metadados para descrever os dados e os representa
+de forma conceitual. Com isso, eliminam-se redundâncias e facilitam-se
+a manutenção e as consultas à base. Um metadado é definido como
+sendo dado sobre dado, ou seja, descreve os atributos e o conteúdo de
+um dado. Na Fig. 6, as setas representam a interação entre os
+componentes do Sistema de Base de Dados.
+Fig. 6. Sistema de Base de Dados.
+Fonte: adaptado de Takai et al. (2005).
+Um SGBD provê o compartilhamento de dados a multiusuários por
+meio do controle de concorrência para assegurar que atualizações
+simultâneas resultem em modificações corretas. Provê também
+mecanismos de restrição de acesso aos dados compartilhados. Podem-
+se definir níveis de acesso, como restrição total, sem restrição e acesso
+somente à recuperação. Por exemplo, dados financeiros são considerados
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+593
+confidenciais. Portanto, somente pessoas autorizadas podem ter acesso
+à recuperação e à modificação deles. Porém, um determinado grupo de
+usuários pode ter acesso somente à recuperação, e os demais usuários
+não podem acessar os dados confidenciais.
+No que se refere à segurança dos dados, um SGBD fornece
+recursos para restauração dos dados caso ocorram falhas de hardware
+ou software. Esses recursos asseguram que a base de dados seja
+restaurada no estado anterior ao início da execução do programa ou,
+alternativamente, que o programa seja reexecutado a partir do ponto
+em que havia sido interrompido.
+Exemplos de SGBDs são MySQL Database (MYSQL, 2006) e
+PostgreSQL (POSTGRESQL, 2006), produtos de código aberto (open
+source), e os produtos comerciais Microsoft Access (parte integrante do
+produto Microsoft Office) (MICROSOFT, 2003); o ORACLE 9i Database
+(ORACLE, 2006); DB2 Universal Database (IBM, 2006); SQL Server
+(MICROSOFT, 2006).
+A escolha por um SGBD deve ser orientada por um profissional de
+informática especializado em administração de banco de dados. Esse
+profissional está habilitado a analisar as necessidades do sistema que se
+deseja automatizar (volume de dados, complexidade das relações dos
+dados, quantidade de usuários, número estimado de acessos simultâneos,
+etc.) e as características dos SGBD disponíveis (portabilidade,
+desempenho e estabilidade, recursos de hardware requeridos, custo de
+licença, etc.).
+Um exemplo de sistema de base de dados é o Banco de Dados de
+Experimentos em Manejo de Cana-de-açúcar (BDCana), resultante da
+parceria entre a Empresa Brasileira de Pesquisa Agropecuária (Embrapa),
+o International Potash Institute (IPI), o Centro de Energia Nuclear na
+Agricultura (Cena) da Universidade de São Paulo (USP) e o Grupo Cosan.
+Esse sistema adota o modelo relacional para organizar dados, gerar e
+tornar disponíveis informações sobre experimentos em manejo de
+fertilizantes para cana-de-açúcar (LEITE et al., 2004). Dessa forma, ele
+provê consulta a um grande volume de informações e possibilita assim a
+realização de trabalhos estatísticos elaborados com essas informações.
+O sistema BDCana possui acesso restrito aos seguintes perfis de
+usuários: pesquisador, administrador da base de dados e membro do IPI.
+O acesso ao sistema é via Internet. A Fig. 7 mostra o acesso dos usuários
+à base de dados por meio do sistema BDCana. Esse sistema é composto
+por consultas (como parcela, perfil do solo, clima) e por aplicações (como
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+594
+relatório, cadastro de experimento, cadastro do crescimento vegetativo
+e exportação de dados). O SGBD utilizado é o MySQL Database.
+Fig. 7. BDCana: exemplo de Sistema de Base de Dados.
+Fonte: adaptado de Takai et al. (2005).
+A Fig. 8 mostra o esquema do relacionamento entre as entidades no
+sistema BDCana. A elipse representa uma entidade e a seta, a existência de
+um relacionamento. Segundo Leite et al. (2004), o experimento é a entidade
+central nesse modelo de relacionamento do BDCana. Um experimento é
+realizado em um ambiente que é caracterizado por informações de seu solo
+e clima. O solo possui dados de seu perfil, dispostos em horizontes, e os
+dados de clima são associados a uma estação climática. Além disso, o
+experimento é realizado no âmbito de um projeto que considera uma ou
+mais variedades de cana-de-açúcar e que pode ser submetido a vários tipos
+de manejo. Cada experimento possui diversos tratamentos que são
+resultantes de uma combinação de fatores de variação em diversos níveis.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+595
+Os tratamentos são aplicados em parcelas distintas, seguindo um número
+de repetições predefinido. Para cada parcela, são coletados dados da cultura
+referentes ao crescimento vegetativo, à maturação e à colheita da cana-
+de-açúcar, bem como dados relativos à fertilidade do solo por camadas.
+Também são armazenados dados de colheita relativos ao experimento como
+um todo.
+Fig. 8. BDCana: esquema do relacionamento entre as entidades da base de dados.
+Fonte: Leite et al. (2004).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+596
+5.2 Data warehouse
+A evolução da computação levou a novas demandas para coleta,
+armazenamento e gerenciamento de grande quantidade de dados.
+Segundo Rezende (2003), muitos desses dados possuem informações
+valiosas, como tendências e padrões que poderiam ser usados para
+melhorar as decisões de negócios, além de outras aplicações. Ao longo
+dos anos, as empresas construíram seus sistemas de base de dados e
+estão acumulando grande volume de dados. Porém, esses sistemas
+respondem, essencialmente, a consultas para satisfazer as necessidades
+rotineiras de uma empresa. Consultas mais complexas, como “qual
+produto de alta lucratividade venderia mais com a promoção de um item
+de baixa lucratividade, analisando os dados dos últimos dez anos de
+vendas?”, são demandadas pelos analistas de negócios. A resposta obtida
+é subsídio para o processo decisório e exige novas ferramentas
+especializadas em análise e extração de conhecimento (REZENDE, 2003).
+A construção de um data warehouse , também conhecido como
+“depósito de dados” ou “armazém de dados”, é considerada um dos
+primeiros passos para tornar factível a análise de grande quantidade de
+dados no processo decisório. Um data warehouse é um ambiente
+composto de processos, ferramentas e recursos que tornam disponíveis
+informações de negócio precisas e inteligíveis para que indivíduos possam
+tomar decisões e obter vantagens competitivas no mercado (MATTISON,
+1996). Esse ambiente possui uma coleção integrada de dados –
+organizada por assunto e por evento – para recuperar informações.
+A arquitetura genérica de um data warehouse é composta pelos
+itens Aquisição, Armazenamento e Acesso, como mostra a Fig. 9.
+O componente de Armazenamento de dados (identificado na figura por
+“Data warehouse”) é uma base de dados física muito grande que
+mantém um amplo conjunto de informações a partir de uma variedade
+de fontes. Os dados dentro desse componente estão organizados de
+uma forma que facilita encontrá-los e usá-los. A atualização desses dados
+é feita freqüentemente por suas fontes geradoras. O componente
+Aquisição de dados é responsável pela importação/exportação de dados
+e preparação
+1 para armazenamento no data warehouse. O componente
+Acesso inclui todas as diferentes aplicações de mineração de dados (data
+1 Essa preparação consiste na criação de Base de Dados departamentais ou setoriais, também
+chamadas Bases de Dados dimensionais
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+597
+mining), entre elas as ferramentas On Line Analytical Processing (OLAP)
+e sistemas de suporte à decisão – Decision Support Systems ( DDS).
+As ferramentas OLAP apresentam facilidades para realização de
+consultas complexas em várias Bases de Dados dimensionais, também
+chamadas Bases de Dados multidimensionais. Normalmente, essas
+consultas são orientadas a consultas dirigidas pelos usuários que possuem
+hipóteses que gostariam de comprovar ou, simplesmente, executam
+consultas aleatórias (REZENDE, 2003). Essa abordagem dependente do
+usuário pode impedir que padrões escondidos nos dados sejam
+encontrados de forma “inteligente”, uma vez que o usuário não terá
+condições de imaginar todas as possíveis relações e associações
+existentes em um grande volume de dados. Por isso, faz-se necessária a
+utilização de técnicas de análise dirigidas por computador que possibilitem
+a extração automática (ou semi-automática) de novos conhecimentos a
+partir de um grande repositório de dados. Essas técnicas são estudadas
+no campo de pesquisa chamado Extração de Conhecimento de Base de
+Dados – Knowledge Discovery in Database – (KDD) ou Mineração de
+Dados (Data Mining).
+O Armazém de Dados da Fruticultura (ADF) (MEIRA et al., 2002) é
+um exemplo de construção de data warehouse no âmbito do Programa
+de Desenvolvimento da Fruticultura (Profruta), do Ministério da
+Agricultura, Pecuária e Abastecimento (Mapa). Esse sistema integra e
+torna disponíveis informações de diversas bases de dados mantidas por
+diferentes instituições para consultas e permite análises para suporte à
+Fig. 9. Os três componentes de um sistema de data warehouse.
+Fonte: Mattison (1996).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+598
+tomada de decisões, como, por exemplo, indicação e direcionamento
+de programas de incentivo à produção e à exportação de frutas (MEIRA
+et al., 2002). Anteriormente, as consultas eram feitas de forma
+independente em cada banco de dados das diferentes instituições, e os
+resultados precisavam ser transportados – em alguns casos, redigitados
+– para planilhas eletrônicas, o que permitia análises com os dados
+integrados e em diferentes níveis de agregação. Atualmente, esse
+processo está sistematizado e automatizado no ADF, resultando em
+rapidez de acesso, flexibilidade na criação e manutenção das análises e
+confiabilidade nos resultados obtidos.
+A ADF integra dados primários de produção e de comércio exterior
+de frutas. As fontes de dados utilizadas são os levantamentos de produção
+agrícola do Instituto Brasileiro de Geografia e Estatística (IBGE) e um
+sistema de informação da Secretaria de Comércio Exterior (Secex/MDIC)
+(Fig. 10). Na última versão (v 1.3), foram incorporadas informações
+adicionais sobre produtores e empacotadores pertencentes à Produção
+Integrada de Frutas (PIF) fornecidas pelo Instituto Nacional de Metrologia,
+Normalização e Qualidade Industrial (Inmetro).
+Conforme apresentado na Fig. 10, as fontes de dados do IBGE são
+o Levantamento Sistemático da Produção Agrícola (LSPA) e a Pesquisa
+de Produção Agrícola Municipal (PAM). O LSPA apresenta estimativas
+de produção agrícola anual por estado, atualizadas ao longo do ano. Os
+atributos principais desse levantamento são a área plantada, a área
+Fig. 10. Arquitetura do Armazém de Dados da Fruticultura Brasileira.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+599
+colhida, a quantidade produzida e o rendimento médio. A PAM consolida
+os dados finais do LSPA e adiciona dados de preço médio pago ao produtor
+e valor da produção. É realizada para todos os municípios do Brasil.
+A fonte de dados da Secex é o Sistema Integrado de Comércio
+Exterior (Siscomex), que registra todas as exportações e importações de
+mercadorias realizadas pelas empresas nacionais. Seus dados indicam o
+ano e mês de exportação/importação, o estado que exportou/importou
+a mercadoria, qual o porto utilizado, o país importador/exportador, a
+quantidade e o valor da negociação.
+A fonte de dados do Inmetro refere-se ao cadastro nacional de
+produtores e empacotadores pertencentes ao regime da PIF, bem como
+às informações de produção em cada safra.
+Os dados integrados no ADF até a versão 1.3 compreendem o período
+de 1990 a 2002 da PAM, os anos de 2001 a 2004 do LSPA e o período de
+1997 a 2004 do Siscomex. Desde 2004, os dados de identificação das
+empresas não são mais fornecidos pela Secex. Os dados da PIF contemplam
+as safras de 2002–2003,de 2003–2004 e de 2004–2005. Os dados da PAM
+são atualizados a cada ano e os dados do LSPA e do Siscomex, mensalmente.
+Os dados da PIF são atualizados a cada safra.
+As tabelas geradas para análises apresentam valores agregados
+em diferentes dimensões, como período de tempo (anual, semestral,
+mensal, etc.), nível territorial (nacional, regional, estadual, etc.) e categoria
+de fruta (frescas, secas, etc.). As análises são feitas com o auxílio também
+de gráficos, como os de tendência ou do tipo “pizza”.
+A integração dos dados de produção com os dados de comércio
+exterior permite respostas a questões do tipo: “Quanto (em valores
+absolutos e em porcentagem) das frutas produzidas no Brasil é exportado
+como frutas frescas e para onde?”.
+Para as séries históricas, faz-se a comparação de valores
+monetários entre anos com unificação monetária (real ou dólar) e, no
+caso da moeda nacional, com atualização decorrente da inflação em
+relação a um ano base, pelo Índice Geral de Preços/Disponibilidade
+Interna (IGP-DI) da Fundação Getúlio Vargas.
+O ADF utiliza o Oracle™ como sistema gerenciador de banco de
+dados e demais ferramentas de seu ambiente de Data Warehousing
+(LANE; LUMPKIN, 1999). Para a criação e a manipulação de análises, foi
+escolhida a ferramenta de inteligência de negócios Oracle Discoverer™
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+600
+O Discoverer (BROWNBRIDGE; FRY, 2000) é um software de análise
+multidimensional, que permite ao usuário analisar os dados em diferentes
+dimensões.
+Além do grupo gestor do Profruta, o público-alvo do armazém de
+dados é constituído por agentes da produção, do processamento, da
+distribuição e da comercialização de produtos frutícolas e também pela
+população ativa das regiões dos pólos de produção de frutas. O ADF já
+se encontra implantado no Mapa. O uso do Discoverer, por enquanto,
+está restrito aos integrantes do grupo gestor do Profruta.
+5.3 Recursos de informação em meio eletrônico
+A popularização das tecnologias de informação e comunicação
+ampliou o uso delas nas mais diversas áreas do setor produtivo.
+Conseqüentemente, houve aumento exponencial na geração de recursos
+de informação em meio eletrônico, desde documentos administrativos –
+como relatórios, memorandos, atas de reuniões, documentação de
+processos, normas técnicas –, até planilhas eletrônicas, bancos de dados,
+sistemas de informação, programa de rádio, mapas de satélite, vídeos,
+serviços virtuais, entre outros. Esse aumento no volume de recursos vem
+demandando ações voltadas para a organização e para o acesso à
+informação eletrônica no que tange à identificação, ao tratamento e à
+recuperação de recursos relevantes (SOUZA et al., 2000a).
+O tratamento de recurso eletrônico, também chamado cataloga-
+ção, é o processo de representação dos itens de informação, com vista
+a permitir o atendimento das demandas do público quanto aos registros
+do conhecimento. Essa representação se dá por meio de metadados e
+visa a criar uma estrutura de descrição padronizada de documentos
+eletrônicos, para tornar mais efetiva a recuperação de informação em
+redes eletrônicas (SOUZA et al., 2000b).
+Os metadados descrevem os atributos e o conteúdo de um
+documento original e, se usados de forma efetiva, viabilizam o acesso à
+informação precisa (MILSTEAD; FELDMAN, 1999). Pereira et al. (2005)
+elencam alguns padrões de metadados utilizados para recursos
+eletrônicos, como, por exemplo: Federal Geographic Data Committee
+(FGDC), para descrição de dados geoespaciais; Machine Readable
+Catalogue (MARC), para catalogação bibliográfica; Internet Anonymous
+Ftp Archive with transfer protocol (IAFA/WHOIS++), para descrição do
+conteúdo e serviços disponíveis em arquivos ftp – file transfer protocol;
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+601
+Text Encoding Initiative (TEI), para representação de materiais textuais
+na forma eletrônica; e Dublin Core, para catalogação de documentos
+na Internet.
+O formato de metadados Dublin Core é um padrão internacional
+para descrição de recursos de informação e possui 15 elementos,
+descritos a seguir, segundo Souza et al. (2000c): O Dublin Core é o padrão
+adotado pelo World Wide Web Consortium (W3C), em decorrência de
+suas principais características:
+• Simplicidade na descrição de recursos.
+• Interoperabilidade semântica – Promove o entendimento comum
+dos descritores, ajuda a unificar padrões de descrição de
+conteúdos, o que aumenta a possibilidade de interoperabilidade
+semântica entre disciplinas.
+• Consenso internacional – Padrão de reconhecimento e aceitação
+internacional no tocante à cobertura e ao escopo dos recursos.
+• Extensibilidade – Permite agregar outros metadados e constitui-
+se em alternativa aos modelos de descrição mais elaborados,
+demorados e caros.
+A adoção do Dublin Core em aplicativos de recuperação de
+informação ainda é pequena no Brasil, segundo estudo de Pereira et al.
+(2005). Como apontado nesse estudo, a Empresa Brasileira de Pesquisa
+Agropecuária (Embrapa), desde o ano 2000 vem buscando soluções
+tecnológicas para organizar e tornar disponível seu amplo estoque de
+recursos de informação em meio eletrônico. A adoção do formato Dublin
+Core no tratamento descritivo tem sido a base das soluções desenvolvidas.
+A primeira experiência foi a organização de recursos do tipo
+imagens estáticas por meio do Banco de Imagem Rural Mídia (SOUZA
+et al., 2000a). Em seguida, desenvolveu-se a Agência de Informação
+Embrapa (EVANGELISTA et al., 2003) que amplia a organização para
+quaisquer tipos de recursos eletrônicos (textos, imagens, áudios, bases
+de dados, websites, softwares e outros).
+A agência se propõe a ampliar o acesso e o consumo de informação
+qualificada de uma dada área do conhecimento. Dedica-se a agregar valor
+à informação antes de torná-la disponível. Contribui para viabilizar a difusão
+de tecnologia, informação e conhecimento gerados por uma organização,
+intensificar as relações com e entre os diferentes agentes de uma dada
+área do conhecimento, além de ampliar o conhecimento desses agentes.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+602
+A agência é um repositório de informação tecnológica disponível
+num website (www.agencia.cnptia.embrapa.br) para acesso na íntegra
+a recursos de informação em meio eletrônico (SANTOS et al., 2005).
+O repositório reúne uma diversidade de tipos e formatos de informação,
+como textos (em formatos PDF, DOC, RTF, etc.), áudios (em formatos
+MP3, RM, etc.), dados (planilha eletrônica em formatos XLS, CVS, etc.),
+imagens (em formatos JPG, GIF, SMI,VDI, etc.), websites (formato HMTL).
+Além disso, provê mecanismos para a recuperação rápida e precisa de
+informação.
+O processo de organização estrutura de forma hierárquica, na
+denominada árvore do conhecimento, o conhecimento de determinada
+área. Cada item dessa hierarquia, também chamado nó, possui um texto
+descritivo, a relação de itens subseqüentes com uma breve descrição de
+cada um, e os recursos de informação associados a esse nó. Cada recurso
+de informação possui uma descrição, representada em um conjunto de
+metadados.
+A Fig. 11 mostra um esquema da organização de informação para
+a Agência de Informação Embrapa. A construção do repositório é apoiada
+pelo sistema Gestor de Conteúdo da Agência de Informação. Essa
+construção inicia-se pela constituição de uma equipe editorial composta
+por especialistas da área do conhecimento a ser organizada (editor técnico
+e editores), por profissionais das áreas de informação (bibliotecário) e de
+comunicação (editores). Essa equipe interdisciplinar organiza a estrutura da
+árvore do conhecimento, elabora os conteúdos dos nós, seleciona os recursos
+de informação apropriados para cada nó e os transfere para o repositório
+(Upload). O bibliotecário faz o tratamento descritivo de cada um desses
+recursos. Esse tratamento é apoiado por ferramentas de geração de
+metadados no formato Dublin Core e com o uso de ferramentas de
+indexação e categorização de assuntos. Ao final do processo, o editor técnico
+publica o conteúdo organizado no website Agência de Informação Embrapa.
+Esse website provê recursos de navegação em hipertexto e de navegação
+gráfica em árvore hiperbólica
+2. O serviço de busca em metadados é um
+diferencial desse website, pois o tratamento descritivo dos recursos de
+informação gera metadados com valor agregado e qualidade – o que
+confere maior precisão na recuperação.
+O tratamento descritivo adota o padrão de catalogação AACR2, o
+padrão de formato de metadados Dublin Core e as ferramentas de
+2 Árvore hiperbólica é uma representação gráfica da árvore do conhecimento na Agência de
+Informação Embrapa.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+603
+indexação de termos e categorização de assuntos Thesagro e NAL
+Agricultural Thesaurus, ambas para o setor agropecuário.
+A Fig. 12 apresenta um esquema do sistema de base de dados do
+Gestor de Conteúdo da Agência de Informação Embrapa. Os recursos
+de informação estão armazenados em um servidor HTTP Apache.
+Os metadados desses recursos e os dados sobre a árvore e o conteúdo
+dos nós estão armazenados no sistema gerenciador de banco de dados
+Oracle 8i, por meio do Gestor de Conteúdo da Agência, e são por esse
+sistema manipulados.
+5.4 Sistemas Inteligentes (SIs)
+Este item inicia-se com uma descrição dos Sistemas Baseados em
+Conhecimento (SBC), que são uma classe especial de Sistemas
+Inteligentes (SIs) na qual o conhecimento é representado explicitamente
+para resolver problemas e separado do programa que o manipula.
+Geralmente, SBCs são usados quando existe grande quantidade de
+Fig. 11. Agência de Informação Embrapa: esquema da organização de informação.
+Fonte: Santos et al. (2005).
+em hipertexto
+gráfica
+documentos
+
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+604
+conhecimento específico do domínio sobre como resolvê-los e também
+quando existe um especialista humano capaz de solucioná-los (REZENDE,
+2003).
+Um SBC é constituído por dois grandes componentes que
+usualmente são considerados separadamente, embora provavelmente
+não possam ser separados na prática, no caso de especialistas humanos:
+uma base de conhecimento e um mecanismo de inferência, que é o
+raciocínio utilizado pelo especialista na busca da solução do problema. A
+Fig. 13 mostra essa estrutura.
+Durante a construção de um SBC, o conhecimento dos membros da
+organização precisa ser capturado, organizado e deixado disponível na Base
+do Conhecimento. Uma vez construída essa base, esse conhecimento torna-
+se permanentemente acessível, facilmente recuperável e pode ser
+amplamente utilizado por todos, independentemente de sua capacitação.
+A construção de um SBC, segundo Rezende (2003), adota um
+processo de desenvolvimento, apresentado na Fig. 14, que consiste das
+Fig. 12. Sistema de base de dados do Gestor de Conteúdo da Agência e a Agência
+de Informação Embrapa.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+605
+seguintes fases: planejamento do SBC, aquisição de conhecimento,
+implementação do SBC e validação e refinamento do SBC.
+Na fase de planejamento do SBC, identificam-se as características
+do domínio do conhecimento, os termos chaves e referências,
+selecionam-se a equipe de desenvolvimento interdisciplinar – especialistas
+do domínio, engenheiros do conhecimento e engenheiros de software,
+e a ferramenta para desenvolvimento.
+Fig. 13. Estrutura geral de um Sistema Baseado em Conhecimento.
+Fonte: adaptado de Rezende (2003).
+Fig. 14. Um processo de desenvolvimento de Sistema Baseado em Conhecimento.
+Fonte: Rezende (2003).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+606
+Na fase de aquisição de conhecimento, o objetivo é adquirir os
+conhecimentos que serão armazenados na Base de Conhecimento, ou
+seja, identificação, conceitualização e formalização do conhecimento.
+Na fase de implementação do SBC, o conhecimento adquirido
+deve ser representado formalmente. Para isso, realiza-se a codificação
+do sistema por meio de linguagens ou ferramentas adequadas –
+selecionadas na fase de planejamento do SBC –, documentação do
+sistema, geração de manuais e implementação da interface com o
+usuário.
+Na fase de validação e refinamento do SBC, realizam-se a
+verificação e a validação do sistema. Essa fase é considerada um processo
+contínuo, pois é necessário assegurar que o sistema funcione
+corretamente, forneça resultados verdadeiros (corretos) e satisfaça aos
+requisitos do cliente. Além disso, realiza eventuais mudanças nos
+requisitos do sistema, enfatizando a aquisição de conhecimento contínua
+e a avaliação do sistema em andamento.
+É importante também diferenciar os Sistemas Baseados em
+Conhecimento (SBCs) dos Sistemas Especialistas (SEs), que são outra
+classe de sistemas inteligentes (SIs). De forma geral, pode-se dizer que
+os SBCs são sistemas capazes de resolver problemas por meio de
+conhecimento específico sobre o domínio da aplicação, ao passo que os
+SEs, uma subclasse dos SBCs, resolvem ordinariamente problemas
+resolvidos por um especialista humano. Por isso, eles requerem
+conhecimento sobre a habilidade, a experiência e a heurística usada
+pelo especialista (AYES-ROTH et al., 1983).
+No setor agropecuário, faltam especialistas para interpretar
+resultados de análise de solo e plantas e recomendar a adubação
+adequada e equilibrada. Essa atividade requer conhecimentos específicos
+para o diagnóstico da acidez do solo e das deficiências de nutrientes
+identificadas nas análises de solo e de plantas nos laboratórios. Faltam
+também especialistas para prescrever as melhores opções de manejo
+para enormes combinações entre culturas, condições sociais, políticas e
+econômicas que ocorrem na prática. Essa deficiência pode ser
+compensada com o treinamento do pessoal não especializado utilizando-
+se Sistemas Especialistas. Dessa forma, um SE pode tornar o
+conhecimento disponível a agrônomos, permitindo-lhes tomar as decisões
+de manejo mais apropriadas em combinação com dados e observações
+locais.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+607
+A utilização de SE na agricultura vem sendo explorada em vários
+trabalhos (JONES, 1989; HUBER; DOLUSCHITZ, 1990), e seus autores
+sintetizam os principais trabalhos em duas áreas:
+• A primeira é a de sistemas baseados em conhecimento que
+oferecem soluções para problemas específicos, como sistemas
+para diagnósticos de doenças em plantas e animais.
+• A segunda cobre os SEs conectados com outros sistemas para
+interpretar e explicar a informação fornecida por eles, como
+sistemas para a decisão.
+A seguir, apresenta-se um exemplo de uso de sistema especialista
+para diagnóstico de qualidade de composto de lixo urbano e
+recomendação de uso para adubação.
+O Sistema Inteligente para Recomendação de Uso de Composto
+de Lixo Urbano na Agricultura (Sirclua) possui arquitetura baseada em
+sistema especialista e plataforma web. Esse sistema visa a auxiliar
+unidades de compostagem de lixo orgânico no que se refere ao
+diagnóstico de qualidade do composto produzido e, se for possível, à
+recomendação de seu manejo na lavoura. Além disso, provê mecanismos
+para monitoramento do impacto ambiental de seu uso.
+O conhecimento armazenado está fundamentado nos processos:
+tipo de coleta de lixo e maturidade do Composto de Lixo Urbano (CLU),
+fatores de restrição ambiental e manejo agrícola adequado por cultura.
+Além disso, as culturas cobertas estão agrupadas por exigências
+nutricionais similares: hortaliças (alface, chicória e rabanete); arroz e
+feijão; cana-de-açúcar; triticale, milho, mandioca e aveia-branca.
+O escopo do Sirclua compreende os processos Engenharia do
+Conhecimento, Diagnóstico da Qualidade e Geração da Recomendação
+de uso do CLU, como apresentado na Fig. 15.
+Fundamentado num documento normatizador, genericamente
+representado na Fig. 15 por “Referência Técnica”, inicia-se o processo
+de engenharia do conhecimento. A primeira atividade traduz o
+conhecimento registrado para um conjunto de regras. Essas regras são
+armazenadas na base de conhecimento (BC). Uma equipe multidisciplinar
+de engenharia do conhecimento, composta por pesquisadores da área
+de CLU e de sistemas especialistas, organizou o conhecimento em forma
+de regras. A fonte desse conhecimento é a Circular Técnica da Embrapa
+(SILVA et al., 2002). Em seguida, valida-se o conjunto de regras,
+confrontando-o com o conhecimento da referência técnica. Nessa
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+608
+atividade, várias iterações ocorrem até que a BC esteja em conformidade
+com a referência técnica. Ao término dessa atividade, a BC está liberada
+para uso dos demais processos.
+O processo diagnóstico da qualidade de CLU inicia-se com o
+cadastramento das características físico-químico-biológicas de lotes de
+CLU produzidos e em processo de maturação. Várias análises podem
+ser cadastradas até que o CLU esteja maturado. O diagnóstico da
+qualidade é feito pelo confronto das características do lote de CLU com
+as regras armazenadas na BC, e um laudo é emitido. A qualidade do
+lote é classificada em: adequada, quando está dentro dos padrões de
+qualidade estabelecidos pela referência técnica; adequada com restrições,
+quando o uso é restrito para algumas culturas; e inadequada, quando o
+uso agrícola é impróprio.
+O processo de geração da recomendação de uso do CLU inicia-se
+com o cadastramento das propriedades rurais que são clientes da unidade
+de compostagem. Nesse cadastramento, informações de identificação
+da propriedade e de análise química do solo são fornecidas. Em seguida,
+dos lotes que estão com qualidade adequada ou adequada com restrições,
+Fig. 15. Processos englobados pelo Sirclua.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+609
+identifica-se qual o lote de CLU que está disponível para uso. Solicita-se
+a geração da recomendação de uso do CLU confrontando as
+características deste, as características do solo da propriedade onde será
+aplicado e quais as culturas que serão manejadas. O resultado será uma
+recomendação a ser entregue ao cliente junto com o produto e que
+também será armazenado em uma base de dados para que possa, no
+futuro, alimentar o processo de monitoramento.
+A Fig. 16 mostra um esquema de funcionamento dos processos
+do Sirclua e o sistema especialista (delimitado pelo retângulo tracejado
+denominado SE) e o contexto em que ele está inserido, desde a realização
+das pesquisas sobre o uso do CLU na agricultura e sua produção até sua
+análise, recomendação de uso e manejo pelo produtor rural.
+Fig. 16. Esquema de funcionamento de processos no Sistema Especialista Sirclua.
+Fonte: adaptado de Rezende (2003).
+A parte superior da Fig. 16 mostra especialistas em compostagem
+de lixo urbano e em seu uso agrícola realizando pesquisas e adquirindo
+conhecimento (atividades representadas pelo retângulo “Pesquisas em
+CLU”). O engenheiro do conhecimento organiza esse conhecimento
+adquirido em forma de regras e alimenta a base de conhecimento
+(DURKIN, 1994) (retângulo “Geração de regras”).
+Considerando uma unidade de compostagem, o CLU é produzido
+e são realizadas análises químico-biológicas para obter as caraterísticas
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+610
+dele (atividades representadas pelo retângulo “Produção de CLU”). O
+usuário, representado por técnico, interage com o SE informando as
+características do CLU, e o sistema retorna o laudo do diagnóstico e
+armazena esse laudo na base de dados (representado pela seta
+“Conclusões”). Com o objetivo de atender a um pedido de compra de
+CLU de um cliente dessa unidade de compostagem (representado pelo
+ícone “Produtor Rural”), um membro do departamento comercial dessa
+unidade (representado pelo ícone “Usuário na Unidade de
+Compostagem”) solicita ao SE uma recomendação de uso do CLU
+representado pelo retângulo “Interface com Usuário”. Nessa interação,
+fornece ao SE os fatos que são compostos pelas características químicas
+do solo da propriedade rural de um cliente, pela indicação da cultura em
+que se pretende usar o CLU e as características deste.
+O SE combina os fatos recebidos com a base de conhecimento
+para chegar às conclusões sobre o problema (retângulo “Máquina de
+Inferência”). As conclusões são formatadas em recomendações de uso
+do CLU para aquela determinada propriedade e cultura (retângulo
+“Interface com usuário”) e armazenadas na base de dados. Essa
+recomendação é entregue ao produtor rural juntamente com o composto
+que ele comprou.
+Atualmente, o sistema possui conhecimento para as culturas:
+alface, chicória, rabanete, arroz, feijão, cana-de-açúcar, triticale, milho,
+mandioca e aveia-branca. Com a adoção dessa arquitetura de SE, a
+disseminação do conhecimento será mais ágil, pois basta adicionar à
+base de conhecimento o conhecimento para o uso agrícola do CLU em
+outras culturas.
+Em fitopatologia, foram desenvolvidos vários sistemas especialistas
+para a diagnose e manejo de doenças, como o Plant/ds, para diagnose
+de doenças da soja, o Managerial Options for Reasonable Economical
+Control of Rust and Other Pathogens (Morecrop), para previsão e manejo
+da ferrugem e outras doenças na cultura do trigo nos EUA, além de
+outros para doenças em abacaxizeiro, pêras e nectarinas e batata. No
+Brasil, destacam-se o TomEx, para diagnóstico de doenças do tomateiro,
+e um sistema especialista para diagnóstico de doenças do cafeeiro.
+Entretanto, a maioria dos sistemas desenvolvidos, inclusive o Sirclua,
+baseia-se no paradigma de regras de produção em que o mecanismo de
+inferência utilizado é o modelo dedutivo: a partir das regras (efeitos 
+causas) e fatos (efeitos), deduzem-se novas informações (causas) que
+tornam esses sistemas difíceis de desenvolver e muito pouco reutilizáveis.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+611
+Esses problemas puderam ser observados durante o desenvolvimento de
+um SE para diagnóstico de doenças do milho (disponível em http://
+diagnose.cnptia.embrapa.br), desenvolvido na Embrapa Informática
+Agropecuária em parceria com a Embrapa Milho e Sorgo. O problema
+principal com esse tipo de abordagem é que o conhecimento do tipo efeitos
+ causas é contrário à maneira como os fenômenos ocorrem na natureza
+(causas  efeitos). Na década de 1990, o conhecimento na forma causas
+ efeitos passou a ser modelado, com o uso de raciocínio do tipo abdutivo:
+a partir das associações (causas  efeitos) e fatos (efeitos), criam-se novas
+hipóteses (causas). Em Massruhá et al. (2005), apresenta-se uma abordagem
+alternativa para desenvolvimento de sistemas especialistas que integra
+conceitos de lógica abdutiva e lógica nebulosa para suportar o processo de
+raciocínio clínico englobando informação temporal, incertezas e imprecisões
+inerentes ao conhecimento do especialista humano.
+5.5 Informatização na interpretação
+de resultados analíticos para fins agronômicos
+Para informatizar a interpretação de resultados, existem diversas
+opções disponíveis mundialmente, que vão do uso de simples tabelas
+eletrônicas e modelos matemáticos ao uso de sistemas especialistas.
+A seguir, apresentam-se como exemplos o sistema especialista para
+diagnose nutricional de cana-de-açúcar e a técnica de Diagnosis and
+Recommendation Integrated System (Dris) (BEAUFILS, 1973). O sistema
+especialista utiliza-se de uma interpretação de distúrbios visuais e de
+valores absolutos de análises de solos e de plantas nas lavouras (Fig. 17).
+Já o Dris se baseia nas relações entre nutrientes.
+A diagnose foliar é uma ferramenta importante no processo de
+avaliação do estado nutricional de plantas. Entretanto, para que ela se
+constitua numa ferramenta útil para recomendação e monitoramento de
+uso de fertilizantes, é necessário que se utilizem procedimentos adequados
+para esse fim.
+Atualmente, dentre os métodos existentes, o mais difundido é o
+de análise por valores críticos de teor de nutrientes e faixas de suficiência.
+O uso desse conceito de diagnose nutricional em lavouras tem um grande
+potencial em cana-de-açúcar, em especial:
+• No levantamento do estado nutricional das culturas.
+• Na confirmação de sintomas visíveis de carência de nutrientes.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+612
+• No diagnóstico de deficiência de nutrientes em plantas com e
+sem sintomas identificáveis.
+O sistema apresenta uma chave de identificação de deficiências
+na cultura de cana-de-açúcar, baseado na diagnose visual, que foi
+adaptada de Anderson e Bowen (1992).
+As analises de solo e de folha são apresentadas por estado,
+complementando as informações, para conferir a diagnose visual,
+baseada em três premissas:
+• Dentro de limites, existe uma relação direta entre níveis de
+fertilidade do solo e a dose de adubo empregado com a produção
+obtida.
+• Dentro dos mesmos limites, existe também uma relação direta
+entre o nível de fertilidade do solo, ou dose de adubo empregado,
+e os teores dos elementos na folha e, no caso extremo, ocorre
+mudança na coloração dessas folhas.
+• Dentro dos limites, finalmente existe uma relação direta entre o
+teor de elementos na folha e a produção.
+Fig. 17. Sistema especialista de diagnose nutricional para cana-de-açucar.
+
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+613
+A base de um programa de análise de folhas na cana-de-açúcar
+fundamenta-se no relacionamento de um teor crítico do elemento no tecido
+vegetal coletado na fase de máximo crescimento, correspondente a quatro
+meses do dobramento, cujo valor é tal que abaixo dele a produtividade cai
+e acima dele ela se estabiliza obedecendo a uma determinada faixa. Na
+amostragem, devem ser coletadas mais de 25 folhas, por talhão,
+considerando de 3 cm a 20 cm centrais da folha “+3”, contados a partir
+da folha mais alta com o colarinho visível (TVD), excluindo a nervura central.
+Depois de verificar se os diagnósticos visuais estão corretos de
+acordo com a chave de identificação visual, por Anderson e Bowen (1992),
+procede-se à checagem com os dados analíticos de amostras de solos e/
+ou de tecido vegetal coletados nos talhões.
+Entretanto, como a composição nutricional de plantas apresenta
+uma natureza dinâmica, a utilização desse método implica erros
+consideráveis para os casos em que a planta sob análise não está no
+mesmo estágio de desenvolvimento que as plantas utilizadas no
+estabelecimento das normas (WALWORTH; SUMNER, 1987; SCHUTLE;
+KELLING, 1999). A amostragem das folhas, como descrito no capítulo 2
+da parte 1, deve obedecer a um protocolo rígido que considera tanto a
+época de amostragem quanto a parte da planta de onde a amostra
+deve ser retirada.
+O Dris (BEAUFILS, 1973) apresenta-se como um método alternativo
+capaz de lidar com esse aspecto da diagnose foliar, de variabilidade na
+concentração de nutrientes ao longo do ciclo da cultura (Fig. 12) . Por
+isso, tem despertado um interesse crescente nos técnicos e extensionistas,
+ansiosos em utilizá-lo como uma ferramenta na assistência técnica a
+produtores rurais (BATAGLIA, 1999). Nota-se na Fig. 18 que ocorrem
+variações de concentração de nutrientes de acordo com o estágio de
+desenvolvimento da planta e como esses efeitos de variabilidade podem
+ser minimizados pelo Dris. Observe que enquanto as concentrações de
+N, P e K relativas à matéria seca são crescentes com o tempo, as razões
+N/P , N/K e P/K (ou P/N, K/N e K/P) permanecem aproximadamente
+constantes ou ao menos tendem a ter uma variação menor.
+Da mesma forma, as concentrações de Ca e Mg tendem a
+aumentar com o tempo, ao passo que o quociente entre esses dois
+nutrientes (Ca/Mg ou Mg/Ca) tende a permanecer constante. Finalmente,
+se dois nutrientes apresentam concentrações tais que uma aumenta
+com o tempo e a outra diminui, o produto entre as duas concentrações
+tende a ficar constante (ex.: NxCa) (WALWORTH; SUMNER, 1987).
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+614
+Figura 18. Ilustração do efeito do estágio de desenvolvimento na concentração
+de nutrientes.
+Fonte: adaptado de Walworth e Sumner, (1987).
+Entretanto, por causa da natureza laboriosa dos cálculos requeridos
+na obtenção dos índices Dris, o risco de erros é muito grande. Dessa
+forma, a utilização de computadores na realização dessa tarefa é quase
+que obrigatória. Além disso, a maior parte dos usuários atuais e potenciais
+de Dris não teve um treinamento formal em programação de
+computadores. Assim, a utilização de programas de computador
+especialmente construídos para facilitar a utilização de Dris
+(estabelecimento de normas, obtenção de índices e manipulação dos
+dados envolvidos) seria um fator propulsor tanto para maior difusão
+quanto para utilização do método Dris (LETZSCH; SUMNER, 1983).
+O Dris utiliza a abordagem de “survey” (BEAUFILS, 1973) para o
+estabelecimento de normas. O primeiro passo nesse sentido é o
+estabelecimento de um banco de dados para a cultura considerada com
+observações que contemplem o maior número possível de fatores que
+possam vir a influenciar a produtividade em condições de campo. Se
+determinados fatores, como época de desenvolvimento da planta, são
+considerados importantes, então amostras correspondentes a diversas
+épocas de desenvolvimento devem ser coletadas. Os dados podem ser
+oriundos de campos comerciais ou experimentais. Cada local será
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+615
+considerado uma parcela de um experimento gigantesco. Os dados
+devem ser coletados de forma aleatória e em número suficientemente
+grande (BEAUFILS, 1973; LETZSCH; SUMNER, 1984).
+Em seguida, o grupo de dados correspondentes aos locais de alta
+produtividade é separado dos demais. É esse grupo que será utilizado
+para estabelecer as normas de referência Dris adequadas, sendo o valor
+de corte utilizado para separar os dois grupos, em geral, determinado
+de forma empírica (WALWORTH; SUMNER, 1987).
+Para cada par de nutrientes considerado, existem três possibilidades
+para expressar a relação entre eles. Por exemplo, considerando P e N, a
+relação entre eles pode ser expressa como P/N, N/P ou NxP . Para escolher a
+expressão a ser utilizada, calcula-se a variância de cada relação para ambos
+os grupos populacionais, de alta e baixa produtividade. Escolhe-se a
+expressão que apresenta a maior razão entre as variâncias encontradas
+para a população de baixa produtividade e a de alta produtividade. A idéia
+é utilizar a expressão com menor variabilidade entre a população de alta
+produtividade quando comparada com a população de baixa produtividade
+3.
+Para cada par de nutrientes selecionados, admite-se como norma
+a média e o coeficiente de variação CV da população de alta
+produtividade.
+Finalmente, as normas encontradas têm sua validade testada
+contra um conjunto de dados independentes daquele utilizado para o
+estabelecimento delas. Geralmente, são utilizados dados de experimentos
+nos quais respostas de produtividade tenham sido obtidas considerando
+os nutrientes em estudo (WALWORTH; SUMNER, 1987). O procedimento
+utilizado é o que segue:
+• Níveis de tratamento mais baixo ou de controle são diagnosti-
+cados, e os nutrientes mais necessários (indicados pelos índices
+Dris) são obtidos.
+• Verifica-se a produtividade do tratamento prescrito no
+experimento. Espera-se encontrar um aumento de
+produtividade. Nesse caso, o tratamento é um sucesso. Caso
+contrário, uma falha.
+• Procede-se à avaliação do status nutricional do segundo
+tratamento e assim por diante até que o tratamento prescrito
+não possa mais ser encontrado no experimento considerado.
+3 Na proposta original de Beaufils (1973), os dados são divididos em três grupos.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+616
+A literatura está repleta de exemplos de esforços de desenvolvimento
+de normas Dris para as mais variadas culturas (ANGELES et. al., 1993). Para
+calcular os índices Dris para uma dada amostra, são utilizadas as seguintes
+fórmulas, supondo hipotéticos os nutrientes de A a N (WALWORTH; SUMNER,
+1987).
+Índice A = [f(A/B) + f(A/C) + f(A/D) + ... + f(A/N)] / z (1)
+Índice B = [- f(A/B) + f(A/C) + f(A/D) + ... + f(A/N)] / z (2)
+Índice N = [- f(A/B) - f(A/C) - f(A/D) - ... - f(A/N)] / z (3)
+em que:
+f(A/B) = [(A/B)/(a/b) - 1]x1.000/CV (4)
+f(A/B) = [1 - (a/b)/(A/B)]x1.000/CV se A/B < a/b (5)
+• A/B é o valor da relação entre as concentrações dos elementos
+A e B do tecido da planta em diagnóstico.
+• a/b é a norma
+ para a relação entre os nutrientes A e B.
+• CV (%) é o coeficiente de variação associado com a norma. O
+CV é utilizado em (4) e (5) para que no cálculo dos índices (1), (2)
+e (3) os efeitos da diferença de amplitude de variações
+(sensibilidade) entre concentrações dos diferentes nutrientes
+sejam minimizadas (BEAUFILS, 1973).
+• z é o número de funções utilizadas no cálculo dos índices para
+cada nutriente 4.
+• o valor 1.000 ponderando as fórmulas (4) e (5) é composto por
+10x100, em que o multiplicando 10 (fator de sensitividade) é
+arbitrário e é utilizado apenas para dar ao valor obtido uma
+magnitude adequada (WALWORTH; SUMNER, 1987).
+A fórmula (4) é utilizada quando a relação entre concentrações de
+nutrientes está acima do estabelecido na norma, resultando sempre em
+um valor positivo, ao passo que a fórmula (5) é utilizada nos casos em
+que a relação entre as concentrações de nutrientes está abaixo do
+estabelecido pela norma e o resultado é sempre um valor negativo.
+O cálculo de índices Dris apresentados nesta seção está em acordo
+com a proposta original de Beaufils, (1973), e de Walworth e Sumner, (1987),
+que já passou por modificações que podem ser encontradas em Elwali e Gascho
+4 Um índice de nutriente é a média das funções de todas as razões que contêm um dado
+nutriente.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+617
+(1984). Um estudo comparativo desses dois métodos e do método original
+proposto por Beaufils pode ser encontrado em Bataglia e Santos (1990).
+Cada um dos índices (1), (2) e (3) reflete o balanço da concentração
+de um nutriente em relação aos demais. Um índice cujo valor apresenta
+sinal negativo indica que o nutriente está em falta quando comparado
+com os demais, ao passo que um valor com sinal positivo indica excesso.
+Em uma planta em equilíbrio nutricional, todos os índices devem ser iguais
+a zero, ou muito próximo desse valor. Somando todos os índices de
+nutrientes, sem considerar se o sinal é negativo ou positivo, obtêm-se o
+Índice de Balanço Nutricional (IBN), e a média desse valor corresponde
+ao Índice de Balanço Nutricional Médio (IBN médio). Quando se ordenar
+os valores dos índices, obtém-se a ordem de importância dos nutrientes,
+visando ao aumento de produtividade.
+Na Tabela 3, encontram-se os índices que indicam N como o
+nutriente que representa o principal fator limitante de uma alta
+produtividade, seguido por P e K, Ca e Mg.
+Tabela 3. Interpretação de índices Dris.
+Nutriente N P K Ca Mg
+Indíce -21 0 +7 +7 +7
+Fonte: Walworth e Sumner (1987).
+A recomendação, nesse caso, incluiria um suplemento de N. Além
+disso, uma vez que K, Ca e Mg possuem valores positivos e como na
+prática nutrientes são adicionados e não retirados, incluiria, em menor
+proporção, P (N >> P > K = Ca = Mg). Nota-se que, apesar de o índice
+Dris para P ser zero, ele é o segundo fator limitante.
+Atualmente, a Potafos já fez os ajustes de novas normas ou valores
+padrão de comparação para seis culturas brasileiras (algodão, café, citrus,
+milho, soja e eucalipto).
+5.6 Disponibilidade de informação
+laboratorial na Internet
+5.6.1 Serviços básicos da Internet
+O novo meio de comunicação representado pela Internet e as
+oportunidades criadas por ela não podem ser ignorados. A Internet
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+618
+começou da experiência com a rede americana conhecida como Arpanet,
+que baseou-se na idéia de múltiplas redes independentes com design
+arbitrário (LEINER et al., 1997). Atualmente, a rede Internet cresce com
+grande velocidade, atingindo um número muito grande de localidades
+no mundo todo.
+Ela começou a ser muito utilizada a partir do sucesso dos servidores
+World Wide Web (WWW), que permitem aos usuários buscar a
+informação de forma não-linear. A forma de buscar informações na
+Internet conectando-se a vários endereços, em busca somente das
+informações desejadas sem um ponto final definido, é conhecido como
+“navegação”, e o formato dos arquivos que permitem esse tipo de uso
+é o hipertexto. O formato usado para escrever o hipertexto é o HiperText
+Markup Language (HTML), que tornou-se um padrão na WEB.
+Além das páginas em formato HTML, atualmente existem muitos
+outros recursos já disponíveis para comunicação na rede. Alguns são
+apresentados a seguir:
+• Correio Eletrônico (e-mail) – É um dos pontos básicos da Internet.
+Com ele, pessoas dispersas pelo mundo podem trocar cartas
+eletrônicas até mesmo com ilustrações, gráficos, som, vídeo
+digitalizado e muito mais. Assim como seu número telefônico, o
+endereço eletrônico identifica um usuário e permite que qualquer
+pessoa na rede envie mensagens e documentos. Com ele, você
+também pode fazer parte de uma lista de distribuição.
+• File Transfer Protocol (FTP) – Uma das mais antigas aplicações
+da Internet, o FTP permite que sua empresa mostre ao cliente
+uma série de títulos de documentos numa lista. Ao selecionar
+esses títulos, o arquivo inteiro pode ser enviado para o PC do
+cliente para posterior leitura. Documentação técnica extensa,
+por exemplo, pode ser distribuída eficientemente por esse meio.
+• Listas de Discussão (Mailing Lists) – As listas de distribuição são
+endereços coletivos de correio eletrônico, que servem para
+distribuir uma mensagem por um conjunto de utilizadores. Por
+isso, elas são utilizadas para grupos de discussão sobre
+determinados assuntos, difusão de informação entre os membros
+de organizações, anúncios e informações a clientes de certos
+produtos e serviços, distribuição de revistas eletrônicas, etc.
+• Usenet – Usenet é um conjunto de máquinas que intercambia
+artigos identificados por um ou mais rótulos reconhecidos
+universalmente, chamados de newsgroups.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+619
+Em resumo, a Internet vem sobrevivendo à evolução tecnológica
+dos computadores, por acoplar vários serviços e ferramentas. É promissor
+seu uso como infra-estrutura básica no oferecimento de alguns serviços
+especiais, como ensino a distância.
+5.6.2 Serviços especiais da Internet
+Aliando os recursos disponíveis para comunicação via Internet à
+necessidade de transferência de informação e tecnologia, várias
+organizações oferecem serviços de informação na Internet.
+Um serviço de informação disponível na área de agroclimatologia
+é o Sistema de Monitoramento Agrometeorológico (Agritempo)
+(www.agritempo.gov.br), que permite aos usuários o acesso, via Internet,
+às informações meteorológicas e agrometeorológicas de diversos
+municípios e estados brasileiros. Além de informar a situação climática
+atual, o sistema alimenta a Rede Nacional de Agrometeorologia (RNA)
+do Ministério da Agricultura, Pecuária e Abastecimento (Mapa) com
+informações básicas que orientam o zoneamento agrícola brasileiro.
+O sistema permite a atualização de cadastro de estações e dados
+climáticos diários (temperaturas máxima e mínima e precipitação), criação
+de boletins agrometeorológicos e visualização de mapas gerados
+dinamicamente no momento da execução dos boletins.
+O Agritempo foi desenvolvido pela Embrapa Informática
+Agropecuária em parceria com o Centro de Pesquisas Meteorológicas e
+Climáticas aplicadas à Agricultura (Cepagri) da Universidade Estadual
+de Campinas (Unicamp), sendo várias as instituições que colaboram
+fornecendo seus dados. Estão disponíveis no sistema, desde 1988, dados
+da estação da Faculdade de Engenharia Agrícola (Feagri) e do Cepagri,
+ambos da Unicamp; de 84 estações de Minas Gerais, coletados e
+armazenados desde 1999 pela Companhia Energética de Minas Gerais
+(Cemig); do Instituto Tecnológico Simepar referentes a 39 pontos de coleta
+do Paraná, desde 2001; e os dados nacionais, a partir de 2001, de 337
+estações pertencentes ao Instituto Nacional de Meteorologia (Inmet).
+Também estão inseridas as informações de 2002 e 2003 do Estado de
+Goiás, graças à contribuição de um produtor rural voluntário, que organiza
+os dados coletados diariamente em 22 estações localizadas em
+cooperativas, escolas e propriedades rurais.
+Outro serviço é o ambiente de Diagnose Virtual. Esse ambiente
+provê um sistema especialista para diagnóstico de doenças de milho,
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+620
+que permite a agrônomos, produtores e extensionistas diagnosticarem
+doenças de sua plantação de milho pela Internet. Esse sistema foi
+desenvolvido em parceria da Embrapa Informática Agropecuária com a
+Embrapa Milho e Sorgo
+5. Além de prover um sistema especialista para
+diagnóstico de doenças, esse ambiente também possibilita que os usuários
+entrem em contato com especialistas da Embrapa por meio de e-mail,
+chat, lista de discussão, entre outros (MASSRUHÁ et al., 1999).
+Esse sistema inteligente disponível na Internet alimenta uma base
+de conhecimento em duas vertentes: fitopatologista e produtor,
+favorecendo seu uso tanto para diagnóstico quanto para prognóstico.
+Futuramente, a integração desses sistemas inteligentes de diagnóstico
+e prevenção com a base de dados do sistema Agritempo, baseada em
+infra-estrutura única na web, tornar-se-á uma poderosa ferramenta de
+decisão e de análise de risco na área de sanidade.
+A Agência de Informação Embrapa (www.agencia.cnptia.embrapa.
+br) também é um exemplo de serviço que torna disponíveis informações
+técnico-científica e socioeconômica em meio eletrônico. Essas informações
+estão organizadas para os produtos Feijão e Agronegócio do Leite e
+para o tema Espécies Arbóreas da Amazônia (SANTOS et al., 2005). É
+possível recuperar e acessar, na íntegra, textos, áudios e vídeos, entre
+outras informações, em meio eletrônico. Esse serviço de informação é
+elaborado em linguagem de fácil compreensão, com o objetivo de
+apresentar, de maneira ampla, objetiva e sistêmica, tanto as
+recomendações da Embrapa relativas à tecnologia da exploração
+econômica das espécies animal e vegetal – sob o enfoque das cadeias
+produtivas – quanto informações relacionadas a temas como Amazônia,
+Agricultura e Meio Ambiente e Informática Agropecuária. Para os
+produtos, o conteúdo apresenta o estágio mais avançado da tecnologia
+de produção correspondente e abrange, de forma sistêmica, todas as
+etapas do processo de cultivo e de criação, desde sua introdução e
+importância econômica até a oferta dos produtos no mercado e sua
+comercialização. Estão incluídas também informações sobre
+rendimentos, custos e rentabilidade, nos diversos níveis de sofisticação
+tecnológica.
+5.6.3 Intranet
+A intranet define um sistema de informação baseado nas
+tecnologias Internet, utilizadas na rede interna da empresa, e serve de
+5 Disponível em: <http://diagnose.cnptia.embrapa.br>.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+621
+base para a construção de aplicações corporativas (FAULHABER, 2002).
+Os usuários de uma intranet são praticamente aqueles que têm acesso
+à rede interna da Empresa, local ou remotamente.
+A intranet pode também estar conectada à Internet. Isso torna
+seu escopo mais abrangente, pois atinge clientes e fornecedores, interliga
+filiais, viabiliza a empresa virtual, tudo por meio da utilização da enorme
+infra-estrutura mundial da Internet. Por essas e outras características, a
+intranet é uma poderosa ferramenta de gestão empresarial e, ao mesmo
+tempo, um meio de viabilizar o trabalho em grupo na organização.
+A tecnologia atual, bastante flexível e poderosa, permite que
+praticamente qualquer aplicação baseada nas arquiteturas centralizadas
+e cliente/servidor possa ser construída sobre a intranet, que também
+viabiliza muitas outras aplicações jamais imaginadas em conseqüência
+das limitações tecnológicas.
+A intranet possui várias características positivas:
+• Facilidade de uso – O único programa necessário para acessar
+todas as aplicações construídas sobre uma intranet é o browser.
+Os usuários necessitam, portanto, aprender o funcionamento
+de apenas um tipo de interface homem–máquina bastante
+simples, independentemente das aplicações que utilizem.
+• Baixo custo – Não é necessária a instalação da última versão de
+cada aplicação em cada máquina que deve acessá-la, pois uma
+vez instalada no servidor, a versão atual de uma aplicação estará
+automaticamente disponível a todos os usuários que utilizem
+apenas um browser para acessá-la.
+• Utilização de padrões abertos – Tal característica torna uma intranet
+praticamente independente de fornecedores e plataformas.
+• Integração com bases de dados corporativas – A tecnologia atual
+permite que as aplicações construídas sobre uma intranet
+acessem de forma transparente as bases de dados corporativas
+hoje existentes, além das desenvolvidas especificamente para
+novas aplicações.
+• Grande abrangência – Com uma máquina (PC, Macintosh, Unix)
+em rede e um browser, qualquer usuário autorizado pode utilizar
+as aplicações desenvolvidas sobre uma intranet. Se a máquina e
+a rede estiverem conectadas à Internet, então o acesso se torna
+universal, tanto para os usuários da empresa como para clientes
+e fornecedores.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+622
+• Informações sempre atualizadas – A informação certa, na hora
+certa, para quem dela necessita, independentemente de onde
+esteja no mundo. Não há fronteiras para informação, sempre
+atualizada, disponível e instantânea.
+• Grande poder de comunicação – A troca de informações
+empresa–funcionário, funcionário–funcionário, empresa–cliente,
+empresa–fornecedor é amplamente facilitada pelas ferramentas
+disponíveis nas intranets.
+Para exemplificar a utilização da intranet como base para a
+construção de aplicações corporativas, são apresentados alguns cenários,
+entre os inúmeros possíveis.
+• Atendimento ao cliente – O serviço de atendimento ao cliente
+que utiliza tecnologia Internet tem duas aplicações: de uso
+interno à empresa e de atendimento a clientes via Internet.
+Cliente interno – A intranet pode ser bastante útil para resolver
+o problema de comunicação entre todos os envolvidos
+internamente nos processos de atendimento ao cliente, pois
+informações atualizadas sobre chamados abertos, reclamações
+e sugestões estão sempre disponíveis, imediatamente, a todos.
+O sistema interno pode também estar integrado ao sistema de
+atendimento a clientes via Internet, para agilizar todo o
+processo de atendimento.
+Cliente externo  – A Internet pode servir de meio eficiente
+para que a empresa se comunique com seus clientes e obtenha
+feed-back sobre o grau de satisfação dos produtos e serviços
+oferecidos, sobre sua imagem no mercado e sua posição em
+relação a concorrentes. O cliente pode solicitar assistência da
+empresa para uso ou reparo de produtos, além de poder fazer
+reclamações e sugestões, tudo de forma simples e interativa.
+• Marketing e Vendas – Os envolvidos com processos de marketing
+e vendas necessitam de informações sempre atualizadas sobre
+produtos e serviços oferecidos pela empresa, bem como de
+informações sobre mercado e concorrentes. A intranet pode
+facilitar, e muito, a distribuição desse tipo de informação na
+empresa e o acesso ela. Pelo uso de ferramentas simples, como
+correio eletrônico e grupos de discussão, facilita também a troca
+de informações entre todos os envolvidos nos processos: a
+informação não é mais privilégio de alguns; ela se torna útil a
+todos que dela necessitam.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+623
+6. Considerações finais
+O presente capítulo aponta os pontos críticos usuais de erro em
+laboratório de análise de solo, plantas e fertilizantes, sem perder de vista
+o futuro desse segmento, ou seja, um negócio que gera informação sobre
+a situação de culturas a serem implantadas e/ou seu andamento no
+campo. Em última análise, visa a orientar o agricultor sobre o melhor uso
+de seus recursos para a otimização de sua produtividade. As expectativas
+para o século 21 são promissoras: os profissionais devem gerenciar de
+forma mais eficiente a informação gerada no laboratório, apoiados em
+um conjunto de métodos, técnicas e ferramentas, que permitem um
+fluxo contínuo de informação, sem contar que os avanços das tecnologias
+de informação e de comunicação tornam-se facilitadores do
+armazenamento, recuperação e disponibilização da informação e do
+conhecimento via Internet.
+7. Referências
+ANDERSON, D. L.; BOWEN, J. E. Nutrição de cana-de-açúcar . Tradução José
+Orlando Filho. Piracicaba: Potafos, 1992. 40 p. (Florida Agricultural Experiment
+Station Journal Series, R-00693).
+ANGELES, D. E.; SUMNER, M. E.; LAHAV, E. Preliminary DRIS norms for
+banana. Journal of Plant Nutrition , New York, v. 16, n. 6, p. 1059-1070,
+1993.
+AYES-ROTH, F.; WATERMAN, D. A.; LENAT, D. B. (Ed.). Building expert
+systems. London: Addison-Wesley, 1983. 444 p. (Teknowledge Series in
+Knowledge Engineering, 1).
+BAKER, D. E.; SUHR, M. H. Atomic absorption and flame emission
+spectrometry. In: PAGE, A. L. (Ed.). Methods of soil analysis : chemical and
+microbiological properties. 2. ed. Madison: Asa, 1982. part. 2, p. 13-27.
+BATAGLIA, O. C. DRIS: origem e atualidade. Boletim Infomativo –
+Sociedade Brasileira de Ciência do Solo , Campinas, v. 24, n. 1, p. 10-12,
+1999.
+BATAGLIA, O. C.; SANTOS, W. R. dos. Efeito do procedimento de cálculo e da
+população de referência nos índices do Sistema Integrado de Diagnose e
+Recomendação (DRIS). Revista Brasileira de Ciência do Solo , Campinas,
+v. 14, p. 339-344, 1990.
+BEATY, R. D.; KERBER, J. D. Concepts, instrumentation and techniques in
+atomic absorption spectrophotometry . Norwalk: Perkin-Elmer, 1993. 95 p.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+624
+BEAUFILS, E. R. Diagnosis and Recommendation Integrated System
+(DRIS). Pietermaritzburg: University of Natal, 1973. 132 p. (Soil Science
+Bulletin, 1).
+BREMER, J. M; EDWARDS, A. P . Determination and isotope ratio analysis of
+diferent forms of nitrogen in soils. I. Apparatus and procedure for distilation an
+determination of ammonium. Soil Science Society of America Proceedings ,
+Madison, v. 29, p. 504-507, 1965.
+BRENDER, J.; MCNAIR, P . User requirements on the future laboratory
+information systems. Computer Methods and Programs in Biomedicine ,
+Clare, n. 50, p. 87-93, 1996.
+BROWNBRIDGE, P . R.; FRY, N. Oracle discoverer plus: user´s guide, release
+4.1 for Windows . Redwood City: Oracle Corporation, 2000. Paginação
+irregular.
+DURKIN, J. Expert systems : design and development. Englewood Cliffs, NJ:
+Prentice-Hall, 1994. 800 p.
+ELMASRI, R.; NAVATHE S. B. Sistemas de banco de dados.4. ed. [S.l.]:
+Addison-Wesley, 2005.
+ELWALI, A. M. O.; GASCHO, G. J. Soil testing, foliar analysis and DRIS as guide
+for sugarcane fertilization. Agronomy Journal , Madison, v. 76, p. 466-470,
+1984.
+EVANGELISTA, S. R. M.; SOUZA, K. X. S. de; SOUZA, M. I. F .; BRAGA, S. A.
+C.; LEITE, M. A. de A.; SANTOS, A. D. dos; MOURA, M. F . Gerenciador de
+conteúdos da Agência Embrapa de Informação. In: INTERNATIONAL
+SYMPOSIUM ON KNOWLEDGE MANAGEMENT –(ISKM)=SIMPÓSIO
+INTERNACIONAL DE GESTÃO DO CONHECIMENTO, 2003, Curitiba. Anais...
+Curitiba: Pontifícia Universidade Católica do Paraná, 2003. p. 1-12.
+FAULHABER, H. Intranet é infra-estrutura . 2002. Disponível em: <http://
+hfaulhaber.ism.com.br/sitehenrique/calandra.nsf/0/
+22E4D600577123AB83256E7600699C93?OpenDocument&pub=T&proj=hfb&sec=Artigos>.
+Acesso em: 10 maio 2006.
+FERREIRA, J. R.; GOMES, J. C. Gerenciamento de laboratórios de análises
+químicas. Viçosa, MG: Fundação Arthur Bernardes, 1995. 387 p.
+GOODMAN, N.; ROZEN, S.; STEIN, L. D. Workflow mangement software
+for genome-laboratory informatics: from a proposal to the national
+institutes of health . [S.I: s.n], 1995. 22 p.
+GUIMARÃES, C. C. Fundamentos de bancos de dados : modelagem, projeto
+de linguagem SQL. Campinas: Unicamp, 2003. 270 p.
+HUBER, U. G.; DOLUSCHITZ, R. An overview of expert systems in
+agriculture. Bonn: ILB, 1990. 16 p.
+IBM. IBM software : DB2 product family. 2006. Disponível em: <http://www-
+306.ibm.com/software/data/db2/>. Acesso em: 11 mar. 2006.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+625
+JONES, P . Agricultural applications of expert systems concepts. Agricultural
+Systems, Barking, v. 31, p. 3-8, 1989.
+LANE, P .; LUMPKIN, G. Oracle8i: data warehousing guide, release 2 (8.1.6).
+Redwood City: Oracle Corporation, 1999. paginação irregular.
+LEINER, B. M.; CERF, V. G.; CLARK, D. D.; KAHN, R. E.; KLEINROCK, L.;
+LYNCH, D. C.; POSTEL, J.; ROBERTS, L. G.; WOLFF, S. A brief history of the
+internet. Disponível em: <URL:http://www.isoc.org/internet-history/>. Acesso
+em: 27 jun. 1997.
+LEITE, M. A. de A.; CUNHA, L. M. S. da; SILVA, F . C. da. Manual de usuário
+de banco de dados de experimentos agrícolas em manejo de fertilizantes para
+cana-de-açúcar. In: EMBRAPA INFORMÁTICA AGROPECUÁRIA. BDCana:
+banco de dados de experimentos em manejo de fertilizantes para cana-de-
+açúcar. Campinas, SP: Embrapa Informática Agropecuária, 2004. 24 p.
+(Embrapa Informática Agropecuária. Documentos, 43).
+LETZSCH, W. S.; SUMNER, M. E.; Computer program for calculating DRIS
+indices. Communications in Soil Science and Plant Analysis , New York,
+v. 14, n. 9, p. 811-815, 1983.
+LETZSCH, W. S.; SUMNER, M. E.; Effect of population size and yield level in
+selection of Diagnosis and Recommendation Integrated System (DRIS) Norms.
+Communication in Soil Science and Plant Analysis, New York, v. 15, n. 9,
+p. 997-1006, 1984.
+MASSRUHÁ, S. M. F. S; SOUZA, E. de; ROMANI, L. A. S.; CRUZ, S. A. B.
+Virtual services for agricultural technology transfer. In: EUROPEAN
+CONFERENCE OF THE EUROPEAN FEDERATION FOR INFORMATION
+TECHNOLOGY IN AGRICULTURE, FOOD AND THE ENVIRONMENT, 2., 1999,
+Bonn, Germany. Role and potential of IT, intranet and internet for
+advisory services . Bonn: Universität Bonn-ILB, 1999. p. 53-62.
+MASSRUHA, S. M. F. S.; SANDRI, S.; WAINER, J.; MORANDI, M. An integrated
+framework for clinical problem solving in agriculture. In: EFITA /WCCA 2005
+JOINT CONGRESS ON IT IN AGRICULTURE, 2005, Vila Real. [ Proceedings ...]
+Vila Real: Universidade de Trás-os-Montes e Alto Douro, 2005. p. 1400-1407.
+MATTISON, R. Data warehousing : strategies, technologies and techniques.
+New York: McGraw-Hill, 1996. 485 p.
+MCDOWALL, R. D. A matrix for a LIMS with a strategic focus.  Laboratory
+Automation and Information Management , Guildford, v. 31, n. 1. p. 57-64,
+1995.
+MEIRA, C. A. A.; SEIXAS NETO, A.; NAKA, J.; CUNHA, L. M. S. Análise da
+produção brasileira de frutas a partir do armazém de dados da
+fruticultura . Campinas, SP: Embrapa Informática Agropecuária, 2002. 6 p.
+(Embrapa Informática Agropecuária. Comunicado técnico, 18). Disponível em:
+<http://www.cnptia.embrapa.br/modules/tinycontent3/content/2002/
+comuntec18.pdf>. Acesso em: 26 mar. 2006.
+=== PAGE BREAK ===
+Manual de análises químicas de solos, plantas e fertilizantes
+626
+MICROSOFT. Informações de produtos: um meio fácil de causar um impacto
+positivo em seus negócios. 2003. Disponível em: <http://www.microsoft.com/
+brasil/office/system.asp>. Acesso em: 11 mar. 2006.
+MICROSOFT. Microsoft SQL server home . 2006. Disponível em: <http://
+www.microsoft.com/sql/default.mspx>. Acesso em: 11 mar. 2006.
+MILSTEAD, J.; FELDMAN, S. Metadata: cataloging by any other name...
+The Leading Magazine for Information Professionals  , Indianapolis, v. 23,
+n. 1, jan. 1999. Disponível em: < http://www.cbuc.es/5digital/1.pdf > Acesso
+em: 11 mar. 2006.
+MYSQL. MySQL AB : database products. 2006. Disponível em <http://
+www.mysql.com/products/database/>. Acesso em: 11 mar. 2006.
+NICOLA, M. Modelagem temporal de workflow . Disponível em: <http://
+www.inf.ufrgs.br/~nicolao/artigo.html>. Acesso em: 30 mar. 1998.
+OLOFSON, C. W. Quebrando a barreira relacional : a vitória do
+gerenciamento de dados de usuário com o caché da InterSystems. 2003.
+Disponível em: <http://www.intersystems.com.br/downloads/
+WhitepaperIDC_portugues.pdf>. Acesso em: 12 mar. 2006.
+ORACLE. Oracle 9i database. 2006. Disponível em: <http://www.oracle.com/
+lang/pt/database/index.html>. Acesso em: 11 mar. 2006.
+PEREIRA, A. M.; RIBEIRO JÚNIOR, D. I.; NEVES, G. L. C. Metadados para a
+descrição de recursos da internet: as novas tecnologias desenvolvidas para o
+padrão Dublin Core e sua utilização. Revista ACB Biblioteconomia em
+Santa Catarina , Florianópolis, v. 10, n. 1, p. 08-39, 2005.
+PERKIN-ELMER Co. Techniques in graphite furnace atomic absorption
+spectrometry. Norwalk, 1985. 224 p.
+PERKIN-ELMER CORPORATION. Analytical methods for atomic absorption
+spectroscopy. Norwalk, 1994. 300 p.
+POSTGRESQL. PostgreSQL: the world’s most advanced open source database.
+2006. Disponível em: <http://www.postgresql.org/>. Acesso em: 11 mar. 2006.
+RAIJ, B. van; QUAGGIO, J. A.; CANTARELLA, H.; FERREIRA, M. E.; LOPES, A.
+S.; BATAGLIA, O. C. Análise de solos para fins de fertilidade . Campinas:
+Fundação Cargill, 1987. 170 p.
+REZENDE, S. O. Sistemas inteligentes : fundamentos e aplicações. Barueri:
+Manole, 2003. 525 p.
+SANTOS, A. D. dos; SOUZA, M. I. F.; SOUZA, K. X. S. de; LEITE, M. A. A.;
+MOURA, M. F.; CRUZ, S. A. B. da; MACÁRIO, C. G. do N.; MASSRUHÁ, S. M.
+F . S. Agência de Informação Embrapa - informação para o negócio agrícola na
+internet. In: CONGRESSO BRASILEIRO DE AGROINFORMÁTICA, 5.; SIMPÓSIO
+BRASILEIRO DE TECNOLOGIA DA INFORMAÇÃO NO AGRONEGÓCIO
+COOPERATIVO, 2., 2005, Londrina. Agronegócio, tecnologia e inovação :
+anais... Londrina: SBI-Agro, 2005. Não paginado.
+SCHULTE, E. E.; KELLING, K. A. Plant analysis: a diagnostic tool. Disponível
+em: <URL: http://www.agcom.purdue.edu/AgcCom/Pubs/NCH-NCH-46.html>.
+Acesso em: 17 dez. 1999.
+=== PAGE BREAK ===
+Parte 3 | Capítulo 2 – Infra-estrutura laboratorial, gerenciamento de laboratório e automação da informação
+627
+SILVA, F. C. da; BERTON, R. S.; CHITOLINA, J. C.; BALLESTERO, S. D.
+Recomendações técnicas para o uso agrícola do composto de ixo urbano
+no Estado de São Paulo . Campinas: Embrapa Informática Agropecuária,
+2002. (Embrapa Informática Agropecuária. Circular técnica 3).
+SOCIEDADE BRASILEIRA DE CIÊNCIA DO SOLO. NÚCLEO REGIONAL SUL.
+Recomendações de adubação e calagem para os solos do Rio Grande do
+Sul e Santa Catarina . 3. ed. Passo Fundo, 1995. 223 p.
+SOUZA, M. I. F.; VENDRUSCULO, L. G.; MELO, G. C. Metadados para a
+descrição de recursos de informação eletrônica: utilização do padrão Dublin
+Core. Ciência da Informação , Brasília, DF, v. 29, n. 1, p. 93-102, jan./abr.
+2000a.
+SOUZA, M. I. F.; SANTOS, A. D. dos; OLIVEIRA, M. J. de; CINTRA, M. A. M.
+de U.; VENDRUSCULO, L. G. Informação para internet: uso de metadados e o
+padrão Dublin Core para catalogação de recursos eletrônicos na Embrapa.
+In: CONGRESSO BRASILEIRO DE BIBLIOTECONOMIA E DOCUMENTAÇÃO, 19.,
+2000, Porto Alegre. Informação para a cidadania : anais. Porto Alegre:
+FEBAB, 2000b. v. 1.
+SOUZA, M. I. F.; SANTOS, A. D. dos; OLIVEIRA, M. J. de; CINTRA, M. A. M.
+de U.; VENDRUSCULO, L. G. Catalogação de recursos eletrônicos:
+metadados e o padrão Dublin Core . Campinas, SP: Embrapa Informática
+Agropecuária, 2000c. 7 p. (Embrapa Informática Agropecuária. Comunicado
+técnico, 7).
+TAKAI, O. K.; ITALIANO, I. C.; FERREIRA, J. E. Introdução à banco de dados .
+São Paulo: USP-IME, 2005. Disponível em: <http://www.ime.usp.br/~jef/
+apostila.pdf>. Acesso em: 11 mar. 2006.
+TEDESCO, M. J. Avaliação de medidas utilizadas na amostragem de solo.
+Boletim Informativo da Sociedade Brasileira de Ciência do Solo ,
+Campinas, v. 10, n. 1, p. 9-13, jan./abr. 1985.
+TEDESCO, M. J.; GIANELLO, C.; BISSANI, C. A.; BONHEN, H.; VOLKWEISS, S.
+J. Análises de solo, plantas e outros materiais . 2. ed. Porto Alegre:
+UFRGS–Departamento de Solos, 1995. 174 p.
+TEIXEIRA, D.; THOMPSON, J. The power of workflow software. The Bankers
+Magazine, San Francisco, n. 176, p. 10-14, Sept./Oct. 1993. Disponível em:
+<http://cne.gmu.edu/modules/workflow/DOCUMENTS/Teixeira-Abstract.html>.
+Acesso em: 01 abr. 1998.
+WADE, V.; GRIMSON, W.; HEDERMAN, L.; YEARWORTH, M.; GROTH, T.
+Managing the operation of open distributed laboratory information system.
+Computer Methods and Programs in Biomedicine , Clare, n. 50, p. 123-
+133, 1996.
+WALWORTH, J. L.; SUMNER, M. E. The Diagnosis and Recommendation
+Integrated System (DRIS). In: STEWART, B. A. (Ed.). Advances in soil science .
+New York: Springer-Verlag, 1987. p. 149-188.

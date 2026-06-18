@@ -1,0 +1,12 @@
+CETAB - Laboratório de Biologia Molecular Vegetal
+Laudo nº: 2026/MOL-58
+Amostra: folha de citros (laranjeira)
+Solicitante: Produtor rural - Sítio Citrolândia
+Município: Governador Mangabeira - BA
+Data da análise: 28/04/2026
+Método: qPCR
+
+Pesquisa de HLB (Candidatus Liberibacter spp.): POSITIVO   (Ct 27,4)
+Pesquisa de CVC (Xylella fastidiosa): NEGATIVO
+
+Obs: amostra coletada em planta com sintomas suspeitos.

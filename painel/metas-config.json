@@ -1,0 +1,9 @@
+{
+  "_nota": "Contadores do projeto ABC+ (editar com os números reais da execução). Propriedades e análises são calculadas AO VIVO (CRM/Data Lake).",
+  "uds_ilpf": 2,
+  "capacitados": 520,
+  "eventos": 18,
+  "safs_pct": 8,
+  "recuperacao_pct": 22,
+  "uds_por_bioma": { "Caatinga": 1, "Cerrado (Chapada Diamantina)": 1, "Mata Atlântica": 0 }
+}

@@ -1,0 +1,13 @@
+CETAB - Laboratório de Qualidade da Água
+Laudo nº: 2026/AG-204
+Solicitante: Prefeitura Municipal de Cachoeira
+Município: Cachoeira - BA
+Tipo de amostra: água (poço comunitário)
+Data da coleta: 05/04/2026
+
+Parâmetro                         Resultado     Unidade
+pH                                7,2           -
+Turbidez                          8,5           UNT
+Coliformes termotolerantes        3             NMP/100mL
+
+Obs: amostra destinada a abastecimento comunitário.

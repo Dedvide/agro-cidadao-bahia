@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahia Agro Inteligente — Apresentação</title>
+  <link rel="stylesheet" href="apresentacao.css" />
+</head>
+<body>
+  <div id="palco">
+
+    <!-- 0 · CAPA -->
+    <section class="cena capa ativa" data-cena="0">
+      <div class="marca">GOVERNO DA BAHIA · SEAGRI · CETAB</div>
+      <h1>Bahia Agro <span>Inteligente</span></h1>
+      <p class="visao">O cérebro digital da agropecuária baiana: conectando laboratórios,
+        dados e inteligência artificial para antecipar problemas, apoiar produtores e
+        orientar políticas públicas em todo o estado.</p>
+      <div id="capa-numeros" class="numeros"></div>
+      <div class="dica">use as setas ◀ ▶ do teclado · F para tela cheia</div>
+    </section>
+
+    <!-- 1 · PROBLEMA -->
+    <section class="cena" data-cena="1">
+      <h2>O problema de hoje</h2>
+      <p class="grande">O CETAB gera <b>milhares de análises</b> por ano.<br>
+        Mas os dados ficam presos em PDFs, planilhas e laudos isolados.</p>
+      <div class="fluxo-ruim">
+        <span>📄 PDF</span><span>📊 planilha</span><span>🗂️ laudo</span><span>💾 sistema</span>
+        <span class="seta">→</span><span class="perda">conhecimento que não circula</span>
+      </div>
+      <p class="legenda">O gestor enxerga o resultado individual — não a tendência do estado.</p>
+    </section>
+
+    <!-- 2 · SOLUÇÃO: LAUDO -->
+    <section class="cena" data-cena="2">
+      <h2>Do dado técnico à decisão</h2>
+      <div class="duas-colunas">
+        <div><div class="rotulo-col">Laudo recebido</div><pre id="ap-bruto" class="doc-bruto"></pre></div>
+        <div><div class="rotulo-col">A IA interpreta <span class="badge-ia">IA</span></div>
+          <div id="ap-interpretado"></div></div>
+      </div>
+    </section>
+
+    <!-- 3 · MAPA -->
+    <section class="cena" data-cena="3">
+      <h2>O estado inteiro num mapa</h2>
+      <div class="frame-wrap"><iframe data-src="index.html" title="mapa"></iframe></div>
+      <p class="legenda">Onde está o risco, onde falta fósforo, onde há foco de doença.</p>
+    </section>
+
+    <!-- 4 · ASSISTENTE -->
+    <section class="cena" data-cena="4">
+      <h2>O gestor pergunta em português</h2>
+      <div id="ap-chat" class="chat-demo"></div>
+    </section>
+
+    <!-- 5 · INTEGRAÇÕES -->
+    <section class="cena" data-cena="5">
+      <h2>Conectado aos outros órgãos</h2>
+      <div class="frame-wrap"><iframe data-src="integracoes.html" title="integrações"></iframe></div>
+      <p class="legenda">Embrapa, MAPA, INMET, INPE, IBGE, ADAB, Bahiater — o CETAB como hub.
+        <b>Clique "Testar conexão ao vivo" no IBGE.</b></p>
+    </section>
+
+    <!-- 6 · IMPACTO + ROADMAP -->
+    <section class="cena" data-cena="6">
+      <h2>Impacto e caminho</h2>
+      <div class="impacto-grid">
+        <div class="imp"><span>👨‍🌾</span><b>Produtores</b><p>decisão mais rápida, menos perdas, mais produtividade</p></div>
+        <div class="imp"><span>🏛️</span><b>Governo</b><p>planejamento, redução de custos, prevenção de crises</p></div>
+        <div class="imp"><span>🏘️</span><b>Municípios</b><p>acesso a inteligência técnica especializada</p></div>
+        <div class="imp"><span>🔬</span><b>CETAB</b><p>referência nacional em inteligência agropecuária</p></div>
+      </div>
+      <div class="timeline-exec">
+        <div class="t-item"><b>90 dias</b><span>dados do CETAB + dashboard executivo</span></div>
+        <div class="t-item"><b>180 dias</b><span>IA de laudos + assistente + mapas</span></div>
+        <div class="t-item"><b>12 meses</b><span>radar de pragas + observatório estadual</span></div>
+        <div class="t-item destaque"><b>2027</b><span>Concurso de Inovação ENAP — categoria IA</span></div>
+      </div>
+      <p class="legenda">Impactos projetados (estimativas) — confirmados à medida da implantação.</p>
+    </section>
+
+    <!-- 7 · ENCERRAMENTO -->
+    <section class="cena fecho" data-cena="7">
+      <div class="marca">BAHIA AGRO INTELIGENTE</div>
+      <p class="fecho-frase">“Hoje o CETAB é um centro de excelência laboratorial.<br>
+        Nossa proposta é transformá-lo no <b>cérebro digital da agropecuária baiana</b>.”</p>
+      <p class="visao">Não é um software. É uma política pública permanente.</p>
+    </section>
+
+  </div>
+
+  <!-- controles -->
+  <div class="controles-ap">
+    <button id="anterior">‹ Anterior</button>
+    <div id="pontos" class="pontos"></div>
+    <button id="proximo">Próximo ›</button>
+    <button id="cheia" title="tela cheia">⛶</button>
+    <a class="sair" href="index.html">sair</a>
+  </div>
+
+  <script src="apresentacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+[
+  {
+    "pergunta": "Quantas análises o CETAB realizou?",
+    "tags": [
+      "quantas",
+      "analises",
+      "total",
+      "realizou"
+    ],
+    "resposta": "Em 2024. o CETAB realizou aproximadamente 107.000 análises e emitiu 9.566 laudos. em 8 laboratórios com cobertura estadual."
+  },
+  {
+    "pergunta": "Quais municípios têm deficiência de fósforo no solo?",
+    "tags": [
+      "municipios",
+      "fosforo",
+      "deficiencia",
+      "baixo"
+    ],
+    "resposta": "Municípios com fósforo baixo nas amostras: Barreiras, Luis Eduardo Magalhaes, Cruz das Almas, Muritiba."
+  },
+  {
+    "pergunta": "Quais municípios têm deficiência de potássio?",
+    "tags": [
+      "municipios",
+      "potassio",
+      "deficiencia"
+    ],
+    "resposta": "Municípios com potássio baixo: Barreiras, Luis Eduardo Magalhaes, Cruz das Almas, Muritiba."
+  },
+  {
+    "pergunta": "Onde há diagnóstico positivo de HLB (greening)?",
+    "tags": [
+      "hlb",
+      "greening",
+      "positivo",
+      "citros",
+      "doenca"
+    ],
+    "resposta": "Diagnóstico POSITIVO para HLB em: Governador Mangabeira. Recomenda-se notificar a ADAB e manejar o vetor."
+  },
+  {
+    "pergunta": "Quais áreas apresentam maior risco fitossanitário?",
+    "tags": [
+      "risco",
+      "fitossanitario",
+      "culturas",
+      "eixo",
+      "maior"
+    ],
+    "resposta": "Eixos com mais amostras em alerta: fertilidade_solo (5), diagnostico_molecular (1)."
+  },
+  {
+    "pergunta": "Qual o panorama geral?",
+    "tags": [
+      "panorama",
+      "geral",
+      "resumo",
+      "estado"
+    ],
+    "resposta": "Base atual: 8 laudos analisados. Fósforo baixo em 4 município(s); HLB positivo em 1. O sistema transforma os laudos em mapa de risco e recomendações."
+  }
+]

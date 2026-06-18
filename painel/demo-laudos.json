@@ -1,0 +1,53 @@
+[
+  {
+    "titulo": "Análise de solo — Sítio Boa Esperança (Cruz das Almas)",
+    "tipo": "Fertilidade de solo",
+    "documento_bruto": "CETAB - Lab. de Solos\nLaudo 2026/0457\npH (água): 4,8\nFósforo (P): 8 mg/dm3\nPotássio (K): 35 mg/dm3\nMatéria orgânica: 1,4 %",
+    "resumo": "Requer atenção: ph (muito baixo (acido)); fosforo (baixo); potassio (baixo); materia_organica (baixo).",
+    "resultados": [
+      {
+        "rotulo": "ph",
+        "valor": "4.8",
+        "classe": "muito baixo (acido)",
+        "alerta": true,
+        "recomendacao": "Calagem recomendada para corrigir a acidez."
+      },
+      {
+        "rotulo": "fosforo",
+        "valor": "8.0 mg/dm3",
+        "classe": "baixo",
+        "alerta": true,
+        "recomendacao": "Adubação fosfatada recomendada."
+      },
+      {
+        "rotulo": "potassio",
+        "valor": "35.0 mg/dm3",
+        "classe": "baixo",
+        "alerta": true,
+        "recomendacao": "Adubação potássica recomendada."
+      },
+      {
+        "rotulo": "materia_organica",
+        "valor": "1.4 %",
+        "classe": "baixo",
+        "alerta": true,
+        "recomendacao": "Adubação orgânica / cobertura vegetal."
+      }
+    ]
+  },
+  {
+    "titulo": "Diagnóstico molecular — folha de citros (Gov. Mangabeira)",
+    "tipo": "Biologia molecular (qPCR)",
+    "documento_bruto": "CETAB - Biologia Molecular\nLaudo 2026/MOL-58\nMétodo: qPCR\nPesquisa de HLB (Candidatus Liberibacter): POSITIVO (Ct 27,4)",
+    "resumo": "Requer atenção: HLB (positivo).",
+    "resultados": [
+      {
+        "rotulo": "HLB",
+        "valor": "positivo (Ct 27.4)",
+        "classe": "positivo",
+        "alerta": true,
+        "recomendacao": "POSITIVO p/ HLB (Greening): notificar a ADAB, erradicar a planta e manejar o psilídeo vetor."
+      }
+    ]
+  }
+]

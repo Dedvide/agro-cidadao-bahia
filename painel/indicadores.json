@@ -1,0 +1,521 @@
+{
+  "total_laudos": 31,
+  "municipios_cobertos": 10,
+  "por_municipio": [
+    [
+      "Itabuna",
+      4
+    ],
+    [
+      "Teixeira de Freitas",
+      3
+    ],
+    [
+      "Tancredo Neves",
+      3
+    ],
+    [
+      "Palmeiras",
+      3
+    ],
+    [
+      "Mucugê",
+      3
+    ],
+    [
+      "Juazeiro",
+      3
+    ],
+    [
+      "Irecê",
+      3
+    ],
+    [
+      "Ibicoara",
+      3
+    ],
+    [
+      "Casa Nova",
+      3
+    ],
+    [
+      "Andaraí",
+      3
+    ]
+  ],
+  "por_categoria": [
+    [
+      "fertilidade_solo",
+      20
+    ],
+    [
+      "analise_agua",
+      10
+    ],
+    [
+      "diagnostico_molecular",
+      1
+    ]
+  ],
+  "laudos_com_alerta": 22,
+  "aguardando_revisao_humana": 0,
+  "por_categoria_detalhe": [
+    {
+      "categoria": "fertilidade_solo",
+      "total": 20,
+      "alertas": 14
+    },
+    {
+      "categoria": "analise_agua",
+      "total": 10,
+      "alertas": 7
+    },
+    {
+      "categoria": "diagnostico_molecular",
+      "total": 1,
+      "alertas": 1
+    }
+  ],
+  "serie_mensal": [
+    [
+      "2026-04",
+      31
+    ]
+  ],
+  "municipios": [
+    {
+      "nome": "Andaraí",
+      "lat": -12.8067,
+      "lon": -41.33,
+      "total": 3,
+      "alertas": 3
+    },
+    {
+      "nome": "Casa Nova",
+      "lat": -9.1631,
+      "lon": -40.9706,
+      "total": 3,
+      "alertas": 0
+    },
+    {
+      "nome": "Ibicoara",
+      "lat": -13.41,
+      "lon": -41.285,
+      "total": 3,
+      "alertas": 3
+    },
+    {
+      "nome": "Irecê",
+      "lat": -11.3044,
+      "lon": -41.8558,
+      "total": 3,
+      "alertas": 0
+    },
+    {
+      "nome": "Itabuna",
+      "lat": -14.7856,
+      "lon": -39.2803,
+      "total": 4,
+      "alertas": 4
+    },
+    {
+      "nome": "Juazeiro",
+      "lat": -9.4111,
+      "lon": -40.4986,
+      "total": 3,
+      "alertas": 0
+    },
+    {
+      "nome": "Mucugê",
+      "lat": -13.005,
+      "lon": -41.3711,
+      "total": 3,
+      "alertas": 3
+    },
+    {
+      "nome": "Palmeiras",
+      "lat": -12.5089,
+      "lon": -41.5775,
+      "total": 3,
+      "alertas": 3
+    },
+    {
+      "nome": "Tancredo Neves",
+      "lat": -13.45,
+      "lon": -39.4231,
+      "total": 3,
+      "alertas": 3
+    },
+    {
+      "nome": "Teixeira de Freitas",
+      "lat": -17.5394,
+      "lon": -39.7425,
+      "total": 3,
+      "alertas": 3
+    }
+  ],
+  "recomendacoes": [
+    {
+      "laudo_id": "ABC-S04",
+      "municipio": "Palmeiras",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-S04",
+      "municipio": "Palmeiras",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S04",
+      "municipio": "Palmeiras",
+      "categoria": "fertilidade_solo",
+      "rotulo": "materia_organica",
+      "texto": "Adubação orgânica / cobertura vegetal."
+    },
+    {
+      "laudo_id": "ABC-S04b",
+      "municipio": "Palmeiras",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A04",
+      "municipio": "Palmeiras",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S05",
+      "municipio": "Mucugê",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-S05",
+      "municipio": "Mucugê",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S05",
+      "municipio": "Mucugê",
+      "categoria": "fertilidade_solo",
+      "rotulo": "materia_organica",
+      "texto": "Adubação orgânica / cobertura vegetal."
+    },
+    {
+      "laudo_id": "ABC-S05b",
+      "municipio": "Mucugê",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A05",
+      "municipio": "Mucugê",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S06",
+      "municipio": "Ibicoara",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-S06",
+      "municipio": "Ibicoara",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S06",
+      "municipio": "Ibicoara",
+      "categoria": "fertilidade_solo",
+      "rotulo": "materia_organica",
+      "texto": "Adubação orgânica / cobertura vegetal."
+    },
+    {
+      "laudo_id": "ABC-S06b",
+      "municipio": "Ibicoara",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A06",
+      "municipio": "Ibicoara",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S07",
+      "municipio": "Andaraí",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-S07",
+      "municipio": "Andaraí",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S07",
+      "municipio": "Andaraí",
+      "categoria": "fertilidade_solo",
+      "rotulo": "materia_organica",
+      "texto": "Adubação orgânica / cobertura vegetal."
+    },
+    {
+      "laudo_id": "ABC-S07b",
+      "municipio": "Andaraí",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A07",
+      "municipio": "Andaraí",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S08",
+      "municipio": "Tancredo Neves",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Calagem recomendada para corrigir a acidez."
+    },
+    {
+      "laudo_id": "ABC-S08",
+      "municipio": "Tancredo Neves",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S08",
+      "municipio": "Tancredo Neves",
+      "categoria": "fertilidade_solo",
+      "rotulo": "potassio",
+      "texto": "Adubação potássica recomendada."
+    },
+    {
+      "laudo_id": "ABC-S08b",
+      "municipio": "Tancredo Neves",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A08",
+      "municipio": "Tancredo Neves",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S09",
+      "municipio": "Itabuna",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Calagem recomendada para corrigir a acidez."
+    },
+    {
+      "laudo_id": "ABC-S09",
+      "municipio": "Itabuna",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S09",
+      "municipio": "Itabuna",
+      "categoria": "fertilidade_solo",
+      "rotulo": "potassio",
+      "texto": "Adubação potássica recomendada."
+    },
+    {
+      "laudo_id": "ABC-S09b",
+      "municipio": "Itabuna",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A09",
+      "municipio": "Itabuna",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-S10",
+      "municipio": "Teixeira de Freitas",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Calagem recomendada para corrigir a acidez."
+    },
+    {
+      "laudo_id": "ABC-S10",
+      "municipio": "Teixeira de Freitas",
+      "categoria": "fertilidade_solo",
+      "rotulo": "fosforo",
+      "texto": "Adubação fosfatada recomendada."
+    },
+    {
+      "laudo_id": "ABC-S10",
+      "municipio": "Teixeira de Freitas",
+      "categoria": "fertilidade_solo",
+      "rotulo": "potassio",
+      "texto": "Adubação potássica recomendada."
+    },
+    {
+      "laudo_id": "ABC-S10b",
+      "municipio": "Teixeira de Freitas",
+      "categoria": "fertilidade_solo",
+      "rotulo": "ph",
+      "texto": "Avaliar calagem conforme a cultura."
+    },
+    {
+      "laudo_id": "ABC-A10",
+      "municipio": "Teixeira de Freitas",
+      "categoria": "analise_agua",
+      "rotulo": "turbidez",
+      "texto": "Resultado fora do padrão — investigar fonte e reanalisar."
+    },
+    {
+      "laudo_id": "ABC-MOL-01",
+      "municipio": "Itabuna",
+      "categoria": "diagnostico_molecular",
+      "rotulo": "HLB",
+      "texto": "POSITIVO p/ HLB (Greening): notificar a ADAB, erradicar a planta e manejar o psilídeo vetor."
+    }
+  ],
+  "indicadores_enap": {
+    "laudos_processados": 31,
+    "municipios_beneficiados": 10,
+    "alertas_emitidos": 36,
+    "agricultura_familiar": 10,
+    "pct_agricultura_familiar": 32,
+    "taxa_alerta_pct": 71,
+    "tempo_estimado_economizado_h": 15.5
+  },
+  "distribuicao_fosforo": [
+    [
+      "medio",
+      10
+    ],
+    [
+      "baixo",
+      7
+    ],
+    [
+      "alto",
+      3
+    ]
+  ],
+  "distribuicao_ph": [
+    [
+      "baixo",
+      11
+    ],
+    [
+      "conforme",
+      10
+    ],
+    [
+      "muito baixo (acido)",
+      3
+    ],
+    [
+      "alto",
+      3
+    ],
+    [
+      "adequado",
+      3
+    ]
+  ],
+  "cobertura": {
+    "com_dados": 10,
+    "total_estado": 417,
+    "pct": 2.4
+  },
+  "por_solicitante": [
+    [
+      "produtor_rural",
+      11
+    ],
+    [
+      "prefeitura",
+      10
+    ],
+    [
+      "agricultura_familiar",
+      10
+    ]
+  ],
+  "ranking_municipios": [
+    [
+      "Itabuna",
+      4
+    ],
+    [
+      "Teixeira de Freitas",
+      3
+    ],
+    [
+      "Tancredo Neves",
+      3
+    ],
+    [
+      "Palmeiras",
+      3
+    ],
+    [
+      "Mucugê",
+      3
+    ],
+    [
+      "Juazeiro",
+      3
+    ],
+    [
+      "Irecê",
+      3
+    ],
+    [
+      "Ibicoara",
+      3
+    ]
+  ],
+  "diagnostico_positividade": [
+    [
+      "positivo",
+      1
+    ]
+  ],
+  "conformidade": [
+    [
+      "conforme",
+      13
+    ]
+  ]
+}
